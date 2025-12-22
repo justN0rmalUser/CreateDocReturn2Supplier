@@ -1,0 +1,2823 @@
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Создание документа регистрации; ID: 142794
+INFO:request:Создание документа реализации товара; ID: 59411; DOC_REG ID: 142794
+INFO:request:Обновление документа регистрации; ID: 142794
+INFO:request:Создание заголовка документа реализации товара; ID: 61298; DOC_REG ID: 142794
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61298
+INFO:request:Получение фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Получение цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Такой товар не найден в базе!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Создание документа регистрации; ID: 142795
+INFO:request:Создание документа реализации товара; ID: 59412; DOC_REG ID: 142795
+INFO:request:Обновление документа регистрации; ID: 142795
+INFO:request:Создание заголовка документа реализации товара; ID: 61299; DOC_REG ID: 142795
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61299
+INFO:request:Получение фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Получение цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Такой товар не найден в базе!
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Создание документа регистрации; ID: 142796
+INFO:request:Создание документа реализации товара; ID: 59413; DOC_REG ID: 142796
+INFO:request:Обновление документа регистрации; ID: 142796
+INFO:request:Создание заголовка документа реализации товара; ID: 61300; DOC_REG ID: 142796
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61300
+INFO:request:Получение фирмы и кода из ключа; BRAND: 211, CODE: 130C17480R
+INFO:request:Получение цены и количества из значения по ключу; PRICE: 5990.34, COUNT: 1.0
+WARNING:request:Такой товар не найден в базе!
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Создание документа регистрации; ID: 142797
+INFO:request:Создание документа реализации товара; ID: 59414; DOC_REG ID: 142797
+INFO:request:Обновление документа регистрации; ID: 142797
+INFO:request:Создание заголовка документа реализации товара; ID: 61301; DOC_REG ID: 142797
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61301
+INFO:request:Получение фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Получение цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+WARNING:request:Такой товар не найден в базе!
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Создание документа регистрации; ID: 142798
+INFO:request:Создание документа реализации товара; ID: 59415; DOC_REG ID: 142798
+INFO:request:Обновление документа регистрации; ID: 142798
+INFO:request:Создание заголовка документа реализации товара; ID: 61302; DOC_REG ID: 142798
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61302
+INFO:request:Получение фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Получение цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+WARNING:request:Товар 43:CO-3696A не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142799
+INFO:request:Создание документа реализации товара; ID: 59416; DOC_REG ID: 142799
+INFO:request:Обновление документа регистрации; ID: 142799
+INFO:request:Создание заголовка документа реализации товара; ID: 61303; DOC_REG ID: 142799
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61303
+INFO:request:Печатка даты в документе регистрации; ID: 142799
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59416; DOC_REG ID: 142799
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61303; DOC_REG ID: 142799
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61303; DOC_REG ID: 142799
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+WARNING:request:Товар 43:CO-3696A не найден в базе!
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+WARNING:request:Товар 43:CO-3696A не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142800
+INFO:request:Создание документа реализации товара; ID: 59417; DOC_REG ID: 142800
+INFO:request:Обновление документа регистрации; ID: 142800
+INFO:request:Создание заголовка документа реализации товара; ID: 61304; DOC_REG ID: 142800
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61304
+INFO:request:Печатка даты в документе регистрации; ID: 142800
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59417; DOC_REG ID: 142800
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61304; DOC_REG ID: 142800
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61304; DOC_REG ID: 142800
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CO-3696A
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.0, COUNT: 1.0
+WARNING:request:Товар 43:CO-3696A не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142801
+INFO:request:Создание документа реализации товара; ID: 59418; DOC_REG ID: 142801
+INFO:request:Обновление документа регистрации; ID: 142801
+INFO:request:Создание заголовка документа реализации товара; ID: 61305; DOC_REG ID: 142801
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61305
+INFO:request:Печатка даты в документе регистрации; ID: 142801
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59418; DOC_REG ID: 142801
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61305; DOC_REG ID: 142801
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61305; DOC_REG ID: 142801
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142802
+INFO:request:Создание документа реализации товара; ID: 59419; DOC_REG ID: 142802
+INFO:request:Обновление документа регистрации; ID: 142802
+INFO:request:Создание заголовка документа реализации товара; ID: 61306; DOC_REG ID: 142802
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61306
+INFO:request:Печатка даты в документе регистрации; ID: 142802
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59419; DOC_REG ID: 142802
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61306; DOC_REG ID: 142802
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61306; DOC_REG ID: 142802
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142803
+INFO:request:Создание документа реализации товара; ID: 59420; DOC_REG ID: 142803
+INFO:request:Обновление документа регистрации; ID: 142803
+INFO:request:Создание заголовка документа реализации товара; ID: 61307; DOC_REG ID: 142803
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61307
+INFO:request:Печатка даты в документе регистрации; ID: 142803
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59420; DOC_REG ID: 142803
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61307; DOC_REG ID: 142803
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61307; DOC_REG ID: 142803
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142804
+INFO:request:Создание документа реализации товара; ID: 59421; DOC_REG ID: 142804
+INFO:request:Обновление документа регистрации; ID: 142804
+INFO:request:Создание заголовка документа реализации товара; ID: 61308; DOC_REG ID: 142804
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61308
+INFO:request:Печатка даты в документе регистрации; ID: 142804
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59421; DOC_REG ID: 142804
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61308; DOC_REG ID: 142804
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142805
+INFO:request:Создание документа реализации товара; ID: 59422; DOC_REG ID: 142805
+INFO:request:Обновление документа регистрации; ID: 142805
+INFO:request:Создание заголовка документа реализации товара; ID: 61309; DOC_REG ID: 142805
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61309
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142806
+INFO:request:Создание документа реализации товара; ID: 59423; DOC_REG ID: 142806
+INFO:request:Обновление документа регистрации; ID: 142806
+INFO:request:Создание заголовка документа реализации товара; ID: 61310; DOC_REG ID: 142806
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61310
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142807
+INFO:request:Создание документа реализации товара; ID: 59424; DOC_REG ID: 142807
+INFO:request:Обновление документа регистрации; ID: 142807
+INFO:request:Создание заголовка документа реализации товара; ID: 61311; DOC_REG ID: 142807
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61311
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142808
+INFO:request:Создание документа реализации товара; ID: 59425; DOC_REG ID: 142808
+INFO:request:Обновление документа регистрации; ID: 142808
+INFO:request:Создание заголовка документа реализации товара; ID: 61312; DOC_REG ID: 142808
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61312
+INFO:request:Печатка даты в документе регистрации; ID: 142808
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59425; DOC_REG ID: 142808
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61312; DOC_REG ID: 142808
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61312; DOC_REG ID: 142808
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142810
+INFO:request:Создание документа реализации товара; ID: 59427; DOC_REG ID: 142810
+INFO:request:Обновление документа регистрации; ID: 142810
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: 142810
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: 142810
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59427; DOC_REG ID: 142810
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: 142810
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: 142810
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142811
+INFO:request:Создание документа реализации товара; ID: 59428; DOC_REG ID: 142811
+INFO:request:Обновление документа регистрации; ID: 142811
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: 142811
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: 142811
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59428; DOC_REG ID: 142811
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: 142811
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: 142811
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142812
+INFO:request:Создание документа реализации товара; ID: 59429; DOC_REG ID: 142812
+INFO:request:Обновление документа регистрации; ID: 142812
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: 142812
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: 142812
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59429; DOC_REG ID: 142812
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: 142812
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: 142812
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142813
+INFO:request:Создание документа реализации товара; ID: 59430; DOC_REG ID: 142813
+INFO:request:Обновление документа регистрации; ID: 142813
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: 142813
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: 142813
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59430; DOC_REG ID: 142813
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: 142813
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: 142813
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142814,)
+INFO:request:Создание документа реализации товара; ID: (59431,); DOC_REG ID: (142814,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59431,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142816,)
+INFO:request:Создание документа реализации товара; ID: (59432,); DOC_REG ID: (142816,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59432,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142818,)
+INFO:request:Создание документа реализации товара; ID: (59433,); DOC_REG ID: (142818,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59433,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142820,)
+INFO:request:Создание документа реализации товара; ID: (59434,); DOC_REG ID: (142820,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59434,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142822,)
+INFO:request:Создание документа реализации товара; ID: (59435,); DOC_REG ID: (142822,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59435,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142824,)
+INFO:request:Создание документа реализации товара; ID: (59436,); DOC_REG ID: (142824,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59436,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: None
+INFO:request:Создание документа реализации товара; ID: (59437,); DOC_REG ID: None
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59437,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: None
+INFO:request:Создание документа реализации товара; ID: (59438,); DOC_REG ID: None
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59438,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: None
+INFO:request:Создание документа реализации товара; ID: (59439,); DOC_REG ID: None
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59439,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: None
+INFO:request:Создание документа реализации товара; ID: (59440,); DOC_REG ID: None
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59440,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142826,)
+INFO:request:Создание документа реализации товара; ID: (59441,); DOC_REG ID: (142826,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59441,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: (142828,)
+INFO:request:Создание документа реализации товара; ID: (59442,); DOC_REG ID: (142828,)
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59442,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: [(142830,)]
+INFO:request:Создание документа реализации товара; ID: (59443,); DOC_REG ID: [(142830,)]
+INFO:request:Обновление документа регистрации; ID: None
+INFO:request:Создание заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: None
+INFO:request:Печатка даты в документе регистрации; ID: None
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59443,); DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: None; DOC_REG ID: None
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: None; DOC_REG ID: None
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: [(142832,)]
+INFO:request:Создание документа реализации товара; ID: (59444,); DOC_REG ID: [(142832,)]
+INFO:request:Обновление документа регистрации; ID: False
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: False
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+INFO:request:Печатка даты в документе регистрации; ID: False
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59444,); DOC_REG ID: False
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: False
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: False
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142834
+INFO:request:Создание документа реализации товара; ID: (59445,); DOC_REG ID: 142834
+INFO:request:Обновление документа регистрации; ID: 142834
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: 142834
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+INFO:request:Печатка даты в документе регистрации; ID: 142834
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: (59445,); DOC_REG ID: 142834
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: 142834
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: 142834
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142835
+INFO:request:Создание документа реализации товара; ID: 59446; DOC_REG ID: 142835
+INFO:request:Обновление документа регистрации; ID: 142835
+INFO:request:Создание заголовка документа реализации товара; ID: 61314; DOC_REG ID: 142835
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61314
+INFO:request:Печатка даты в документе регистрации; ID: 142835
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59446; DOC_REG ID: 142835
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61314; DOC_REG ID: 142835
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61314; DOC_REG ID: 142835
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: 477F1008017
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 727.16, COUNT: 1.0
+WARNING:request:Товар 1324:477F1008017 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142836
+INFO:request:Создание документа реализации товара; ID: 59447; DOC_REG ID: 142836
+INFO:request:Обновление документа регистрации; ID: 142836
+INFO:request:Создание заголовка документа реализации товара; ID: 61315; DOC_REG ID: 142836
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61315
+INFO:request:Печатка даты в документе регистрации; ID: 142836
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59447; DOC_REG ID: 142836
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61315; DOC_REG ID: 142836
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61315; DOC_REG ID: 142836
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0816
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 10237.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0816 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142837
+INFO:request:Создание документа реализации товара; ID: 59448; DOC_REG ID: 142837
+INFO:request:Обновление документа регистрации; ID: 142837
+INFO:request:Создание заголовка документа реализации товара; ID: 61316; DOC_REG ID: 142837
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61316
+INFO:request:Печатка даты в документе регистрации; ID: 142837
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59448; DOC_REG ID: 142837
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61316; DOC_REG ID: 142837
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61316; DOC_REG ID: 142837
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 3, CODE: 1 096 277
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2418.34, COUNT: 1.0
+WARNING:request:Товар 3:1 096 277 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: LS34001
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1806.0, COUNT: 2.0
+CRITICAL:root:Непредвиденная ошибка: not enough values to unpack (expected 2, got 1)
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 2, CODE: LZKAR7D-9D
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 588.7, COUNT: 4.0
+WARNING:request:Товар 2:LZKAR7D-9D не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 535, CODE: SC 0903
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1663.0, COUNT: 1.0
+WARNING:request:Товар 535:SC 0903 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 552602P300
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 661.5, COUNT: 1.0
+WARNING:request:Товар 1178:552602P300 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 55260-3R000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 805.17, COUNT: 1.0
+WARNING:request:Товар 1178:55260-3R000 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: BC 1948
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 500.0, COUNT: 2.0
+WARNING:request:Товар 808:BC 1948 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: MB-01
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 368.0, COUNT: 2.0
+WARNING:request:Товар 530:MB-01 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: MA-1096LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1905.0, COUNT: 2.0
+WARNING:request:Товар 43:MA-1096LR не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH23024
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1271.0, COUNT: 2.0
+CRITICAL:root:Непредвиденная ошибка: too many values to unpack (expected 2)
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015670XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7244.0, COUNT: 1.0
+WARNING:request:Товар 811:K015670XS не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LWP 0190
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1434.0, COUNT: 1.0
+WARNING:request:Товар 271:LWP 0190 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-2035
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 644.0, COUNT: 2.0
+INFO:request:Товар 43:BC-2035 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 61, CODE: 83A694CS30
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1338.07, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: too many values to unpack (expected 2)
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015670XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7244.0, COUNT: 1.0
+WARNING:request:Товар 811:K015670XS не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LWP 0190
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1434.0, COUNT: 1.0
+WARNING:request:Товар 271:LWP 0190 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-2035
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 644.0, COUNT: 2.0
+INFO:request:Товар 43:BC-2035 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 61, CODE: 83A694CS30
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1338.07, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: too many values to unpack (expected 2)
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 180, CODE: 21419
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3315.0, COUNT: 1.0
+WARNING:request:Товар 180:21419 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95HBY-35560915C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 303.0, COUNT: 2.0
+WARNING:request:Товар 530:95HBY-35560915C не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 1282-SBF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1782.0, COUNT: 1.0
+WARNING:request:Товар 530:1282-SBF не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0573
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 256.0, COUNT: 2.0
+INFO:request:Товар 83:GV0573 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0812
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7878.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0812 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142838
+INFO:request:Создание документа реализации товара; ID: 59449; DOC_REG ID: 142838
+INFO:request:Обновление документа регистрации; ID: 142838
+INFO:request:Создание заголовка документа реализации товара; ID: 61317; DOC_REG ID: 142838
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61317
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142838
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59449; DOC_REG ID: 142838
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61317; DOC_REG ID: 142838
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61317; DOC_REG ID: 142838
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 180, CODE: 21419
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3315.0, COUNT: 1.0
+WARNING:request:Товар 180:21419 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95HBY-35560915C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 303.0, COUNT: 2.0
+WARNING:request:Товар 530:95HBY-35560915C не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 1282-SBF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1782.0, COUNT: 1.0
+WARNING:request:Товар 530:1282-SBF не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0573
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 256.0, COUNT: 2.0
+INFO:request:Товар 83:GV0573 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0812
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7878.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0812 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142839
+INFO:request:Создание документа реализации товара; ID: 59450; DOC_REG ID: 142839
+INFO:request:Обновление документа регистрации; ID: 142839
+INFO:request:Создание заголовка документа реализации товара; ID: 61318; DOC_REG ID: 142839
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61318
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142839
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59450; DOC_REG ID: 142839
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61318; DOC_REG ID: 142839
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61318; DOC_REG ID: 142839
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 180, CODE: 21419
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3315.0, COUNT: 1.0
+WARNING:request:Товар 180:21419 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95HBY-35560915C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 303.0, COUNT: 2.0
+WARNING:request:Товар 530:95HBY-35560915C не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 1282-SBF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1782.0, COUNT: 1.0
+WARNING:request:Товар 530:1282-SBF не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0573
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 256.0, COUNT: 2.0
+INFO:request:Товар 83:GV0573 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0812
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7878.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0812 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142840
+INFO:request:Создание документа реализации товара; ID: 59451; DOC_REG ID: 142840
+INFO:request:Обновление документа регистрации; ID: 142840
+INFO:request:Создание заголовка документа реализации товара; ID: 61319; DOC_REG ID: 142840
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61319
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142840
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59451; DOC_REG ID: 142840
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61319; DOC_REG ID: 142840
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 180, CODE: 21419
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3315.0, COUNT: 1.0
+WARNING:request:Товар 180:21419 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95HBY-35560915C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 303.0, COUNT: 2.0
+WARNING:request:Товар 530:95HBY-35560915C не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 1282-SBF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1782.0, COUNT: 1.0
+WARNING:request:Товар 530:1282-SBF не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0573
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 256.0, COUNT: 2.0
+INFO:request:Товар 83:GV0573 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: FR 0812
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7878.0, COUNT: 1.0
+WARNING:request:Товар 808:FR 0812 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142841
+INFO:request:Создание документа реализации товара; ID: 59452; DOC_REG ID: 142841
+INFO:request:Обновление документа регистрации; ID: 142841
+INFO:request:Создание заголовка документа реализации товара; ID: 61320; DOC_REG ID: 142841
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61320
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142841
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59452; DOC_REG ID: 142841
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61320; DOC_REG ID: 142841
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61320; DOC_REG ID: 142841
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: 'SL2594'
+ERROR:root:Ошибка в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: 'SL2594'
+ERROR:root:Ошибка в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: 'SL2594'
+ERROR:root:Ошибка в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: 'SL2594'
+ERROR:root:Ошибка в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 379.0, COUNT: 2.0
+WARNING:request:Товар 1042:None не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1501.39, COUNT: 1.0
+WARNING:request:Товар 1324:None не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 6925.0, COUNT: 1.0
+WARNING:request:Товар 808:None не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 306, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 156.14, COUNT: 2.0
+WARNING:request:Товар 306:None не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 326, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9213.96, COUNT: 1.0
+WARNING:request:Товар 326:None не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 101, CODE: None
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 482.25, COUNT: 1.0
+WARNING:request:Товар 101:None не найден в базе!
+INFO:request:Создание документа регистрации; ID: 142842
+INFO:request:Создание документа реализации товара; ID: False; DOC_REG ID: 142842
+INFO:request:Обновление документа регистрации; ID: 142842
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: 142842
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+WARNING:request:Товар не добавлен!
+WARNING:request:Товар не добавлен!
+INFO:request:Печатка даты в документе регистрации; ID: 142842
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: False; DOC_REG ID: 142842
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: 142842
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: 142842
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142843
+INFO:request:Создание документа реализации товара; ID: False; DOC_REG ID: 142843
+INFO:request:Обновление документа регистрации; ID: 142843
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: 142843
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+WARNING:request:Товар не добавлен!
+WARNING:request:Товар не добавлен!
+INFO:request:Печатка даты в документе регистрации; ID: 142843
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: False; DOC_REG ID: 142843
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: 142843
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: 142843
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142844
+INFO:request:Создание документа реализации товара; ID: False; DOC_REG ID: 142844
+INFO:request:Обновление документа регистрации; ID: 142844
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: 142844
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+WARNING:request:Товар не добавлен!
+WARNING:request:Товар не добавлен!
+INFO:request:Печатка даты в документе регистрации; ID: 142844
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: False; DOC_REG ID: 142844
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: 142844
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: 142844
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142845
+INFO:request:Создание документа реализации товара; ID: False; DOC_REG ID: 142845
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142846
+INFO:request:Создание документа реализации товара; ID: False; DOC_REG ID: 142846
+INFO:request:Обновление документа регистрации; ID: 142846
+INFO:request:Создание заголовка документа реализации товара; ID: False; DOC_REG ID: 142846
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: False
+WARNING:request:Товар не добавлен!
+WARNING:request:Товар не добавлен!
+INFO:request:Печатка даты в документе регистрации; ID: 142846
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: False; DOC_REG ID: 142846
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: False; DOC_REG ID: 142846
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: False; DOC_REG ID: 142846
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142847
+INFO:request:Создание документа реализации товара; ID: 59455; DOC_REG ID: 142847
+INFO:request:Обновление документа регистрации; ID: 142847
+INFO:request:Создание заголовка документа реализации товара; ID: 61321; DOC_REG ID: 142847
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61321
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142847
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59455; DOC_REG ID: 142847
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61321; DOC_REG ID: 142847
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61321; DOC_REG ID: 142847
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142848
+INFO:request:Создание документа реализации товара; ID: 59456; DOC_REG ID: 142848
+INFO:request:Обновление документа регистрации; ID: 142848
+INFO:request:Создание заголовка документа реализации товара; ID: 61322; DOC_REG ID: 142848
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61322
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142848
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59456; DOC_REG ID: 142848
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61322; DOC_REG ID: 142848
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61322; DOC_REG ID: 142848
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142849
+INFO:request:Создание документа реализации товара; ID: 59457; DOC_REG ID: 142849
+INFO:request:Обновление документа регистрации; ID: 142849
+INFO:request:Создание заголовка документа реализации товара; ID: 61323; DOC_REG ID: 142849
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61323
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142849
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59457; DOC_REG ID: 142849
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61323; DOC_REG ID: 142849
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61323; DOC_REG ID: 142849
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142850
+INFO:request:Создание документа реализации товара; ID: 59458; DOC_REG ID: 142850
+INFO:request:Обновление документа регистрации; ID: 142850
+INFO:request:Создание заголовка документа реализации товара; ID: 61324; DOC_REG ID: 142850
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61324
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142850
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59458; DOC_REG ID: 142850
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61324; DOC_REG ID: 142850
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61324; DOC_REG ID: 142850
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142851
+INFO:request:Создание документа реализации товара; ID: 59459; DOC_REG ID: 142851
+INFO:request:Обновление документа регистрации; ID: 142851
+INFO:request:Создание заголовка документа реализации товара; ID: 61325; DOC_REG ID: 142851
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61325
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142851
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59459; DOC_REG ID: 142851
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61325; DOC_REG ID: 142851
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61325; DOC_REG ID: 142851
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142852
+INFO:request:Создание документа реализации товара; ID: 59460; DOC_REG ID: 142852
+INFO:request:Обновление документа регистрации; ID: 142852
+INFO:request:Создание заголовка документа реализации товара; ID: 61326; DOC_REG ID: 142852
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61326
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142852
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59460; DOC_REG ID: 142852
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61326; DOC_REG ID: 142852
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61326; DOC_REG ID: 142852
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142853
+INFO:request:Создание документа реализации товара; ID: 59461; DOC_REG ID: 142853
+INFO:request:Обновление документа регистрации; ID: 142853
+INFO:request:Создание заголовка документа реализации товара; ID: 61327; DOC_REG ID: 142853
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61327
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142853
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59461; DOC_REG ID: 142853
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61327; DOC_REG ID: 142853
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61327; DOC_REG ID: 142853
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142854
+INFO:request:Создание документа реализации товара; ID: 59462; DOC_REG ID: 142854
+INFO:request:Обновление документа регистрации; ID: 142854
+INFO:request:Создание заголовка документа реализации товара; ID: 61328; DOC_REG ID: 142854
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61328
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142854
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59462; DOC_REG ID: 142854
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61328; DOC_REG ID: 142854
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61328; DOC_REG ID: 142854
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C1173LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1252.0, COUNT: 1.0
+INFO:request:Товар 43:C1173LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1324, CODE: T113301313
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.05, COUNT: 2.0
+WARNING:request:Товар 1324:T113301313 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1245
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1601.0, COUNT: 1.0
+INFO:request:Товар 43:WB1245 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 142855
+INFO:request:Создание документа реализации товара; ID: 59463; DOC_REG ID: 142855
+INFO:request:Обновление документа регистрации; ID: 142855
+INFO:request:Создание заголовка документа реализации товара; ID: 61329; DOC_REG ID: 142855
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 61329
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 142855
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 59463; DOC_REG ID: 142855
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 61329; DOC_REG ID: 142855
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 61329; DOC_REG ID: 142855
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 63, CODE: 03C109293
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 198.92, COUNT: 1.0
+INFO:request:Товар 63:03C109293 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: ATG044
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1796.0, COUNT: 1.0
+INFO:request:Товар 53:ATG044 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 157897
+INFO:request:Создание документа реализации товара; ID: 65529; DOC_REG ID: 157897
+INFO:request:Обновление документа регистрации; ID: 157897
+INFO:request:Создание заголовка документа реализации товара; ID: 67646; DOC_REG ID: 157897
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 67646
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 157897
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 65529; DOC_REG ID: 157897
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 67646; DOC_REG ID: 157897
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 67646; DOC_REG ID: 157897
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0037
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 210.0, COUNT: 2.0
+INFO:request:Товар 83:GV0037 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0360
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 481.0, COUNT: 2.0
+INFO:request:Товар 83:GV0360 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 535, CODE: vscs0112
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 267.0, COUNT: 1.0
+INFO:request:Товар 535:vscs0112 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159304
+INFO:request:Создание документа реализации товара; ID: 66086; DOC_REG ID: 159304
+INFO:request:Обновление документа регистрации; ID: 159304
+INFO:request:Создание заголовка документа реализации товара; ID: 68229; DOC_REG ID: 159304
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68229
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159304
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66086; DOC_REG ID: 159304
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68229; DOC_REG ID: 159304
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68229; DOC_REG ID: 159304
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 71, CODE: NP6041
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2716.64, COUNT: 1.0
+INFO:request:Товар 71:NP6041 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-2000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 408.0, COUNT: 2.0
+INFO:request:Товар 43:BC-2000 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-6351
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 789.0, COUNT: 1.0
+INFO:request:Товар 43:BC-6351 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 63, CODE: WHT005190
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 356.21, COUNT: 1.0
+INFO:request:Товар 63:WHT005190 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 63, CODE: 32 121 666
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 63.56, COUNT: 1.0
+INFO:request:Товар 63:32 121 666 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG 791 CF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 540.0, COUNT: 1.0
+INFO:request:Товар 53:AG 791 CF добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: OG 157 ECO
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 419.0, COUNT: 1.0
+INFO:request:Товар 53:OG 157 ECO добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG 793
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 554.0, COUNT: 1.0
+INFO:request:Товар 53:AG 793 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 13270ED000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 886.56, COUNT: 1.0
+INFO:request:Товар 21:13270ED000 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C2585LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 873.0, COUNT: 2.0
+INFO:request:Товар 43:C2585LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LT1853
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 4053.0, COUNT: 1.0
+INFO:request:Товар 271:LT1853 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159406
+INFO:request:Создание документа реализации товара; ID: 66123; DOC_REG ID: 159406
+INFO:request:Обновление документа регистрации; ID: 159406
+INFO:request:Создание заголовка документа реализации товара; ID: 68268; DOC_REG ID: 159406
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68268
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159406
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66123; DOC_REG ID: 159406
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68268; DOC_REG ID: 159406
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68268; DOC_REG ID: 159406
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 90301-67004
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 213.03, COUNT: 1.0
+INFO:request:Товар 1197:90301-67004 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG742CF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 675.0, COUNT: 1.0
+INFO:request:Товар 53:AG742CF добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 306, CODE: 812001
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 307.2, COUNT: 2.0
+INFO:request:Товар 306:812001 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 529, CODE: V272085644
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 905.0, COUNT: 1.0
+INFO:request:Товар 529:V272085644 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 306, CODE: 234932
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1195.76, COUNT: 2.0
+INFO:request:Товар 306:234932 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95GDW41610813L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 389.0, COUNT: 1.0
+INFO:request:Товар 530:95GDW41610813L добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95GDW41610813R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 402.0, COUNT: 1.0
+INFO:request:Товар 530:95GDW41610813R добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-0347
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 240.0, COUNT: 1.0
+INFO:request:Товар 43:BC-0347 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95IBS-35520808C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 396.0, COUNT: 1.0
+WARNING:request:Товар 530:95IBS-35520808C не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 536, CODE: 94535473
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 132.49, COUNT: 1.0
+WARNING:request:Товар 536:94535473 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: 7PK1870
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 802.0, COUNT: 1.0
+INFO:request:Товар 43:7PK1870 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159518
+INFO:request:Создание документа реализации товара; ID: 66161; DOC_REG ID: 159518
+INFO:request:Обновление документа регистрации; ID: 159518
+INFO:request:Создание заголовка документа реализации товара; ID: 68306; DOC_REG ID: 159518
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68306
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159518
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66161; DOC_REG ID: 159518
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68306; DOC_REG ID: 159518
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68306; DOC_REG ID: 159518
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 594, CODE: 3050-072
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1680.0, COUNT: 2.0
+INFO:request:Товар 594:3050-072 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: AS62062RS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 714.0, COUNT: 1.0
+WARNING:request:Товар 530:AS62062RS не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 535, CODE: SBT006
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 109.98, COUNT: 2.0
+INFO:request:Товар 535:SBT006 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1173, CODE: HP07008KIT
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1151.5, COUNT: 1.0
+INFO:request:Товар 1173:HP07008KIT добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PS-3128
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 317.0, COUNT: 2.0
+INFO:request:Товар 43:PS-3128 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC2089
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 435.0, COUNT: 2.0
+INFO:request:Товар 43:BC2089 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-6396
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 802.0, COUNT: 2.0
+INFO:request:Товар 43:BC-6396 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-0488
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 293.0, COUNT: 2.0
+INFO:request:Товар 43:BC-0488 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C9132
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 155.0, COUNT: 2.0
+INFO:request:Товар 43:C9132 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1240, CODE: sp1099
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1415.21, COUNT: 1.0
+WARNING:request:Товар 1240:sp1099 не найден в базе!
+INFO:request:Создание документа регистрации; ID: 159615
+INFO:request:Создание документа реализации товара; ID: 66191; DOC_REG ID: 159615
+INFO:request:Обновление документа регистрации; ID: 159615
+INFO:request:Создание заголовка документа реализации товара; ID: 68336; DOC_REG ID: 159615
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68336
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159615
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66191; DOC_REG ID: 159615
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68336; DOC_REG ID: 159615
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68336; DOC_REG ID: 159615
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: ATG065
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1080.0, COUNT: 1.0
+INFO:request:Товар 53:ATG065 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159715
+INFO:request:Создание документа реализации товара; ID: 66235; DOC_REG ID: 159715
+INFO:request:Обновление документа регистрации; ID: 159715
+INFO:request:Создание заголовка документа реализации товара; ID: 68382; DOC_REG ID: 159715
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68382
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159715
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66235; DOC_REG ID: 159715
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68382; DOC_REG ID: 159715
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68382; DOC_REG ID: 159715
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: J14C
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 8648.0, COUNT: 1.0
+INFO:request:Товар 43:J14C добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1047, CODE: 4610082700338
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 6255.76, COUNT: 1.0
+INFO:request:Товар 1047:4610082700338 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: CF212
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 4157.0, COUNT: 1.0
+INFO:request:Товар 808:CF212 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 536, CODE: 55568033
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 525.18, COUNT: 1.0
+INFO:request:Товар 536:55568033 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C5436LR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1899.0, COUNT: 2.0
+INFO:request:Товар 43:C5436LR добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 659, CODE: 713349200
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1506.0, COUNT: 1.0
+WARNING:request:Товар 659:713349200 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 590.797
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 474.0, COUNT: 1.0
+INFO:request:Товар 166:590.797 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: SG-2097
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 438.0, COUNT: 1.0
+INFO:request:Товар 43:SG-2097 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: FA1050
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2069.0, COUNT: 1.0
+INFO:request:Товар 1042:FA1050 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 210, CODE: 13223600
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 642.0, COUNT: 1.0
+INFO:request:Товар 210:13223600 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159785
+INFO:request:Создание документа реализации товара; ID: 66261; DOC_REG ID: 159785
+INFO:request:Обновление документа регистрации; ID: 159785
+INFO:request:Создание заголовка документа реализации товара; ID: 68409; DOC_REG ID: 159785
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68409
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159785
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66261; DOC_REG ID: 159785
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68409; DOC_REG ID: 159785
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68409; DOC_REG ID: 159785
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 27, CODE: 44165ac020
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 659.59, COUNT: 2.0
+WARNING:request:Товар 27:44165ac020 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BD3601
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1218.0, COUNT: 1.0
+INFO:request:Товар 43:BD3601 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 27, CODE: 800610740
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 113.96, COUNT: 8.0
+INFO:request:Товар 27:800610740 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159868
+INFO:request:Создание документа реализации товара; ID: 66292; DOC_REG ID: 159868
+INFO:request:Обновление документа регистрации; ID: 159868
+INFO:request:Создание заголовка документа реализации товара; ID: 68440; DOC_REG ID: 159868
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68440
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159868
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66292; DOC_REG ID: 159868
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68440; DOC_REG ID: 159868
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68440; DOC_REG ID: 159868
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: GD717
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 4294.02, COUNT: 1.0
+INFO:request:Товар 808:GD717 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 306, CODE: 754442
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1224.63, COUNT: 1.0
+INFO:request:Товар 306:754442 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CL0586
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1053.0, COUNT: 2.0
+INFO:request:Товар 83:CL0586 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 159976
+INFO:request:Создание документа реализации товара; ID: 66344; DOC_REG ID: 159976
+INFO:request:Обновление документа регистрации; ID: 159976
+INFO:request:Создание заголовка документа реализации товара; ID: 68492; DOC_REG ID: 159976
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68492
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 159976
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66344; DOC_REG ID: 159976
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68492; DOC_REG ID: 159976
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68492; DOC_REG ID: 159976
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 2, CODE: PLZKAR6A-11
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1184.18, COUNT: 4.0
+INFO:request:Товар 2:PLZKAR6A-11 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160061
+INFO:request:Создание документа реализации товара; ID: 66382; DOC_REG ID: 160061
+INFO:request:Обновление документа регистрации; ID: 160061
+INFO:request:Создание заголовка документа реализации товара; ID: 68531; DOC_REG ID: 160061
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68531
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160061
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66382; DOC_REG ID: 160061
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68531; DOC_REG ID: 160061
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68531; DOC_REG ID: 160061
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 630, CODE: EB5418
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1565.51, COUNT: 1.0
+INFO:request:Товар 630:EB5418 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 159, CODE: PA-0044AF
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1597.0, COUNT: 1.0
+INFO:request:Товар 159:PA-0044AF добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: SA-1032
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2173.0, COUNT: 2.0
+INFO:request:Товар 1042:SA-1032 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PR7016
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1310.0, COUNT: 1.0
+INFO:request:Товар 43:PR7016 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0531
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 241.0, COUNT: 2.0
+INFO:request:Товар 83:GV0531 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: SH-1541
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1569.0, COUNT: 1.0
+INFO:request:Товар 1042:SH-1541 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1048, CODE: 11J1207
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1603.0, COUNT: 2.0
+INFO:request:Товар 1048:11J1207 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1048, CODE: 11J1216
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1585.0, COUNT: 2.0
+INFO:request:Товар 1048:11J1216 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160172
+INFO:request:Создание документа реализации товара; ID: 66416; DOC_REG ID: 160172
+INFO:request:Обновление документа регистрации; ID: 160172
+INFO:request:Создание заголовка документа реализации товара; ID: 68566; DOC_REG ID: 160172
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68566
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160172
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66416; DOC_REG ID: 160172
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68566; DOC_REG ID: 160172
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68566; DOC_REG ID: 160172
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 667, CODE: 77A1124
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 457.0, COUNT: 2.0
+INFO:request:Товар 667:77A1124 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 72, CODE: PN0348W
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3281.0, COUNT: 1.0
+INFO:request:Товар 72:PN0348W добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 989, CODE: M2624484
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2156.0, COUNT: 1.0
+INFO:request:Товар 989:M2624484 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160258
+INFO:request:Создание документа реализации товара; ID: 66446; DOC_REG ID: 160258
+INFO:request:Обновление документа регистрации; ID: 160258
+INFO:request:Создание заголовка документа реализации товара; ID: 68598; DOC_REG ID: 160258
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68598
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160258
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66446; DOC_REG ID: 160258
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68598; DOC_REG ID: 160258
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68598; DOC_REG ID: 160258
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 953, CODE: L1G00142
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1086.0, COUNT: 4.0
+INFO:request:Товар 953:L1G00142 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 724.580
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1461.18, COUNT: 1.0
+INFO:request:Товар 166:724.580 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LRc 0327
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 6433.02, COUNT: 1.0
+INFO:request:Товар 271:LRc 0327 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160355
+INFO:request:Создание документа реализации товара; ID: 66478; DOC_REG ID: 160355
+INFO:request:Обновление документа регистрации; ID: 160355
+INFO:request:Создание заголовка документа реализации товара; ID: 68632; DOC_REG ID: 160355
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68632
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160355
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66478; DOC_REG ID: 160355
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68632; DOC_REG ID: 160355
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68632; DOC_REG ID: 160355
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PS-3020
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 532.0, COUNT: 2.0
+INFO:request:Товар 43:PS-3020 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 507.822
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 910.0, COUNT: 1.0
+INFO:request:Товар 166:507.822 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: GS-1267
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1224.0, COUNT: 2.0
+INFO:request:Товар 43:GS-1267 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1184, CODE: SPU6210
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 5368.97, COUNT: 1.0
+INFO:request:Товар 1184:SPU6210 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: FS-1057
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 253.0, COUNT: 2.0
+INFO:request:Товар 43:FS-1057 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160440
+INFO:request:Создание документа реализации товара; ID: 66505; DOC_REG ID: 160440
+INFO:request:Обновление документа регистрации; ID: 160440
+INFO:request:Создание заголовка документа реализации товара; ID: 68660; DOC_REG ID: 160440
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68660
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160440
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66505; DOC_REG ID: 160440
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68660; DOC_REG ID: 160440
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68660; DOC_REG ID: 160440
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 932, CODE: BSA011
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 369.46, COUNT: 1.0
+INFO:request:Товар 932:BSA011 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BD8035
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1711.0, COUNT: 1.0
+INFO:request:Товар 43:BD8035 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CO-7504A
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2261.0, COUNT: 1.0
+INFO:request:Товар 43:CO-7504A добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 3533060060
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 5015.82, COUNT: 1.0
+WARNING:request:Товар 1197:3533060060 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 214, CODE: 150 1671-SX
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1717.0, COUNT: 1.0
+INFO:request:Товар 214:150 1671-SX добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 630, CODE: EBT2168
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 607.52, COUNT: 1.0
+INFO:request:Товар 630:EBT2168 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 2, CODE: ZKER6A10EG
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 555.64, COUNT: 4.0
+INFO:request:Товар 2:ZKER6A10EG добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: CS21009
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1442.0, COUNT: 2.0
+INFO:request:Товар 492:CS21009 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: RB21025
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1010.0, COUNT: 2.0
+INFO:request:Товар 492:RB21025 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160541
+INFO:request:Создание документа реализации товара; ID: 66544; DOC_REG ID: 160541
+INFO:request:Обновление документа регистрации; ID: 160541
+INFO:request:Создание заголовка документа реализации товара; ID: 68700; DOC_REG ID: 160541
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68700
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160541
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66544; DOC_REG ID: 160541
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68700; DOC_REG ID: 160541
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68700; DOC_REG ID: 160541
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC-6396
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 802.0, COUNT: 2.0
+INFO:request:Товар 43:BC-6396 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG695CFC
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 540.0, COUNT: 1.0
+INFO:request:Товар 53:AG695CFC добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 659, CODE: 81-33489-10
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 775.0, COUNT: 1.0
+WARNING:request:Товар 659:81-33489-10 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 659, CODE: 711781300
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2869.0, COUNT: 1.0
+WARNING:request:Товар 659:711781300 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LWP 0514
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3908.0, COUNT: 1.0
+INFO:request:Товар 271:LWP 0514 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160617
+INFO:request:Создание документа реализации товара; ID: 66573; DOC_REG ID: 160617
+INFO:request:Обновление документа регистрации; ID: 160617
+INFO:request:Создание заголовка документа реализации товара; ID: 68730; DOC_REG ID: 160617
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68730
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160617
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66573; DOC_REG ID: 160617
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68730; DOC_REG ID: 160617
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68730; DOC_REG ID: 160617
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 24, CODE: 2920a096
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 175.26, COUNT: 2.0
+INFO:request:Товар 24:2920a096 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C4238R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1002.0, COUNT: 1.0
+INFO:request:Товар 43:C4238R добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1235, CODE: A 264 094 01 00
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 4578.0, COUNT: 1.0
+INFO:request:Товар 1235:A 264 094 01 00 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1235, CODE: A 270 180 01 09
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1764.17, COUNT: 1.0
+INFO:request:Товар 1235:A 270 180 01 09 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1235, CODE: A1668300218
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2310.0, COUNT: 1.0
+INFO:request:Товар 1235:A1668300218 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LPKh 05084
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 306.74, COUNT: 1.0
+INFO:request:Товар 271:LPKh 05084 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LPKh 05083
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 490.0, COUNT: 1.0
+INFO:request:Товар 271:LPKh 05083 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 1204-SOLR-KIT
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 951.0, COUNT: 1.0
+WARNING:request:Товар 530:1204-SOLR-KIT не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 529, CODE: 3502482
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1937.0, COUNT: 1.0
+INFO:request:Товар 529:3502482 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160690
+INFO:request:Создание документа реализации товара; ID: 66600; DOC_REG ID: 160690
+INFO:request:Обновление документа регистрации; ID: 160690
+INFO:request:Создание заголовка документа реализации товара; ID: 68757; DOC_REG ID: 160690
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68757
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160690
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66600; DOC_REG ID: 160690
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68757; DOC_REG ID: 160690
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68757; DOC_REG ID: 160690
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 807, CODE: P1NC011
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 66.0, COUNT: 1.0
+WARNING:request:Товар 807:P1NC011 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1234, CODE: 0348.Q2
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 413.83, COUNT: 1.0
+INFO:request:Товар 1234:0348.Q2 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC2122
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 535.0, COUNT: 1.0
+INFO:request:Товар 43:BC2122 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1114, CODE: ELH4472
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 605.0, COUNT: 1.0
+WARNING:request:Товар 1114:ELH4472 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1114, CODE: ELR7292
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 836.0, COUNT: 1.0
+WARNING:request:Товар 1114:ELR7292 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 134, CODE: A26460
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1566.0, COUNT: 1.0
+INFO:request:Товар 134:A26460 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC2096
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 535.0, COUNT: 2.0
+INFO:request:Товар 43:BC2096 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 268, CODE: AMD.WN15
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 172.9, COUNT: 2.0
+INFO:request:Товар 268:AMD.WN15 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95GDW41610813L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 389.0, COUNT: 1.0
+INFO:request:Товар 530:95GDW41610813L добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1163, CODE: GEN5510
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 5992.19, COUNT: 1.0
+INFO:request:Товар 1163:GEN5510 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160793
+INFO:request:Создание документа реализации товара; ID: 66635; DOC_REG ID: 160793
+INFO:request:Обновление документа регистрации; ID: 160793
+INFO:request:Создание заголовка документа реализации товара; ID: 68792; DOC_REG ID: 160793
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68792
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160793
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66635; DOC_REG ID: 160793
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68792; DOC_REG ID: 160793
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68792; DOC_REG ID: 160793
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 399, CODE: BR.PW.1.21
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 223.0, COUNT: 1.0
+INFO:request:Товар 399:BR.PW.1.21 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 807, CODE: P1C-C009
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 199.0, COUNT: 1.0
+WARNING:request:Товар 807:P1C-C009 не найден в базе!
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 383428E001
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 826.61, COUNT: 1.0
+INFO:request:Товар 21:383428E001 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 383428E000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 556.15, COUNT: 1.0
+INFO:request:Товар 21:383428E000 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 313751XF00
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 453.1, COUNT: 1.0
+INFO:request:Товар 21:313751XF00 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 31526-80X01
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 284.57, COUNT: 1.0
+INFO:request:Товар 21:31526-80X01 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 134, CODE: TE10170
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1000.0, COUNT: 1.0
+INFO:request:Товар 134:TE10170 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC2022
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 573.0, COUNT: 2.0
+INFO:request:Товар 43:BC2022 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 160958
+INFO:request:Создание документа реализации товара; ID: 66695; DOC_REG ID: 160958
+INFO:request:Обновление документа регистрации; ID: 160958
+INFO:request:Создание заголовка документа реализации товара; ID: 68855; DOC_REG ID: 160958
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 68855
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 160958
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 66695; DOC_REG ID: 160958
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 68855; DOC_REG ID: 160958
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 68855; DOC_REG ID: 160958
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 535, CODE: SWP 1804
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 487.62, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WH-1132
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3858.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: unsupported operand type(s) for -: 'decimal.Decimal' and 'float'
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: unsupported operand type(s) for -: 'decimal.Decimal' and 'float'
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 90, CODE: K015631XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 9360.0, COUNT: 1.0
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1286
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3376.0, COUNT: 2.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1185
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: 6PK1203
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1370.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 667, CODE: 77BGB148
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 71, CODE: NP1059SC
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1542.61, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1286
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3376.0, COUNT: 2.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1185
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: 6PK1203
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1370.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 667, CODE: 77BGB148
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 71, CODE: NP1059SC
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1542.61, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1286
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3376.0, COUNT: 2.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1185
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: 6PK1203
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1370.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 667, CODE: 77BGB148
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1049.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 71, CODE: NP1059SC
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1542.61, COUNT: 1.0
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: 'NoneType' object has no attribute 'get'
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 1884611070
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 680.78, COUNT: 4.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251002B700
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.31, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251242B000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 223.75, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 953, CODE: CRT1036
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1795.5, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: 'bool' object is not iterable
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 1884611070
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 680.78, COUNT: 4.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251002B700
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.31, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251242B000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 223.75, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 953, CODE: CRT1036
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1795.5, COUNT: 1.0
+CRITICAL:root:Непредвиденная ошибка: 'bool' object is not iterable
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 1884611070
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 680.78, COUNT: 4.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251002B700
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3808.31, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 251242B000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 223.75, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 953, CODE: CRT1036
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1795.5, COUNT: 1.0
+INFO:request:Товар 89440:57826 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: LC1602
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 240.0, COUNT: 1.0
+INFO:request:Товар 89437:33510 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG2032
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 743.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 72, CODE: PN1498
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1819.0, COUNT: 1.0
+INFO:request:Товар 89399:14915 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: 5PK690
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 705.86, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: OG132HQ
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 317.0, COUNT: 1.0
+INFO:request:Товар 89359:12173 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 584880
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1007.0, COUNT: 2.0
+INFO:request:Товар 89113:27255 добавлен в список валида
+INFO:request:Товар 89366:27255 добавлен в список валида
+INFO:request:Товар 90081:27255 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: CL1055
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 5700.0, COUNT: 1.0
+INFO:request:Товар 89362:50356 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 210, CODE: 24029300
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 228.0, COUNT: 1.0
+INFO:request:Товар 89353:52638 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 025260
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 733.0, COUNT: 4.0
+INFO:request:Товар 89346:20763 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: 5PK1398
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 970.49, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 536, CODE: 55592715
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1084.34, COUNT: 2.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 136, CODE: 427001810
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 4044.3, COUNT: 2.0
+INFO:request:Товар 89380:57798 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GV0589
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1186.0, COUNT: 2.0
+INFO:request:Товар 89339:41666 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: SO0350
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 542.0, COUNT: 2.0
+INFO:request:Товар 89319:35396 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 287513S000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 268.26, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 951, CODE: 4P908AG
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 29.2, COUNT: 20.0
+INFO:request:Товар 89708:57976 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 31, CODE: 0 986 280 417
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2081.21, COUNT: 1.0
+INFO:request:Товар 89295:57778 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95HDS38620513X
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 346.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 53, CODE: AG2025
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 540.0, COUNT: 1.0
+INFO:request:Товар 75153:51393 добавлен в список валида
+INFO:request:Товар 75197:51393 добавлен в список валида
+INFO:request:Товар 89281:51393 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 305.529
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 752.0, COUNT: 1.0
+INFO:request:Товар 89262:57758 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 101, CODE: 023963P
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 689.32, COUNT: 1.0
+INFO:request:Товар 89263:57759 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: PF 2528
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3952.56, COUNT: 1.0
+INFO:request:Товар 89264:57760 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 214, CODE: 29-98507-SX
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 446.0, COUNT: 2.0
+INFO:request:Товар 89239:57751 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C5332L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3426.0, COUNT: 1.0
+INFO:request:Товар 89214:57741 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C5332R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3426.0, COUNT: 1.0
+INFO:request:Товар 89217:45022 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 67, CODE: R236
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2761.0, COUNT: 1.0
+INFO:request:Товар 90033:15265 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 050560
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 533.0, COUNT: 2.0
+INFO:request:Товар 89218:24271 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: BC0244
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 211.0, COUNT: 2.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 989, CODE: M8090070
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 405.0, COUNT: 1.0
+INFO:request:Товар 89220:57720 добавлен в список валида
+INFO:request:Товар 89221:57720 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 745740
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1025.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: FS-1220
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 215.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 360, CODE: QF31C00066
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1159.37, COUNT: 1.0
+INFO:request:Товар 89184:57725 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 0515-DY3WT
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1326.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 214, CODE: 1300775SX
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 559.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: RINGAH-005
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 336.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PR-7233
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1018.0, COUNT: 1.0
+INFO:request:Товар 89163:57707 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: BC 1048
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 425.28, COUNT: 2.0
+INFO:request:Товар 89164:57708 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 811, CODE: K035669XS
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 6409.0, COUNT: 1.0
+INFO:request:Товар 89142:45456 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 659, CODE: 713808600
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1285.0, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 267, CODE: CVJ1372HR
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 518.0, COUNT: 1.0
+INFO:request:Товар 89143:57696 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BL28078L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 662.0, COUNT: 2.0
+INFO:request:Товар 89123:43515 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PC-2011
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 432.0, COUNT: 1.0
+INFO:request:Товар 89109:47510 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: GD0034
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7287.28, COUNT: 2.0
+INFO:request:Товар 89175:57719 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 90311-35017
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 550.6, COUNT: 1.0
+INFO:request:Товар 89117:57679 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1326, CODE: T035K
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 5917.0, COUNT: 1.0
+INFO:request:Товар 89114:57680 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 210, CODE: 13196000
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 606.0, COUNT: 2.0
+INFO:request:Товар 89086:57667 добавлен в список валида
+INFO:request:Товар 89089:57667 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 530, CODE: 95GAY-46630809R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 310.06, COUNT: 1.0
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 132708J112
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 740.26, COUNT: 1.0
+INFO:request:Товар 89090:7198 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 21, CODE: 13270-8J102
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 773.03, COUNT: 1.0
+INFO:request:Товар 89096:42646 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 659, CODE: 815350900
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 497.76, COUNT: 1.0
+INFO:request:Создание документа регистрации; ID: 163514
+INFO:request:Создание документа реализации товара; ID: 67607; DOC_REG ID: 163514
+INFO:request:Обновление документа регистрации; ID: 163514
+INFO:request:Создание заголовка документа реализации товара; ID: 69824; DOC_REG ID: 163514
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 69824
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163514
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67607; DOC_REG ID: 163514
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69824; DOC_REG ID: 163514
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69824; DOC_REG ID: 163514
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 580, CODE: KH8001
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2964.9, COUNT: 1.0
+INFO:request:Товар 89592:57909 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 580, CODE: KH8002
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3674.02, COUNT: 1.0
+INFO:request:Товар 89593:57910 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 203, CODE: AT29000C3
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2500.0, COUNT: 1.0
+INFO:request:Товар 89539:55399 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 271, CODE: LPK 0105
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 745.98, COUNT: 1.0
+INFO:request:Товар 89545:56332 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 166, CODE: 263380
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1197.0, COUNT: 1.0
+INFO:request:Товар 89527:38885 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 163551
+INFO:request:Создание документа реализации товара; ID: 67620; DOC_REG ID: 163551
+INFO:request:Обновление документа регистрации; ID: 163551
+INFO:request:Создание заголовка документа реализации товара; ID: 69837; DOC_REG ID: 163551
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 69837
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163551
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67620; DOC_REG ID: 163551
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69837; DOC_REG ID: 163551
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69837; DOC_REG ID: 163551
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: SM-1062
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1240.0, COUNT: 1.0
+INFO:request:Товар 89589:48667 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 31, CODE: 0 258 006 990
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 3929.36, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 31, CODE: 0 258 006 990
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 211, CODE: 8200 632 270
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 7625.02, COUNT: 1.0
+INFO:request:Товар 89591:57908 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1257
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2721.0, COUNT: 1.0
+INFO:request:Товар 89564:57891 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 163683
+INFO:request:Создание документа реализации товара; ID: 67672; DOC_REG ID: 163683
+INFO:request:Обновление документа регистрации; ID: 163683
+INFO:request:Создание заголовка документа реализации товара; ID: 69891; DOC_REG ID: 163683
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 69891
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163683
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67672; DOC_REG ID: 163683
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69891; DOC_REG ID: 163683
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69891; DOC_REG ID: 163683
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 808, CODE: RM0111
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 922.74, COUNT: 1.0
+INFO:request:Товар 89625:48223 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: PC2067
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 228.0, COUNT: 1.0
+INFO:request:Товар 89626:40653 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: C9604K
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1903.0, COUNT: 1.0
+INFO:request:Товар 89627:41428 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1182, CODE: 89202
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 15005.76, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 1182, CODE: 89202
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1178, CODE: 28313-2B300
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 450.71, COUNT: 1.0
+INFO:request:Товар 89618:57918 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: DM-7009
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 376.0, COUNT: 1.0
+INFO:request:Товар 89606:57919 добавлен в список валида
+INFO:request:Создание документа регистрации; ID: 163806
+INFO:request:Создание документа реализации товара; ID: 67712; DOC_REG ID: 163806
+INFO:request:Обновление документа регистрации; ID: 163806
+INFO:request:Создание заголовка документа реализации товара; ID: 69931; DOC_REG ID: 163806
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 69931
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163806
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67712; DOC_REG ID: 163806
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69931; DOC_REG ID: 163806
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69931; DOC_REG ID: 163806
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1202
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2886.0, COUNT: 1.0
+INFO:request:Товар 89725:57985 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 90916-03093
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1440.42, COUNT: 1.0
+INFO:request:Товар 88797:57526 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: sg1720
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 157.0, COUNT: 1.0
+INFO:request:Товар 89713:37955 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+INFO:request:Товар 89654:57951 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1400, CODE: DUC-20019
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 724.22, COUNT: 2.0
+INFO:request:Товар 89755:58010 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CR0821
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1496.0, COUNT: 2.0
+INFO:request:Товар 89655:57952 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+INFO:request:Товар 89656:57953 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21033
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1020.0, COUNT: 2.0
+INFO:request:Товар 89651:38582 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21034
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1568.0, COUNT: 2.0
+INFO:request:Товар 89650:14847 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21250
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1234.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21250
+INFO:request:Создание документа регистрации; ID: 163909
+INFO:request:Создание документа реализации товара; ID: 67754; DOC_REG ID: 163909
+INFO:request:Обновление документа регистрации; ID: 163909
+INFO:request:Создание заголовка документа реализации товара; ID: 69976; DOC_REG ID: 163909
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 69976
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163909
+INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67754; DOC_REG ID: 163909
+INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69976; DOC_REG ID: 163909
+INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69976; DOC_REG ID: 163909
