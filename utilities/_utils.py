@@ -153,7 +153,7 @@ def document_action(cursor, doc_reg, summa, is_end: bool, *, time_stamp: date=da
         return True
 
 
-def document_out(cursor, summa, self_update_id: int | None=None, *, time_stamp: date=datetime.now().strftime("%Y-%m-%d %H:%M:%S")):
+def document_out(cursor, summa, partner, self_update_id: int | None=None, *, time_stamp: date=datetime.now().strftime("%Y-%m-%d %H:%M:%S")):
     GET_ID = "SELECT MAX(DOCUMENT_OUT_ID) FROM DOCUMENT_OUT"
     CREATE_DOC = """
     INSERT INTO DOCUMENT_OUT(
@@ -171,7 +171,7 @@ def document_out(cursor, summa, self_update_id: int | None=None, *, time_stamp: 
         1,
         4458,
         2,
-        8880,
+        {partner_id},
         {summa},
 		'{stamp}',
         1
@@ -194,7 +194,7 @@ def document_out(cursor, summa, self_update_id: int | None=None, *, time_stamp: 
             return self_update_id    
     else:
         try:
-            cursor.execute(CREATE_DOC.format(summa=summa, stamp=time_stamp))
+            cursor.execute(CREATE_DOC.format(partner_id=partner, summa=summa, stamp=time_stamp))
         except Exception as exc:
             print('doc_out')
             print(exc)

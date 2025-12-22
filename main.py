@@ -17,9 +17,13 @@ def run():
         raise
 
     try:
-        success, failure, summa = get_data.main()
-        assert success
-        assert summa
+        rossko, profit = get_data.main()
+        
+        assert rossko[1]
+        assert rossko[3]
+        
+        assert profit[1]
+        assert profit[3]
     except AssertionError:
         log.warning("Нет новых данных")
         raise
@@ -31,7 +35,7 @@ def run():
         raise
     
     try:
-        assert request_db.main(success, summa) # True если успешно
+        assert request_db.main((rossko, profit)) # True если успешно
     except AssertionError:
         log.warning("Не все данные закомиченны")
         raise

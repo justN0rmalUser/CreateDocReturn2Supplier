@@ -2821,3 +2821,86 @@ INFO:request:Печатка даты в документе регистраци�
 INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67754; DOC_REG ID: 163909
 INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69976; DOC_REG ID: 163909
 INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69976; DOC_REG ID: 163909
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: ProfitLiga.profitReq() missing 1 required positional argument: 'Date'
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: 'ProfitLiga' object has no attribute 'API'
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: list indices must be integers or slices, not str
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: '>=' not supported between instances of 'datetime.datetime' and 'datetime.date'
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+ERROR:Getter:Ошибка при фильтрации
+ERROR:root:Ошибка: not enough values to unpack (expected 3, got 0)
+ERROR:root:Исключение в модуле get_data!
