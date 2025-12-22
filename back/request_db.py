@@ -128,7 +128,7 @@ def main(success_data):
             document_registry(cur, self_update_id=doc_reg_id)
             req_log.info("Печатка даты в документе регистрации; ID: {}".format(doc_reg_id))
 
-            document_out(cur, valid_summa, self_update_id=doc_out_id)
+            document_out(cur, valid_summa, self_update_id=doc_out_id, partner=partner_id)
             req_log.info("Изменение категории состояния на 4 для документа реализации товара; ID: {}; DOC_REG ID: {}".format(doc_out_id, doc_reg_id))
 
             document_out_header(cur, doc_out_id, doc_reg_id, self_update_id=doc_head_i)

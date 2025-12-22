@@ -2904,3 +2904,196 @@ INFO:Getter:Фильтрация
 ERROR:Getter:Ошибка при фильтрации
 ERROR:root:Ошибка: not enough values to unpack (expected 3, got 0)
 ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+WARNING:root:Нет новых данных
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1202
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2886.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 43, CODE: WB1202
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 90916-03093
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1440.42, COUNT: 1.0
+INFO:request:Товар 89712:57526 добавлен в список валида
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: sg1720
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 157.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 43, CODE: sg1720
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CE0149L
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1400, CODE: DUC-20019
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 724.22, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 1400, CODE: DUC-20019
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CR0821
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1496.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CR0821
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CE0149R
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21033
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1020.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21033
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21034
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1568.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21034
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21250
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1234.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21250
+INFO:request:Создание документа регистрации; ID: 163969
+INFO:request:Создание документа реализации товара; ID: 67779; DOC_REG ID: 163969
+INFO:request:Обновление документа регистрации; ID: 163969
+INFO:request:Создание заголовка документа реализации товара; ID: 70001; DOC_REG ID: 163969
+INFO:request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 70001
+INFO:request:Товар успешно добавлен
+INFO:request:Печатка даты в документе регистрации; ID: 163969
+CRITICAL:root:Непредвиденная ошибка: document_out() missing 1 required positional argument: 'partner'
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:request:База данных подключена успешно
+INFO:request:Курсор установлен успешно
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: WB1202
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 2886.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 43, CODE: WB1202
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1197, CODE: 90916-03093
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1440.42, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 1197, CODE: 90916-03093
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: sg1720
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 157.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 43, CODE: sg1720
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149L
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CE0149L
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 1400, CODE: DUC-20019
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 724.22, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 1400, CODE: DUC-20019
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CR0821
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1496.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CR0821
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 83, CODE: CE0149R
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1474.0, COUNT: 1.0
+WARNING:request:Нет свободных слотов; BRAND: 83, CODE: CE0149R
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21033
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1020.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21033
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21034
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1568.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21034
+INFO:request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH21250
+INFO:request:Проверка цены и количества из значения по ключу; PRICE: 1234.0, COUNT: 2.0
+WARNING:request:Нет свободных слотов; BRAND: 492, CODE: BH21250
+WARNING:request:Среди товаров поставщика 8880 не найден никакой валид!
+WARNING:root:Не все данные закомиченны
+INFO:Getter:Создание класса Rossko
+INFO:Getter:Запрос на сервер
+INFO:Getter:Запрос успешен
+INFO:Getter:Фильтрация
+INFO:Getter:Фильтрация завершена
+INFO:Getter:Создание класса Profit
+INFO:Getter:Запрос на сервер
+ERROR:Getter:Запрос не успешен
+ERROR:root:Ошибка: Extra data: line 1 column 5 (char 4)
+ERROR:root:Исключение в модуле get_data!

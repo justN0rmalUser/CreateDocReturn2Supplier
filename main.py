@@ -18,12 +18,7 @@ def run():
 
     try:
         rossko, profit = get_data.main()
-        
-        assert rossko[1]
-        assert rossko[3]
-        
-        assert profit[1]
-        assert profit[3]
+        assert rossko[1] or profit[1]
     except AssertionError:
         log.warning("Нет новых данных")
         raise
@@ -38,7 +33,6 @@ def run():
         assert request_db.main((rossko, profit)) # True если успешно
     except AssertionError:
         log.warning("Не все данные закомиченны")
-        raise
     except SystemExit:
         log.error("Исключение в модуле request_db!")
         raise
@@ -51,5 +45,5 @@ if __name__ == '__main__':
     log.info("Старт скрипта")
     try:
         run()
-    except:
+    except Exception:
         sys.exit(1)

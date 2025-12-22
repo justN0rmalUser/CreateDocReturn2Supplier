@@ -94,10 +94,10 @@ class ProfitLiga:
             }
         aggregated_data = []
         while True:
-            curent_page_data = requests.get(self.URL, params=params).json()
+            curent_page_data = requests.get(self.URL, params=params).json()["data"]
 
-            big_date = datetime.strptime(curent_page_data["data"][0]['delivery_date'], "%Y-%m-%d").date()
-            small_date = datetime.strptime(curent_page_data["data"][99]['delivery_date'], "%Y-%m-%d").date()
+            big_date = datetime.strptime(curent_page_data[0]['delivery_date'], "%Y-%m-%d").date()
+            small_date = datetime.strptime(curent_page_data[99]['delivery_date'], "%Y-%m-%d").date()
 
             date_less_sup = big_date >= Date
             date_bigger_inf = small_date < Date
@@ -106,11 +106,11 @@ class ProfitLiga:
             
             if date_less_sup:
                 if date_bigger_inf:
-                    aggregated_data.append(curent_page_data["data"])
+                    aggregated_data.append(curent_page_data)
                     break
             
                 if date_is_inf:
-                    aggregated_data.append(curent_page_data["data"])
+                    aggregated_data.append(curent_page_data)
                     params["page"] += 1
 
                 if date_less_inf:
