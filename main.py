@@ -1,6 +1,6 @@
-from back import get_data
-from back import request_db
-from back import update_format
+from back.get_data import main as Request
+from back.request_db import main as Update
+from back.update_format import main as Format 
 
 import sys
 import logging as log
@@ -13,14 +13,14 @@ def run():
     """Функция запуска"""
     # Унификация и преобразование в удобный формат
     try:
-        update_format.main()
+        Format()
     except SystemExit:
         log.error("Исключение в модуле update_format!")
         raise
 
     # Получение данных с API
     try:
-        data = get_data.main()
+        data = Request()
     except AssertionError:
         log.warning('Пустой ответ в модуле "get_data"')
         sys.exit(0)
@@ -30,7 +30,7 @@ def run():
     
     # Отправка данных в базу данных
     try:
-        assert request_db.main(contractorHeader=data) # True если успешно
+        assert Update(contractorHeader=data) # True если успешно
     except AssertionError:
         log.warning("Не все данные закомиченны")
         sys.exit(0)

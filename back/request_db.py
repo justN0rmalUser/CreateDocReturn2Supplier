@@ -41,7 +41,7 @@ def aggregate_data (cursor, data):
             if count_of_free_slots - count < 0:
                 count = min(count, count_of_free_slots)
         except AssertionError as ass:
-            LOG.warning(f"{ass}; BRAND: {brand_id}, CODE: {code}")
+            ERRDATA.warning(f"{ass}; BRAND: {brand_id}, CODE: {code}")
         else:
             for good_id, shop_id, quantity in slots:
                 quantity = float(quantity)
