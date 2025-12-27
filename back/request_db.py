@@ -96,6 +96,7 @@ def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | N
     all_goods_is_commited = True
     for partner in contractorHeader:
         # Проверка валидных товаров
+        print(partner)
         partner_id, data = partner
         valid_data, valid_summa = aggregate_data(cursor=cur, data=data)
 

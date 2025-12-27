@@ -2821,3 +2821,90 @@ INFO:request:Печатка даты в документе регистраци�
 INFO:request:Изменение категории состояния на 4 для документа реализации товара; ID: 67754; DOC_REG ID: 163909
 INFO:request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 69976; DOC_REG ID: 163909
 INFO:request:Изменение категории состояния на 4 в активностях документа; ID: 69976; DOC_REG ID: 163909
+DEBUG:Getter:ROSSKO: Создание класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен
+DEBUG:Getter:ROSSKO: Старт фильтрации
+INFO:Getter:ROSSKO: Фильтрация завершена
+DEBUG:Getter:PROFIT: Создание класса
+DEBUG:Getter:PROFIT: Запрос на сервер
+ERROR:Getter:PROFIT | Assertion: Проверка ответа; Ошибка: <Статус ответа не двухсотый>
+DEBUG:Request:Подключение к базе данных
+INFO:Request:База данных подключена успешно
+DEBUG:Request:Создание курсора
+INFO:Request:Курсор установлен успешно
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH22084
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 659.0, COUNT: 1.0
+WARNING:Errors:Нет свободных слотов; BRAND: 492, CODE: BH22084
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: FW-2181
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 138.0, COUNT: 1.0
+WARNING:Errors:Нет свободных слотов; BRAND: 43, CODE: FW-2181
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: ST1536
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 2853.0, COUNT: 1.0
+INFO:Request:Товар 89974:48218 добавлен в список валида
+DEBUG:Request:Старт цикла создания документов
+DEBUG:Request:Создание документа регистрации; ID: 164485
+DEBUG:Request:Создание документа реализации товара; ID: 67973; DOC_REG ID: 164485
+DEBUG:Request:Обновление документа регистрации; ID: 164485
+DEBUG:Request:Создание заголовка документа реализации товара; ID: 70204; DOC_REG ID: 164485
+DEBUG:Request:Создание причины отказа документа реализации товара; DOC_HEAD ID: 70204
+INFO:Request:Документы созданы и сохранены
+INFO:Request:Товар успешно добавлен
+INFO:Request:Печатка даты в документе регистрации; ID: 164485
+INFO:Request:Изменение категории состояния на 4 для документа реализации товара; ID: 67973; DOC_REG ID: 164485
+INFO:Request:Изменение категории состояния на 4 для заголовка документа реализации товара; ID: 70204; DOC_REG ID: 164485
+INFO:Request:Изменение категории состояния на 4 в активностях документа; ID: 70204; DOC_REG ID: 164485
+INFO:Request:Документы обновления и сохранены
+CRITICAL:root:Непредвиденная ошибка: 'NoneType' object is not iterable
+DEBUG:Getter:ROSSKO: Создание класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен
+DEBUG:Getter:ROSSKO: Старт фильтрации
+INFO:Getter:ROSSKO: Фильтрация завершена
+DEBUG:Getter:PROFIT: Создание класса
+DEBUG:Getter:PROFIT: Запрос на сервер
+DEBUG:Getter:PROFIT | Проверка страницы ответа №1
+ERROR:Getter:PROFIT | Assertion: Проверка ответа; Ошибка: <Статус ответа не двухсотый>
+DEBUG:Request:Подключение к базе данных
+INFO:Request:База данных подключена успешно
+DEBUG:Request:Создание курсора
+INFO:Request:Курсор установлен успешно
+CRITICAL:root:Непредвиденная ошибка: too many values to unpack (expected 2)
+DEBUG:Getter:ROSSKO: Создание класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен
+DEBUG:Getter:ROSSKO: Старт фильтрации
+INFO:Getter:ROSSKO: Фильтрация завершена
+DEBUG:Getter:PROFIT: Создание класса
+DEBUG:Getter:PROFIT: Запрос на сервер
+DEBUG:Getter:PROFIT | Проверка страницы ответа №1
+ERROR:Getter:PROFIT | Assertion: Проверка ответа; Ошибка: <Статус ответа не двухсотый>
+DEBUG:Request:Подключение к базе данных
+INFO:Request:База данных подключена успешно
+DEBUG:Request:Создание курсора
+INFO:Request:Курсор установлен успешно
+CRITICAL:root:Непредвиденная ошибка: too many values to unpack (expected 2)
+DEBUG:Getter:ROSSKO: Создание класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен
+DEBUG:Getter:ROSSKO: Старт фильтрации
+INFO:Getter:ROSSKO: Фильтрация завершена
+DEBUG:Getter:PROFIT: Создание класса
+DEBUG:Getter:PROFIT: Запрос на сервер
+DEBUG:Getter:PROFIT | Проверка страницы ответа №1
+ERROR:Getter:PROFIT | Assertion: Проверка ответа; Ошибка: <Статус ответа не двухсотый>
+DEBUG:Request:Подключение к базе данных
+INFO:Request:База данных подключена успешно
+DEBUG:Request:Создание курсора
+INFO:Request:Курсор установлен успешно
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 492, CODE: BH22084
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 659.0, COUNT: 1.0
+WARNING:Errors:Нет свободных слотов; BRAND: 492, CODE: BH22084
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 43, CODE: FW-2181
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 138.0, COUNT: 1.0
+WARNING:Errors:Нет свободных слотов; BRAND: 43, CODE: FW-2181
+INFO:Request:Проверка фирмы и кода из ключа; BRAND: 1042, CODE: ST1536
+INFO:Request:Проверка цены и количества из значения по ключу; PRICE: 2853.0, COUNT: 1.0
+WARNING:Errors:Нет свободных слотов; BRAND: 1042, CODE: ST1536
+WARNING:Request:Среди товаров поставщика 8880 не найден никакой валид!
+WARNING:root:Не все данные закомиченны

@@ -4,74 +4,10 @@
     "OrdersList": {
         "Order": [
             {
-                "id": 160179466,
-                "created_date": "08.12.2025 18:46:49",
-                "delivery_date": "09.12.2025",
-                "total_price": "124.02",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0016789777",
-                            "partnumber": "GZ 102 0114",
-                            "name": "Прокладка приемной трубы (перфометал.) для а/м ВАЗ 2123 Chevrolet Niva",
-                            "brand": "Trialli",
-                            "price": "124.02",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "СПК Шнива",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160179347,
-                "created_date": "08.12.2025 18:44:55",
-                "delivery_date": "09.12.2025",
-                "total_price": "525.76",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSIN0011324888",
-                            "partnumber": "01031902B",
-                            "name": "Сальник коробки передач",
-                            "brand": "Corteco",
-                            "price": "525.76",
-                            "count": 1,
-                            "delivery": 1,
-                            "comment": "Сокол мерс",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160178501,
-                "created_date": "08.12.2025 18:31:49",
-                "delivery_date": "09.12.2025",
-                "total_price": "2520",
+                "id": 160747807,
+                "created_date": "13.12.2025 18:42:54",
+                "delivery_date": "14.12.2025",
+                "total_price": "843",
                 "extra": 0,
                 "stock_address": "Краснодар, Тургенева, 78",
                 "detail": {
@@ -86,714 +22,699 @@
                 "parts": {
                     "part": [
                         {
-                            "guid": "NSII0012899768",
-                            "partnumber": "WB-1318",
-                            "name": "Подшипник ступицы колеса | зад прав/лев | LADA LARGUS",
+                            "guid": "NSIN0019617889",
+                            "partnumber": "L10755B",
+                            "name": "Лампа H7 12V 55W PX26D SUPER WHITE",
                             "brand": "LYNXauto",
-                            "price": "2520.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Примо ларгус",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160178485,
-                "created_date": "08.12.2025 18:31:28",
-                "delivery_date": "09.12.2025",
-                "total_price": "2886",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0012824086",
-                            "partnumber": "WB-1202",
-                            "name": "Подшипник ступицы колеса | перед прав/лев | LADA LARGUS/XRAY",
-                            "brand": "LYNXauto",
-                            "price": "2886.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Примо ларгус",
-                            "status": 31
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160166633,
-                "created_date": "08.12.2025 16:29:45",
-                "delivery_date": "08.12.2025",
-                "total_price": "709",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0019780536",
-                            "partnumber": "AG 655 CF",
-                            "name": "Фильтр салона",
-                            "brand": "GoodWill",
-                            "price": "405.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "тигго 7 про склад",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0007190431",
-                            "partnumber": "OG 720 HQ",
-                            "name": "Фильтр масляный двигателя",
-                            "brand": "GoodWill",
-                            "price": "304.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "тигго 7 про склад",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160166632,
-                "created_date": "08.12.2025 16:29:45",
-                "delivery_date": "09.12.2025",
-                "total_price": "388.36",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0025322671",
-                            "partnumber": "AMD.FA518",
-                            "name": "Фильтр воздушный",
-                            "brand": "AMD",
-                            "price": "388.36",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "тигго 7 про склад",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160161506,
-                "created_date": "08.12.2025 15:51:17",
-                "delivery_date": "08.12.2025",
-                "total_price": "1597.42",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSIN0005572089",
-                            "partnumber": "90916-03093",
-                            "name": "Термостат",
-                            "brand": "Toyota",
-                            "price": "1440.42",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Еременко Хайс",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0019277633",
-                            "partnumber": "SG-1720",
-                            "name": "Прокладка термостата",
-                            "brand": "LYNXauto",
-                            "price": "157.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Еременко Хайс",
-                            "status": 31
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160132472,
-                "created_date": "08.12.2025 12:55:59",
-                "delivery_date": "08.12.2025",
-                "total_price": "2353.02",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0019789713",
-                            "partnumber": "CS 809",
-                            "name": "Подшипник ступицы колеса | перед |",
-                            "brand": "Trialli",
-                            "price": "2353.02",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "СПК Нива",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160132442,
-                "created_date": "08.12.2025 12:55:50",
-                "delivery_date": "08.12.2025",
-                "total_price": "1660",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0012899584",
-                            "partnumber": "WB-1041",
-                            "name": "Комплект подшипника ступицы колеса | перед прав/лев | LADA NIVA 2121/2131",
-                            "brand": "LYNXauto",
-                            "price": "1660.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "СПК нива",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160128400,
-                "created_date": "08.12.2025 12:34:14",
-                "delivery_date": "08.12.2025",
-                "total_price": "4464",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0011572509",
-                            "partnumber": "FR 723",
-                            "name": "Сцепление в сборе (кмпл.) для а/м ВАЗ 2123",
-                            "brand": "Trialli",
-                            "price": "4464.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Сервис пром комплектация",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160115821,
-                "created_date": "08.12.2025 11:32:01",
-                "delivery_date": "08.12.2025",
-                "total_price": "1347",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0019549088",
-                            "partnumber": "RS7017-20R/L",
-                            "name": "Наконечник рулевой",
-                            "brand": "TRT",
-                            "price": "1347.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": null,
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160098057,
-                "created_date": "08.12.2025 10:07:28",
-                "delivery_date": "08.12.2025",
-                "total_price": "26698.98",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSIN0023091313",
-                            "partnumber": "C7046L",
-                            "name": "Стойка стабилизатора | зад лев |",
-                            "brand": "LYNXauto",
-                            "price": "704.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSIN0023091312",
-                            "partnumber": "C7046R",
-                            "name": "Стойка стабилизатора | зад прав |",
-                            "brand": "LYNXauto",
-                            "price": "704.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSIN0000011090",
-                            "partnumber": "270.360",
-                            "name": "Прокладка выпускного коллектора",
-                            "brand": "Elring",
-                            "price": "925.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0019304569",
-                            "partnumber": "GASKEX-006",
-                            "name": "Кольцо уплотнительное выхлопной трубы | прав/лев |",
-                            "brand": "Febest",
-                            "price": "1094.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0007150074",
-                            "partnumber": "30711011",
-                            "name": "Радиатор системы охлаждения",
-                            "brand": "Sakura",
-                            "price": "10918.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0017375461",
-                            "partnumber": "HPQ1023XQ",
-                            "name": "Насос гидроусилителя руля",
-                            "brand": "Krauf",
-                            "price": "9920.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSIN0019699731",
-                            "partnumber": "BD-3425",
-                            "name": "Колодки тормозные дисковые | зад |",
-                            "brand": "LYNXauto",
-                            "price": "1172.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSIN0012589329",
-                            "partnumber": "52306-SDB-A02",
-                            "name": "Втулка стабилизатора | зад |",
-                            "brand": "Honda",
-                            "price": "630.99",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "Вешинин Акорд",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160092875,
-                "created_date": "08.12.2025 09:40:34",
-                "delivery_date": "08.12.2025",
-                "total_price": "7388.44",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0023941498",
-                            "partnumber": "CE0149L",
-                            "name": "/ CEG-22L Наконечник рулевой тяги | лев |",
-                            "brand": "CTR",
-                            "price": "1474.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Соколов астра",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0027476790",
-                            "partnumber": "DUC-20019",
-                            "name": "Пыльник рулевой рейки",
-                            "brand": "UNIO",
-                            "price": "724.22",
-                            "count": 2,
-                            "delivery": 2,
-                            "comment": "Соколов астра",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0023944493",
-                            "partnumber": "CR0821",
-                            "name": "/ CRG-59 Тяга рулевая | перед прав/лев |",
-                            "brand": "CTR",
-                            "price": "1496.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "Соколов астра",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0023941499",
-                            "partnumber": "CE0149R",
-                            "name": "/ CEG-22R Наконечник рулевой тяги | прав |",
-                            "brand": "CTR",
-                            "price": "1474.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "Соколов астра",
-                            "status": 31
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160091662,
-                "created_date": "08.12.2025 09:33:59",
-                "delivery_date": "08.12.2025",
-                "total_price": "2034",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0012778929",
-                            "partnumber": "BH21249",
-                            "name": "Сайлентблок рычага подвески | зад прав/лев |",
-                            "brand": "JIKIU",
-                            "price": "1017.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "шевелев лексус",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160091661,
-                "created_date": "08.12.2025 09:33:58",
-                "delivery_date": "08.12.2025",
-                "total_price": "16834",
-                "extra": 0,
-                "stock_address": "Краснодар, Новороссийская улица, 240/1",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0007164883",
-                            "partnumber": "BH21033",
-                            "name": "Сайлентблок рычага подвески | перед прав/лев |",
-                            "brand": "JIKIU",
-                            "price": "1020.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "шевелев лексус",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0007164860",
-                            "partnumber": "BH21034",
-                            "name": "Втулка рычага | перед прав/лев |",
-                            "brand": "JIKIU",
-                            "price": "1568.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "шевелев лексус",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0014094509",
-                            "partnumber": "BH21250",
-                            "name": "Сайлентблок | зад прав |",
-                            "brand": "JIKIU",
-                            "price": "1234.00",
-                            "count": 2,
-                            "delivery": 1,
-                            "comment": "шевелев лексус",
-                            "status": 31
-                        },
-                        {
-                            "guid": "NSII0019211002",
-                            "partnumber": "BH21192B",
-                            "name": "Сайлентблок | зад |",
-                            "brand": "JIKIU",
-                            "price": "1941.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "шевелев лексус",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0015235919",
-                            "partnumber": "BH21240",
-                            "name": "Сайлентблок задней цапфы | зад |",
-                            "brand": "JIKIU",
-                            "price": "1420.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": "шевелев лексус",
-                            "status": 2
-                        },
-                        {
-                            "guid": "NSII0014094509",
-                            "partnumber": "BH21250",
-                            "name": "Сайлентблок | зад прав |",
-                            "brand": "JIKIU",
-                            "price": "1234.00",
-                            "count": 2,
-                            "delivery": 0,
-                            "comment": null,
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160087584,
-                "created_date": "08.12.2025 09:11:34",
-                "delivery_date": "08.12.2025",
-                "total_price": "648",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0006734390",
-                            "partnumber": "MCP-003",
-                            "name": "Кольцо уплотнительное форсунки впрыска топлива | прав/лев |",
-                            "brand": "Febest",
-                            "price": "81.00",
-                            "count": 8,
-                            "delivery": 0,
-                            "comment": "Solaris гончаров",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160084477,
-                "created_date": "08.12.2025 08:50:44",
-                "delivery_date": "08.12.2025",
-                "total_price": "2332",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0007353722",
-                            "partnumber": "LN2003",
-                            "name": "Жидкость для очистки форсунок в ультразвуковых ваннах, 5 л",
-                            "brand": "LAVR",
-                            "price": "2332.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "в тз ",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160081444,
-                "created_date": "08.12.2025 08:25:50",
-                "delivery_date": "08.12.2025",
-                "total_price": "422",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSII0016762900",
-                            "partnumber": "C47030",
-                            "name": "Фильтр масляный",
-                            "brand": "Sakura",
-                            "price": "422.00",
-                            "count": 1,
-                            "delivery": 0,
-                            "comment": "сахно",
-                            "status": 2
-                        }
-                    ]
-                }
-            },
-            {
-                "id": 160080435,
-                "created_date": "08.12.2025 08:16:11",
-                "delivery_date": "08.12.2025",
-                "total_price": "378",
-                "extra": 0,
-                "stock_address": "Краснодар, Тургенева, 78",
-                "detail": {
-                    "delivery_type": "Курьерская доставка",
-                    "delivery_cost": "0",
-                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
-                    "payment_type": "Оплата банковским платежом",
-                    "company_name": null,
-                    "company_requisites": null,
-                    "comment": null
-                },
-                "parts": {
-                    "part": [
-                        {
-                            "guid": "NSIN0019617888",
-                            "partnumber": "L10755",
-                            "name": "Лампа H7 12V 55W PX26D",
-                            "brand": "LYNXauto",
-                            "price": "126.00",
+                            "price": "281.00",
                             "count": 3,
                             "delivery": 0,
                             "comment": "склад",
                             "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160747006,
+                "created_date": "13.12.2025 18:21:31",
+                "delivery_date": "14.12.2025",
+                "total_price": "1448",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0009567144",
+                            "partnumber": "AG 305",
+                            "name": "Фильтр воздушный",
+                            "brand": "GoodWill",
+                            "price": "419.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Таран Сергей Анатольевич Grander ",
+                            "status": 2
+                        },
+                        {
+                            "guid": "NSII0018300136",
+                            "partnumber": "LO-242",
+                            "name": "Фильтр масляный (картридж)",
+                            "brand": "LYNXauto",
+                            "price": "556.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Таран Сергей Анатольевич Grander ",
+                            "status": 2
+                        },
+                        {
+                            "guid": "NSII0010082162",
+                            "partnumber": "AG 401 CFC",
+                            "name": "Фильтр салона угольный",
+                            "brand": "GoodWill",
+                            "price": "473.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Таран Сергей Анатольевич Grander ",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160738699,
+                "created_date": "13.12.2025 16:06:44",
+                "delivery_date": "14.12.2025",
+                "total_price": "119.88",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0028497799",
+                            "partnumber": "AECC168",
+                            "name": "Разъём 2 pin с проводами угловой для лампы с цоколем H7",
+                            "brand": "AIRLINE",
+                            "price": "119.88",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Икиликян гольф",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160735901,
+                "created_date": "13.12.2025 15:34:10",
+                "delivery_date": "13.12.2025",
+                "total_price": "1869",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0015592049",
+                            "partnumber": "CF 928",
+                            "name": "Цилиндр рабочий сцепления",
+                            "brand": "Trialli",
+                            "price": "1869.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Главтрой",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160732287,
+                "created_date": "13.12.2025 14:56:30",
+                "delivery_date": "13.12.2025",
+                "total_price": "825.68",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0019940249",
+                            "partnumber": "3097259",
+                            "name": "Жидкость тормозная DOT-4, CLASS 6, 0,91кг",
+                            "brand": "Лукойл",
+                            "price": "412.84",
+                            "count": 2,
+                            "delivery": 0,
+                            "comment": "Топчило Optima ",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160729660,
+                "created_date": "13.12.2025 14:32:05",
+                "delivery_date": "13.12.2025",
+                "total_price": "897",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0007151951",
+                            "partnumber": "C9495",
+                            "name": "Сайлентблок рычага подвески | зад прав/лев |",
+                            "brand": "LYNXauto",
+                            "price": "897.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "туаев",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160729293,
+                "created_date": "13.12.2025 14:28:45",
+                "delivery_date": "13.12.2025",
+                "total_price": "659",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0014094544",
+                            "partnumber": "BH22084",
+                            "name": "Сайлентблок | зад прав/лев |",
+                            "brand": "JIKIU",
+                            "price": "659.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 31
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160727102,
+                "created_date": "13.12.2025 14:08:56",
+                "delivery_date": "13.12.2025",
+                "total_price": "2388",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0007164696",
+                            "partnumber": "BH22082",
+                            "name": "Втулка подвески",
+                            "brand": "JIKIU",
+                            "price": "1194.00",
+                            "count": 2,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160725012,
+                "created_date": "13.12.2025 13:51:27",
+                "delivery_date": "13.12.2025",
+                "total_price": "336",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSIN0000007627",
+                            "partnumber": "12-25837-01",
+                            "name": "Комплект сальников клапанов",
+                            "brand": "Victor Reinz",
+                            "price": "336.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "На ниву просил Тарабанов",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160722069,
+                "created_date": "13.12.2025 13:27:48",
+                "delivery_date": "14.12.2025",
+                "total_price": "950",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0022970823",
+                            "partnumber": "WS2683.00",
+                            "name": "Колодки тормозные дисковые | перед |",
+                            "brand": "JEENICE",
+                            "price": "950.00",
+                            "count": 1,
+                            "delivery": 1,
+                            "comment": "бужинский оптима",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160709509,
+                "created_date": "13.12.2025 11:58:06",
+                "delivery_date": "13.12.2025",
+                "total_price": "1718",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSIN0023126553",
+                            "partnumber": "C4207R",
+                            "name": "Наконечник рулевой тяги | перед прав |",
+                            "brand": "LYNXauto",
+                            "price": "859.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Соколов Астра ",
+                            "status": 2
+                        },
+                        {
+                            "guid": "NSIN0023126286",
+                            "partnumber": "C4207L",
+                            "name": "Наконечник рулевой тяги | перед лев |",
+                            "brand": "LYNXauto",
+                            "price": "859.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Соколов Астра ",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160704896,
+                "created_date": "13.12.2025 11:27:16",
+                "delivery_date": "13.12.2025",
+                "total_price": "4269.4",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0019576040",
+                            "partnumber": "18857-09085",
+                            "name": "Свеча зажигания",
+                            "brand": "Hyundai/Kia",
+                            "price": "1067.35",
+                            "count": 4,
+                            "delivery": 0,
+                            "comment": "Топчило Optima ",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160702767,
+                "created_date": "13.12.2025 11:13:33",
+                "delivery_date": "13.12.2025",
+                "total_price": "138",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0027272280",
+                            "partnumber": "FW-2181",
+                            "name": "Гайка колесная (M12x1,25/S21/H30) | перед/зад прав/лев |",
+                            "brand": "LYNXauto",
+                            "price": "138.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 31
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160694065,
+                "created_date": "13.12.2025 10:16:30",
+                "delivery_date": "13.12.2025",
+                "total_price": "1000.48",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSIN0011326353",
+                            "partnumber": "19033885B",
+                            "name": "Сальник дифференциала",
+                            "brand": "Corteco",
+                            "price": "1000.48",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "Мартынников Сергей Александров Skoda Гарантия",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160692597,
+                "created_date": "13.12.2025 10:06:24",
+                "delivery_date": "13.12.2025",
+                "total_price": "220",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0025297976",
+                            "partnumber": "R8011012",
+                            "name": "Бумага наждачная водостойкая 230x280 мм P220 Profi (10шт)",
+                            "brand": "ARNEZI",
+                            "price": "220.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160692322,
+                "created_date": "13.12.2025 10:04:23",
+                "delivery_date": "14.12.2025",
+                "total_price": "381.22",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0009927920",
+                            "partnumber": "05251",
+                            "name": "Щуп уровня масла | зад |",
+                            "brand": "Metalcaucho",
+                            "price": "381.22",
+                            "count": 1,
+                            "delivery": 2,
+                            "comment": "Кистнер Денис Иванович Peugeot",
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160686025,
+                "created_date": "13.12.2025 09:17:19",
+                "delivery_date": "13.12.2025",
+                "total_price": "1619",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSIN0000419800",
+                            "partnumber": "6PK1210",
+                            "name": "XF 68382 Ремень поликлиновый",
+                            "brand": "Gates",
+                            "price": "1619.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160681857,
+                "created_date": "13.12.2025 08:33:37",
+                "delivery_date": "13.12.2025",
+                "total_price": "762",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0022901631",
+                            "partnumber": "LA-300",
+                            "name": "Фильтр воздушный GAZELLE/GAZELLE NEXT/SOBOL",
+                            "brand": "LYNXauto",
+                            "price": "762.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160681855,
+                "created_date": "13.12.2025 08:33:37",
+                "delivery_date": "13.12.2025",
+                "total_price": "1694",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0022901631",
+                            "partnumber": "LA-300",
+                            "name": "Фильтр воздушный GAZELLE/GAZELLE NEXT/SOBOL",
+                            "brand": "LYNXauto",
+                            "price": "762.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        },
+                        {
+                            "guid": "NSII0007190514",
+                            "partnumber": "FG 100",
+                            "name": "Фильтр топливный",
+                            "brand": "GoodWill",
+                            "price": "466.00",
+                            "count": 2,
+                            "delivery": 0,
+                            "comment": null,
+                            "status": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160667078,
+                "created_date": "12.12.2025 20:03:50",
+                "delivery_date": "13.12.2025",
+                "total_price": "2853",
+                "extra": 0,
+                "stock_address": "Краснодар, Новороссийская улица, 240/1",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0025061312",
+                            "partnumber": "ST-1536",
+                            "name": "ШРУС внутренний | перед прав/лев |",
+                            "brand": "SUFIX",
+                            "price": "2853.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "бужинский оптима",
+                            "status": 31
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 160667077,
+                "created_date": "12.12.2025 20:03:50",
+                "delivery_date": "13.12.2025",
+                "total_price": "2853",
+                "extra": 0,
+                "stock_address": "Краснодар, Тургенева, 78",
+                "detail": {
+                    "delivery_type": "Курьерская доставка",
+                    "delivery_cost": "0",
+                    "delivery_address": "пос. Яблоновский, Ленина, 38/1",
+                    "payment_type": "Оплата банковским платежом",
+                    "company_name": null,
+                    "company_requisites": null,
+                    "comment": null
+                },
+                "parts": {
+                    "part": [
+                        {
+                            "guid": "NSII0025061312",
+                            "partnumber": "ST-1536",
+                            "name": "ШРУС внутренний | перед прав/лев |",
+                            "brand": "SUFIX",
+                            "price": "2853.00",
+                            "count": 1,
+                            "delivery": 0,
+                            "comment": "бужинский оптима",
+                            "status": 31
                         }
                     ]
                 }

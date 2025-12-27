@@ -120,6 +120,7 @@ class ProfitLiga:
         assert page, "Ответ пустой"
         assert page["status"] == "success", "Статус тела ответа - неудовлетворительный"
         for current_page in range(1, count_of_pages):
+            LOG.debug(f"PROFIT | Проверка страницы ответа №{current_page}")
             # Пространство имен
             page = self._request(pageNum=current_page)
             # Рабочие данные
@@ -196,7 +197,7 @@ def get_rosskoData():
         raise
     else:
         LOG.info('ROSSKO: Фильтрация завершена')
-        return rsko_suc
+        return (8880, rsko_suc)
 
 def get_profitData():
     # Объявление
@@ -236,11 +237,12 @@ def get_profitData():
         raise
     else:
         LOG.info('PROFIT: Фильтрация завершена')
-        return prof_suc
+        return (8876, prof_suc)
 
 
 def main():
     rsko = get_rosskoData()
     prof = get_profitData()
-    assert rsko or prof
-    return (8880, rsko), (8876, prof)
+    out = [agent for agent in (rsko, prof) if agent]
+    assert any(out)
+    return tuple(out)
