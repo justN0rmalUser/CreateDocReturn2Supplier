@@ -20,11 +20,11 @@ def stdcode(cursor):
 
     data = cursor.execute(SQLC).fetchall()
 
-    with open("utilities\\_stdcode.py", mode='w', encoding='utf-8') as file:
+    with open("utilities\\fmt.py", mode='w', encoding='utf-8') as file:
         file.write('get_fmt_code = {\n')
         for code in data:
             file.write(f'\t"{std(str(*code))}": "{str(*code)}",\n')
-        file.write("}")
+        file.write("}\n\n")
 
 def stdfirm(cursor):
     SQLF = """
@@ -33,11 +33,11 @@ def stdfirm(cursor):
 
     data = cursor.execute(SQLF).fetchall()
 
-    with open("utilities\\_stdfirm.py", mode='w', encoding='utf-8') as file:
+    with open("utilities\\fmt.py", mode='a', encoding='utf-8') as file:
         file.write('get_fmt_firm = {\n')
         for prod_id, name in data:
             file.write(f'\t"{std(str(name))}": {prod_id},\n')
-        file.write("}")
+        file.write("}\n")
 
 
 def main():

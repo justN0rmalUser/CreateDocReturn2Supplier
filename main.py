@@ -10,42 +10,35 @@ log.basicConfig(filename="logs\\global.log", encoding='utf-8')
 
 
 def run():
+    """Функция запуска"""
+    # Унификация и преобразование в удобный формат
     try:
         update_format.main()
     except SystemExit:
         log.error("Исключение в модуле update_format!")
         raise
 
+    # Получение данных с API
     try:
-        success, failure, summa = get_data.main()
-        assert success
-        assert summa
+        data = get_data.main()
     except AssertionError:
-        log.warning("Нет новых данных")
-        raise
-    except SystemExit:
-        log.error("Исключение в модуле get_data!")
-        raise
+        log.warning('Пустой ответ в модуле "get_data"')
+        sys.exit(0)
     except Exception as exc:
-        log.critical(f"Непредвиденная ошибка: {exc}")
-        raise
+        log.critical(f'Критическая ошибка в модуле "get_data": {exc}')
+        sys.exit(1)
     
+    # Отправка данных в базу данных
     try:
-        assert request_db.main(success, summa) # True если успешно
+        assert request_db.main(contractorHeader=data) # True если успешно
     except AssertionError:
         log.warning("Не все данные закомиченны")
-        raise
-    except SystemExit:
-        log.error("Исключение в модуле request_db!")
-        raise
+        sys.exit(0)
     except Exception as exc:
         log.critical(f"Непредвиденная ошибка: {exc}")
-        raise
+        sys.exit(1)
 
 
 if __name__ == '__main__':
     log.info("Старт скрипта")
-    try:
-        run()
-    except:
-        sys.exit(1)
+    run()
