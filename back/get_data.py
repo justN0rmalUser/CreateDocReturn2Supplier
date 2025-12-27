@@ -91,7 +91,7 @@ class ProfitLiga:
             "page": pageNum
         }
         output = requests.get(self.URL, params=params)
-        assert output.status_code in range(200, 300), "Статус ответа не двухсотый"
+        assert output.status_code in range(200, 300), f"Статус ответа не двухсотый: статус - {output.status_code}"
         return output.json()
         
     def _can_be_next(self, page, pageSize: int) -> bool | None:
