@@ -6,6 +6,7 @@ from zeep import Client
 from zeep.helpers import serialize_object
 
 from datetime import date, timedelta, datetime
+import time
 
 from utilities._utils import std, logger
 from utilities.fmt import fmt_firm, fmt_code
@@ -120,6 +121,9 @@ class ProfitLiga:
         assert page, "Ответ пустой"
         assert page["status"] == "success", "Статус тела ответа - неудовлетворительный"
         for current_page in range(1, count_of_pages):
+            # Кулдаун
+            time.sleep(2.5)
+
             LOG.debug(f"PROFIT | Проверка страницы ответа №{current_page}")
             # Пространство имен
             page = self._request(pageNum=current_page)
