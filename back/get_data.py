@@ -122,7 +122,7 @@ class ProfitLiga:
         assert page["status"] == "success", "Статус тела ответа - неудовлетворительный"
         for current_page in range(1, count_of_pages):
             # Кулдаун
-            time.sleep(2.5)
+            time.sleep(2.7)
 
             LOG.debug(f"PROFIT | Проверка страницы ответа №{current_page}")
             # Пространство имен
