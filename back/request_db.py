@@ -1,7 +1,6 @@
 import fdb
-import configparser
 
-from utilities._utils import logger
+from utilities._utils import logger, get_config
 from utilities.docs_sqls import (
     document_registry,
     document_out_header,
@@ -15,31 +14,41 @@ from utilities.docs_sqls import (
 )
 
 
-cfg = configparser.ConfigParser()
-cfg.read("config.ini")
+cfg = get_config()
 
 LOG = logger(name="Request", fpath="logs\\req.log")
 ERRDATA = logger(name="Errors", fpath="logs\\corrupt_data.log")
 
 
+def get_free_cells(cursor, brand_id, code, count):
+    count_of_free_slots = check_count_goods(cursor, brand_id, code)
+    assert count_of_free_slots, "Нет свободных слотов"
+    
+    slots = get_slots(cursor, brand_id, code)
+    assert slots, "Ошибка при поиске позиций"
+
+    if count_of_free_slots - count < 0:
+        count = min(count, count_of_free_slots)
+    
+    return slots, count
+
+
 def aggregate_data (cursor, data):
     valid_data = []
     summary = 0.0
-    for key in data:
-        brand_id, code = key
-        price, count = data[key] 
+    for guid in data:
+        inner_dict = data[guid]
+
+        brand_id = inner_dict["brand"]
+        code = inner_dict["partnumber"]
+        price = inner_dict["price"]
+        count = inner_dict["count"]
+
         LOG.info(f"Проверка фирмы и кода из ключа; BRAND: {brand_id}, CODE: {code}")
         LOG.info(f"Проверка цены и количества из значения по ключу; PRICE: {price}, COUNT: {count}")
 
         try:
-            count_of_free_slots = check_count_goods(cursor, brand_id, code)
-            assert count_of_free_slots, "Нет свободных слотов"
-            
-            slots = get_slots(cursor, brand_id, code)
-            assert slots, "Ошибка при поиске позиций"
-
-            if count_of_free_slots - count < 0:
-                count = min(count, count_of_free_slots)
+            slots, count = get_free_cells(cursor, brand_id, code, count)
         except AssertionError as ass:
             ERRDATA.warning(f"{ass}; BRAND: {brand_id}, CODE: {code}")
         else:
@@ -69,7 +78,7 @@ def aggregate_data (cursor, data):
     return valid_data, summary
 
 
-def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | None]]):
+def main(*, contractorHeader):
     # Подключение к базе данных
     try:
         LOG.debug("Подключение к базе данных")
@@ -94,10 +103,9 @@ def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | N
 
 
     all_goods_is_commited = True
-    for partner in contractorHeader:
+    for agent_id in contractorHeader:
         # Проверка валидных товаров
-        print(partner)
-        partner_id, data = partner
+        data = contractorHeader[agent_id]
         valid_data, valid_summa = aggregate_data(cursor=cur, data=data)
 
         # Создание цепочки документов
@@ -107,7 +115,7 @@ def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | N
                 doc_reg_id = document_registry(cur)
                 LOG.debug("Создание документа регистрации; ID: {}".format(doc_reg_id))
 
-                doc_out_id = document_out(cur, valid_summa, partner_id)
+                doc_out_id = document_out(cur, valid_summa, int(agent_id))
                 LOG.debug("Создание документа реализации товара; ID: {}; DOC_REG ID: {}".format(doc_out_id, doc_reg_id))
 
                 doc_reg_id = document_registry(cur, doc_reg_id) # update
@@ -139,7 +147,7 @@ def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | N
                 document_registry(cur, self_update_id=doc_reg_id)
                 LOG.info("Печатка даты в документе регистрации; ID: {}".format(doc_reg_id))
 
-                document_out(cur, valid_summa, partner_id, self_update_id=doc_out_id)
+                document_out(cur, valid_summa, agent_id, self_update_id=doc_out_id)
                 LOG.info("Изменение категории состояния на 4 для документа реализации товара; ID: {}; DOC_REG ID: {}".format(doc_out_id, doc_reg_id))
 
                 document_out_header(cur, doc_out_id, doc_reg_id, self_update_id=doc_head_i)
@@ -152,9 +160,9 @@ def main(*, contractorHeader: tuple[tuple[int, dict | None], tuple[int, dict | N
                 raise
             else:
                 con.commit()
-                LOG.info("Документы обновления и сохранены")
+                LOG.info("Документы обновлены и сохранены")
         else:
-            LOG.warning(f"Среди товаров поставщика {partner_id} не найден никакой валид!")
+            LOG.warning(f"Среди товаров поставщика {agent_id} не найден никакой валид!")
             all_goods_is_commited = False
     return all_goods_is_commited
 

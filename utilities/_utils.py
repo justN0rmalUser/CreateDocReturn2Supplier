@@ -1,8 +1,7 @@
 import os
 from pathlib import Path
-import sys
-import time
-from datetime import datetime, date
+import configparser
+from datetime import datetime
 import logging as log
 
 
@@ -41,3 +40,7 @@ def std(word: str) -> str:
     if isinstance(word, str):
         return word.upper().replace('-', '').replace(' ', '').replace('.', '').replace('/', '').replace(',', '').strip()
     
+def get_config(path="config.ini"):
+    cfg = configparser.ConfigParser()
+    cfg.read(path)
+    return cfg
