@@ -11,13 +11,6 @@ log.basicConfig(filename="logs\\global.log", encoding='utf-8')
 
 def run():
     """Функция запуска"""
-    # Унификация и преобразование в удобный формат
-    try:
-        Format()
-    except SystemExit:
-        log.error("Исключение в модуле update_format!")
-        raise
-
     # Получение данных с API
     try:
         data = Request()
@@ -30,7 +23,7 @@ def run():
     
     # Отправка данных в базу данных
     try:
-        assert Update(contractorHeader=data) # True если успешно
+        Update(contractorHeader=data) # True если успешно
     except AssertionError:
         log.warning("Не все данные закомиченны")
         sys.exit(0)

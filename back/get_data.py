@@ -1,12 +1,13 @@
 # get_data.py
 from datetime import date, timedelta
-from utilities.rosskoNprofit import RosskoAPI, ProfitLigaAPI
+from utilities.rosskoNprofit import RosskoAPI#, ProfitLigaAPI
 from utilities._utils import logger, get_config
 
 # --- Настройка логгирования ---
 GET_DATA_LOGGER = logger(name="Getter", fpath="logs/get.log")
 CFG = get_config()
 DATE_OFFSET = date.today() - timedelta(days=int(CFG["DEFAULT"]["delta_days"]))
+
 
 def get_rossko_data():
     """
@@ -26,10 +27,10 @@ def get_rossko_data():
         GET_DATA_LOGGER.info('ROSSKO: Запрос успешен')
 
         GET_DATA_LOGGER.debug('ROSSKO: Начало фильтрации')
-        filtered_data = rossko_api.filter_successful_orders(raw_orders)
+        summa, filtered_data = rossko_api.filter_successful_orders(raw_orders)
         GET_DATA_LOGGER.info('ROSSKO: Фильтрация завершена')
         
-        return filtered_data
+        return (8880, summa, filtered_data)
 
     except AssertionError as e:
         GET_DATA_LOGGER.error(f"ROSSKO | Assertion Error: {e}")
@@ -38,31 +39,33 @@ def get_rossko_data():
         GET_DATA_LOGGER.critical(f"ROSSKO | Неизвестная ошибка: {e}")
         raise # Переподнимаем исключение, если это критическая ошибка, не связанная с бизнес-логикой
 
-def get_profit_data():
-    """
-    Получает и фильтрует данные от Profit Liga.
-    Возвращает кортеж (идентификатор, результат) или None в случае ошибки.
-    """
-    try:
-        GET_DATA_LOGGER.debug('PROFIT: Инициализация класса')
-        profit_api = ProfitLigaAPI(
-            url=CFG["Profit"]["URL"],
-            api_key=CFG["Profit"]["key"]
-        )
 
-        GET_DATA_LOGGER.debug('PROFIT: Запрос на сервер')
-        filtered_data = profit_api.get_filtered_orders()
-        GET_DATA_LOGGER.info('PROFIT: Запрос и фильтрация успешны')
+# def get_profit_data():
+#     """
+#     Получает и фильтрует данные от Profit Liga.
+#     Возвращает кортеж (идентификатор, результат) или None в случае ошибки.
+#     """
+#     try:
+#         GET_DATA_LOGGER.debug('PROFIT: Инициализация класса')
+#         profit_api = ProfitLigaAPI(
+#             url=CFG["Profit"]["URL"],
+#             api_key=CFG["Profit"]["key"]
+#         )
 
-        # Возвращается кортеж, как в оригинальном коде
-        return ("8876", filtered_data)
+#         GET_DATA_LOGGER.debug('PROFIT: Запрос на сервер')
+#         filtered_data = profit_api.get_filtered_orders()
+#         GET_DATA_LOGGER.info('PROFIT: Запрос и фильтрация успешны')
 
-    except AssertionError as e:
-        GET_DATA_LOGGER.error(f"PROFIT | Assertion Error: {e}")
-        return None
-    except Exception as e:
-        GET_DATA_LOGGER.critical(f"PROFIT | Неизвестная ошибка: {e}")
-        raise # Переподнимаем исключение, если это критическая ошибка
+#         # Возвращается кортеж, как в оригинальном коде
+#         return (8876, filtered_data)
+
+#     except AssertionError as e:
+#         GET_DATA_LOGGER.error(f"PROFIT | Assertion Error: {e}")
+#         return None
+#     except Exception as e:
+#         GET_DATA_LOGGER.critical(f"PROFIT | Неизвестная ошибка: {e}")
+#         raise # Переподнимаем исключение, если это критическая ошибка
+
 
 def main():
     """
@@ -74,11 +77,7 @@ def main():
 
     # successful_results = [res for res in (rossko_data, ) if res is not None]
     
-    if not rossko_data:
+    if rossko_data[1] == 0 or rossko_data is None:
         raise AssertionError("Ни один из источников данных не вернул успешный результат.")
         
-    return rossko_data
-
-if __name__ == "__main__":
-    results = main()
-    print("Успешно полученные данные:", results)
+    return (rossko_data, None) # FIXME
