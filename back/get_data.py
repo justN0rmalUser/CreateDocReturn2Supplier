@@ -27,12 +27,10 @@ def get_rossko_data(start=DATE_OFFSET, end=DATE_OFFSET):
         GET_DATA_LOGGER.info('ROSSKO: Запрос успешен, итератор получен')
 
         summary = 0.0
-        print(rossko_api, flush=True)
         for product in rossko_api:
-            print(product, flush=True)
             summary += product["count"] * product["price"]
                 
-        return (8880, summary, rossko_api)
+        return (8880, round(summary, 2), rossko_api)
 
     except AssertionError as e:
         GET_DATA_LOGGER.error(f"ROSSKO | Assertion Error: {e}")

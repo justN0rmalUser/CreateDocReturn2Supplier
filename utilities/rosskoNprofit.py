@@ -61,7 +61,6 @@ class RosskoAPI:
         )
 
         data = serialize_object(raw_response)
-        print(data["message"], flush=True)
         if not data.get("success"):
             raise RuntimeError("API Rossko вернул статус success=False")
             

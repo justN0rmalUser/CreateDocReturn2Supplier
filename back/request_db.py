@@ -37,7 +37,6 @@ def main(*, contractorHeader: Tuple[
                 continue
 
             agent_id, summa, data = value 
-            pprint(data)
 
             try:
                 LOG.debug("Старт цикла создания документов")
