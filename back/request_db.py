@@ -1,5 +1,5 @@
 from autodealerAPI import Connection, DatabaseConfig
-from typing import Literal, Tuple, Dict
+from typing import Literal, Tuple, Iterable
 from pprint import pprint
 from utilities._utils import logger
 
@@ -11,19 +11,19 @@ ERRDATA = logger(name="Errors", fpath="logs\\corrupt_data.log")
 def main(*, contractorHeader: Tuple[
     Tuple[
         Literal[8880], 
-        int, 
-        dict[str, dict]
+        float, 
+        Iterable
     ],
     Tuple[
         Literal[8876], 
-        int, 
-        dict[str, dict]
+        float, 
+        Iterable
     ] | None]):
 
 
     db_cfg = DatabaseConfig.from_ini(
         "config.ini",
-        path_key="db_path_test",
+        path_key="db_path",
         user_key="db_user",
         pass_key="db_password"
     )
@@ -33,10 +33,11 @@ def main(*, contractorHeader: Tuple[
 
     with transaction.start_transaction(type_api="high", read_only=False) as trans:
         for value in contractorHeader:
-            
-            if value is None: continue
+            if value is None: 
+                continue
 
-            agent_id, summa, data = value; pprint(data)
+            agent_id, summa, data = value 
+            pprint(data)
 
             try:
                 LOG.debug("Старт цикла создания документов")

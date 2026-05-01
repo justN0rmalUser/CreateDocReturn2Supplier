@@ -9,28 +9,30 @@ CFG = get_config()
 DATE_OFFSET = date.today() - timedelta(days=int(CFG["DEFAULT"]["delta_days"]))
 
 
-def get_rossko_data():
+def get_rossko_data(start=DATE_OFFSET, end=DATE_OFFSET):
     """
     Получает и фильтрует данные от Rossko.
     Возвращает результат или None в случае ошибки.
     """
     try:
         GET_DATA_LOGGER.debug('ROSSKO: Инициализация класса')
+        GET_DATA_LOGGER.debug('ROSSKO: Запрос на сервер')
         rossko_api = RosskoAPI(
             url=CFG["Rossko"]["URL"],
             key_1=CFG["Rossko"]["first_secret"],
-            key_2=CFG["Rossko"]["second_secret"]
+            key_2=CFG["Rossko"]["second_secret"],
+            start_date=start,
+            end_date=end
         )
+        GET_DATA_LOGGER.info('ROSSKO: Запрос успешен, итератор получен')
 
-        GET_DATA_LOGGER.debug('ROSSKO: Запрос на сервер')
-        raw_orders = rossko_api.get_raw_orders()
-        GET_DATA_LOGGER.info('ROSSKO: Запрос успешен')
-
-        GET_DATA_LOGGER.debug('ROSSKO: Начало фильтрации')
-        summa, filtered_data = rossko_api.filter_successful_orders(raw_orders)
-        GET_DATA_LOGGER.info('ROSSKO: Фильтрация завершена')
-        
-        return (8880, summa, filtered_data)
+        summary = 0.0
+        print(rossko_api, flush=True)
+        for product in rossko_api:
+            print(product, flush=True)
+            summary += product["count"] * product["price"]
+                
+        return (8880, summary, rossko_api)
 
     except AssertionError as e:
         GET_DATA_LOGGER.error(f"ROSSKO | Assertion Error: {e}")
@@ -72,11 +74,15 @@ def main():
     Главная функция для сбора данных от обоих API.
     Возвращает кортеж с успешными результатами.
     """
-    rossko_data = get_rossko_data()
+    start = date.fromisoformat(CFG["DEFAULT"]["start_date"])
+    end = date.fromisoformat(CFG["DEFAULT"]["end_date"])
+    print(start, end)
+
+    rossko_data = get_rossko_data(start, end)
     # profit_data = get_profit_data()
 
     # successful_results = [res for res in (rossko_data, ) if res is not None]
-    
+    print(rossko_data[1], 'asd')
     if rossko_data[1] == 0 or rossko_data is None:
         raise AssertionError("Ни один из источников данных не вернул успешный результат.")
         

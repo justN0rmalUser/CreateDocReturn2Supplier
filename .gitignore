@@ -4,3 +4,4 @@ utilities\__pycache__
 js_res.json
 jsko.json
 logs
+*.pyc

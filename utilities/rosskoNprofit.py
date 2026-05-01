@@ -3,11 +3,12 @@ import json
 import logging
 import requests
 from datetime import date, timedelta, datetime
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Literal, Iterator
 from zeep import Client
 from zeep.helpers import serialize_object
+from time import sleep
 
-from autodealerAPI.core.build_types.types.standard import std
+from autodealerAPI.utils.functions.standard import std
 from ._utils import get_config
 
 cfg = get_config()
@@ -38,47 +39,63 @@ class RosskoAPI:
     Класс для взаимодействия с API Rossko.
     Предоставляет методы для получения и фильтрации заказов.
     """
-    def __init__(self, url: str, key_1: str, key_2: str):
+    def __init__(self, url: str, key_1: str, key_2: str, start_date: date, end_date: date):
+        if start_date > end_date:
+            raise ValueError("Стартовая дата больше конечной")
         self.url = url
         self.key_1 = key_1
         self.key_2 = key_2
+        self.start_date = start_date
+        self.end_date = end_date
+        self._cache: List[Dict[str, str | int | float]] = []
 
-    def _make_request(self) -> dict:
-        """Выполняет SOAP-запрос к API Rossko."""
+    def _fetch_orders_for_date(self, current_date: date) -> List[Dict[str, str | int | float]]:
+        """Выполняет SOAP-запрос и возвращает структурированный список заказов."""
+        client = Client(self.url)
+        raw_response = client.service.GetOrders(
+            KEY1=self.key_1, 
+            KEY2=self.key_2, 
+            start_date=current_date, 
+            end_date=current_date, 
+            limit = 100
+        )
+
+        data = serialize_object(raw_response)
+        print(data["message"], flush=True)
+        if not data.get("success"):
+            raise RuntimeError("API Rossko вернул статус success=False")
+            
+        orders = data.get("OrdersList", {}).get("Order")
+        if not orders:
+            return []
+        return orders if isinstance(orders, list) else [orders]
+
+    def __iter__(self) -> Iterator[Dict[str, str | int | float]]:
+        """Реализует ленивую загрузку с однократным кэшированием."""
         try:
-            client = Client(self.url)
-            raw_result = client.service.GetOrders(
-                KEY1=self.key_1, 
-                KEY2=self.key_2, 
-                start_date=DATE, 
-                end_date=DATE
-            )
-            # Преобразование результата Zeep в словарь Python
-            json_str = json.dumps(serialize_object(raw_result), ensure_ascii=False, indent=4)
-            return json.loads(json_str)
-        except Exception as e:
-            raise RuntimeError(f"Ошибка при выполнении запроса к Rossko: {e}")
+            if any(self._cache):
+                yield from self._cache
+            else:
+                current_date = self.start_date
+                while current_date <= self.end_date:
+                    sleep(0.5)
+                    raw_orders = self._fetch_orders_for_date(current_date)
+                    for item in self.filter_successful_orders(raw_orders):
+                        self._cache.append(item)
+                        yield item
+                    current_date += timedelta(days=1)
+        except Exception as exc:
+            # Сброс кэша гарантирует корректную перезагрузку при следующем вызове
+            self._cache = None
+            print(f"Проблема: {exc}")
+            raise
 
-
-    def get_raw_orders(self) -> List[dict]:
-        """Получает список заказов из API."""
-        response = self._make_request()
-        if not response.get("success"):
-            raise AssertionError("Значение успешности запроса в ответе от Rossko = False")
-
-        orders_list = response.get("OrdersList", {}).get("Order")
-        if not orders_list:
-            raise AssertionError("Список заказов в ответе от Rossko пустой")
-        return orders_list
-
-
-    def filter_successful_orders(self, raw_orders: List[dict]) -> Dict[str, dict]:
+    def filter_successful_orders(self, raw_orders: List[dict]) -> tuple[Dict[str, dict]]:
         """
         Фильтрует заказы по статусу (успешные и возможные откаты).
         Возвращает словарь с уникальными товарами.
         """
         returned_items = {}
-        summa = 0.0
         
         for order in raw_orders:
             parts = order.get("parts", {}).get("part")
@@ -94,8 +111,8 @@ class RosskoAPI:
                 name = part["name"]
                 brand = part['brand']
                 code = part['partnumber']
-                price = std.price(part['price'])
-                count = std.count(part['count'])
+                price = std.numeric(part['price'])
+                count = std.numeric(part['count'])
 
                 # Статус -1 используется для обозначения проблем с брендом/кодом
                 status = int(part.get("status")) if brand and code else -1
@@ -105,14 +122,17 @@ class RosskoAPI:
                         returned_items[guid] = {"name": name, "firm": brand, "code": code, "count": count, "price": price}
                     else:
                         returned_items[guid]["count"] += count
-                    summa += count * price
                 elif 31 < status < 36:
-                    log_missing_data_error("Rossko", part, brand, code, status)
+                    log_missing_data_error("Rossko", part, brand, code, status)        
+        return tuple(returned_items.values())
+    
+    def get_sum(self) -> float:
+        summary = 0.0
+        for product in self:
+            print(product, flush=True)
+            summary += product["count"] * product["price"]
+        return float(summary)
         
-        if not returned_items:
-            raise AssertionError("После фильтрации не найдено подходящих заказов от Rossko")
-        
-        return summa, tuple(returned_items.values())
 
 
 # class ProfitLigaAPI:

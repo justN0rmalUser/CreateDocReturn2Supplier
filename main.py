@@ -1,6 +1,5 @@
 from back.get_data import main as Request
 from back.request_db import main as Update
-from back.update_format import main as Format 
 
 import sys
 import logging as log
@@ -13,6 +12,7 @@ def run():
     """Функция запуска"""
     # Получение данных с API
     try:
+        print("das")
         data = Request()
     except AssertionError:
         log.warning('Пустой ответ в модуле "get_data"')
