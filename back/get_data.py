@@ -28,8 +28,8 @@ def get_rossko_data(start=DATE_OFFSET, end=DATE_OFFSET):
 
         summary = 0.0
         for product in rossko_api:
-            summary += product["count"] * product["price"]
-                
+            summary += product["count"] * product["price"]  # type: ignore
+
         return (8880, round(summary, 2), rossko_api)
 
     except AssertionError as e:
@@ -80,8 +80,7 @@ def main():
     # profit_data = get_profit_data()
 
     # successful_results = [res for res in (rossko_data, ) if res is not None]
-    print(rossko_data[1], 'asd')
-    if rossko_data[1] == 0 or rossko_data is None:
+    if rossko_data is None or rossko_data[1] == 0:
         raise AssertionError("Ни один из источников данных не вернул успешный результат.")
-        
+
     return (rossko_data, None) # FIXME

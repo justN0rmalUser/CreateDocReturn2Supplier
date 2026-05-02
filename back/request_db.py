@@ -10,13 +10,13 @@ ERRDATA = logger(name="Errors", fpath="logs\\corrupt_data.log")
 
 def main(*, contractorHeader: Tuple[
     Tuple[
-        Literal[8880], 
-        float, 
+        Literal[8880],
+        float,
         Iterable
     ],
     Tuple[
-        Literal[8876], 
-        float, 
+        Literal[8876],
+        float,
         Iterable
     ] | None]):
 
@@ -33,10 +33,10 @@ def main(*, contractorHeader: Tuple[
 
     with transaction.start_transaction(type_api="high", read_only=False) as trans:
         for value in contractorHeader:
-            if value is None: 
+            if value is None:
                 continue
 
-            agent_id, summa, data = value 
+            agent_id, summa, data = value
 
             try:
                 LOG.debug("Старт цикла создания документов")
@@ -45,7 +45,7 @@ def main(*, contractorHeader: Tuple[
             except Exception as exc:
                 LOG.error(f"Ошибка создания документов; Ошибка: {exc}")
                 raise
-            
+
             try:
                 LOG.debug("Старт цикла заполнения документов")
                 trans.fill_document_out(

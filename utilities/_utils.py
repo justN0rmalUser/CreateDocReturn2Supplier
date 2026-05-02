@@ -36,10 +36,6 @@ def logger(*, name: str, fpath: Path | str):
     else:
         return abstract_logger
 
-def std(word: str) -> str:
-    if isinstance(word, str):
-        return word.upper().replace('-', '').replace(' ', '').replace('.', '').replace('/', '').replace(',', '').strip()
-    
 def get_config(path="config.ini"):
     cfg = configparser.ConfigParser()
     cfg.read(path)
