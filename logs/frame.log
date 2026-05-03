@@ -1,0 +1,744 @@
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:23:46>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:23:46>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:23:46>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:23:46>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176463, 'DOCUMENT_OUT': 72569, 'DOCUMENT_CARGO': 61238, 'DOCUMENT_OUT_HEADER': 74969, 'DOCUMENT_RETURN_PVD_DETAIL': 3350}
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 15:23:46] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:23:46] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 15:23:46] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 15:23:47] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:36:16>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:36:16>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:36:16>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:36:16>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176464, 'DOCUMENT_OUT': 72570, 'DOCUMENT_CARGO': 61239, 'DOCUMENT_OUT_HEADER': 74970, 'DOCUMENT_RETURN_PVD_DETAIL': 3351}
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 15:36:16] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:36:16] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 15:36:16] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:38:50>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:38:50>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:38:50>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 15:38:50>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176465, 'DOCUMENT_OUT': 72571, 'DOCUMENT_CARGO': 61240, 'DOCUMENT_OUT_HEADER': 74971, 'DOCUMENT_RETURN_PVD_DETAIL': 3352}
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 15:38:50] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='Болт шаровой опоры качающего рычага' raw_firm='GM' raw_code='94501323' raw_count=1.0 raw_price=270.16 name='болт шаровой опоры качающего рычага' count=1.0 price=270.16 shop_nom_ids=() firm_id=58 code='94501323'>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'Болт шаровой опоры качающего рычага', 'raw_firm': 'GM', 'raw_code': '94501323', 'raw_count': 1.0, 'raw_price': 270.16, 'name': 'болт шаровой опоры качающего рычага', 'count': 1.0, 'price': 270.16, 'shop_nom_ids': (), 'firm_id': 58, 'code': '94501323'}>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 15:38:50] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 15:38:50] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 16:23:43>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 16:23:43>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 16:23:43>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 16:23:43>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176470, 'DOCUMENT_OUT': 72573, 'DOCUMENT_CARGO': 61242, 'DOCUMENT_OUT_HEADER': 74973, 'DOCUMENT_RETURN_PVD_DETAIL': 3353}
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 16:23:43] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='Болт шаровой опоры качающего рычага' raw_firm='GM' raw_code='94501323' raw_count=1.0 raw_price=270.16 name='болт шаровой опоры качающего рычага' count=1.0 price=270.16 shop_nom_ids=() firm_id=58 code='94501323'>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'Болт шаровой опоры качающего рычага', 'raw_firm': 'GM', 'raw_code': '94501323', 'raw_count': 1.0, 'raw_price': 270.16, 'name': 'болт шаровой опоры качающего рычага', 'count': 1.0, 'price': 270.16, 'shop_nom_ids': (), 'firm_id': 58, 'code': '94501323'}>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 16:23:43] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 16:23:43] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:18:31>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:18:31>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:18:31>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:18:31>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176483, 'DOCUMENT_OUT': 72580, 'DOCUMENT_CARGO': 61247, 'DOCUMENT_OUT_HEADER': 74980, 'DOCUMENT_RETURN_PVD_DETAIL': 3354}
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 17:18:31] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='Болт шаровой опоры качающего рычага' raw_firm='GM' raw_code='94501323' raw_count=1.0 raw_price=270.16 name='болт шаровой опоры качающего рычага' count=1.0 price=270.16 shop_nom_ids=() firm_id=58 code='94501323'>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'Болт шаровой опоры качающего рычага', 'raw_firm': 'GM', 'raw_code': '94501323', 'raw_count': 1.0, 'raw_price': 270.16, 'name': 'болт шаровой опоры качающего рычага', 'count': 1.0, 'price': 270.16, 'shop_nom_ids': (), 'firm_id': 58, 'code': '94501323'}>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 17:18:31] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 17:18:31] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:22:58>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:22:58>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:22:58>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:22:58>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176484, 'DOCUMENT_OUT': 72581, 'DOCUMENT_CARGO': 61248, 'DOCUMENT_OUT_HEADER': 74981, 'DOCUMENT_RETURN_PVD_DETAIL': 3355}
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 17:22:58] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='Болт шаровой опоры качающего рычага' raw_firm='GM' raw_code='94501323' raw_count=1.0 raw_price=270.16 name='болт шаровой опоры качающего рычага' count=1.0 price=270.16 shop_nom_ids=(61108,) firm_id=58 code='94501323'>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'Болт шаровой опоры качающего рычага', 'raw_firm': 'GM', 'raw_code': '94501323', 'raw_count': 1.0, 'raw_price': 270.16, 'name': 'болт шаровой опоры качающего рычага', 'count': 1.0, 'price': 270.16, 'shop_nom_ids': (61108,), 'firm_id': 58, 'code': '94501323'}>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 17:22:58] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: WARNING | Выброшена ошибка, происходит откат действий!
+[2026-05-03 17:22:58] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: DEBUG | Инициализация экземпляра объекта <Connection>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <__create_connect>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: INFO | Подключение к базе данных.
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: INFO | Подключение установлено!
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: DEBUG | Возврат значения
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: DEBUG | Старт функции <transaction>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.connect>: DEBUG | Создание экземпляра объекта <Transaction>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <Transaction>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__create_transact>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: INFO | Создание транзакции.
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: INFO | Транзакция создана без ошибок!
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <start_transaction>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: INFO | Тип API: <high>.
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionHigh>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Инициализация экземпляра объекта <TransactionLow>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Инициализация экземпляра объекта <TransactionSession>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__enter__>
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Вход в контекст.
+[2026-05-03 17:25:02] <autodealerAPI.core.connection.transactions>: DEBUG | Возврат значения
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <create_document_out>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Создание основных документов в системе: <DOCUMENT_REGISTRY>, <DOCUMENT_OUT>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:25:02>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:25:02>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:25:02>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_cargo>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_CARGO>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_cargo>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание таймштампа: <2026-05-03 17:25:02>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_document_return_pvd_detail>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Создание документа: <DOCUMENT_RETURN_PVD_DETAIL>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_document_return_pvd_detail>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <create_document_out>: {'DOCUMENT_REGISTRY': 176485, 'DOCUMENT_OUT': 72582, 'DOCUMENT_CARGO': 61249, 'DOCUMENT_OUT_HEADER': 74982, 'DOCUMENT_RETURN_PVD_DETAIL': 3356}
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <fill_document_out>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'Болт шаровой опоры качающего рычага', 'firm': 'GM', 'code': '94501323', 'count': 1, 'price': 270.16}>
+[2026-05-03 17:25:02] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='Болт шаровой опоры качающего рычага' raw_firm='GM' raw_code='94501323' raw_count=1.0 raw_price=270.16 name='болт шаровой опоры качающего рычага' count=1.0 price=270.16 shop_nom_ids=(61108,) firm_id=58 code='94501323'>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'Болт шаровой опоры качающего рычага', 'raw_firm': 'GM', 'raw_code': '94501323', 'raw_count': 1.0, 'raw_price': 270.16, 'name': 'болт шаровой опоры качающего рычага', 'count': 1.0, 'price': 270.16, 'shop_nom_ids': (61108,), 'firm_id': 58, 'code': '94501323'}>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Поиск наиболее подходящих GOODS_IN_ID по SHOP_NOMECLATURE_ID
+[2026-05-03 17:25:02] <autodealerAPI.core.methods.service>: INFO | Поиск GOODS_IN_ID, которые были реализованны/возвращены по SHOP_NOMECLATURE_ID
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | GOODS_IN_ID найдены: ((97091, 61108, '94501323', 58),)
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <_get_goodsin>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Проверка: <(97091, 61108, '94501323', 58)>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_count_of_free_cells>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Количество свободных слотов: <1>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <_count_of_free_cells>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Добавление: <{'goods_in_id': 97091, 'shop_nom_id': 61108, 'count': 1.0, 'price': 270.16, 'is_sold_out': True}>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Завершение цикла подбора
+[2026-05-03 17:25:03] <autodealerAPI.types.builder>: DEBUG | Валидация модели: <{'name': 'MOTO Набор для обслуживания фильтра нулевого сопротивления, 335/500 мл', 'firm': 'LAVR', 'code': 'Ln7777', 'count': 1, 'price': 781.0}>
+[2026-05-03 17:25:03] <autodealerAPI.types.builder>: INFO | Модель валидирована, результат: <raw_name='MOTO Набор для обслуживания фильтра нулевого сопротивления, 335/500 мл' raw_firm='LAVR' raw_code='Ln7777' raw_count=1.0 raw_price=781.0 name='moto набор для обслуживания фильтра нулевого сопротивления, 335500 мл' count=1.0 price=781.0 shop_nom_ids=(61107,) firm_id=343 code='Ln7777'>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Старт итерации
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Текущие данные итерации: <{'raw_name': 'MOTO Набор для обслуживания фильтра нулевого сопротивления, 335/500 мл', 'raw_firm': 'LAVR', 'raw_code': 'Ln7777', 'raw_count': 1.0, 'raw_price': 781.0, 'name': 'moto набор для обслуживания фильтра нулевого сопротивления, 335500 мл', 'count': 1.0, 'price': 781.0, 'shop_nom_ids': (61107,), 'firm_id': 343, 'code': 'Ln7777'}>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_get_goodsin>
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Поиск наиболее подходящих GOODS_IN_ID по SHOP_NOMECLATURE_ID
+[2026-05-03 17:25:03] <autodealerAPI.core.methods.service>: INFO | Поиск GOODS_IN_ID, которые были реализованны/возвращены по SHOP_NOMECLATURE_ID
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | GOODS_IN_ID найдены: ((97090, 61107, 'Ln7777', 343),)
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <_get_goodsin>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Проверка: <(97090, 61107, 'Ln7777', 343)>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <_count_of_free_cells>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Создание курсора
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Количество свободных слотов: <1>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <_count_of_free_cells>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Добавление: <{'goods_in_id': 97090, 'shop_nom_id': 61107, 'count': 1.0, 'price': 781.0, 'is_sold_out': True}>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Завершение цикла подбора
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Старт создания записей в базе данных
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_goods_out>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_goods_out>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Документ добавлен: <567342>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: INFO | Обновление <IS_SALED> для записи
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <load>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Поиск существующей записи
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <update_fields>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <update_fields>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Изменение аттрибутов
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Конец функции <update_fields>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Старт функции <new_goods_out>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <new_goods_out>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <new>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <_gen_id>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Создание нового индекса
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Запрос в базу данных на получения нужного индекса
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <_gen_id>
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Установка корректного первичного ключа
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: INFO | Создание записи
+[2026-05-03 17:25:04] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <new>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.service>: INFO | Документ добавлен: <567343>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.service>: INFO | Обновление <IS_SALED> для записи
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <load>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: INFO | Поиск существующей записи
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: INFO | Изменение аттрибутов
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Конец функции <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.service>: INFO | Установка статуса готовности для <DOCUMENT_OUT_HEADER>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <load>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Инициализация экземпляра объекта <TableRow>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: INFO | Поиск существующей записи
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Возврат значений <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Старт функции <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: INFO | Изменение аттрибутов
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.table_api>: DEBUG | Конец функции <update_fields>
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.service>: INFO | Цикл внесения товаров пройден успешно.
+[2026-05-03 17:25:05] <autodealerAPI.core.methods.service>: DEBUG | Возврат значений <fill_document_out>
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.transactions>: DEBUG | Старт функции <__exit__>
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.transactions>: INFO | Программа завершена без "исключений"
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.transactions>: INFO | Коммит по параметру пользователя
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.transactions>: INFO | Закрытие транзакции
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.transactions>: DEBUG | Функция <__exit__> завершена
+[2026-05-03 17:25:05] <autodealerAPI.core.connection.connect>: INFO | Подключение закрыто.

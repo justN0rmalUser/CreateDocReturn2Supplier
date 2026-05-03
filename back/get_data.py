@@ -76,7 +76,7 @@ def main():
     end = date.fromisoformat(CFG["DEFAULT"]["end_date"])
     print(start, end)
 
-    rossko_data = get_rossko_data(start, end)
+    rossko_data = get_rossko_data()
     # profit_data = get_profit_data()
 
     # successful_results = [res for res in (rossko_data, ) if res is not None]

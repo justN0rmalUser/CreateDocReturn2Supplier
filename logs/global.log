@@ -9072,3 +9072,78 @@ INFO:Request:Документы созданы и сохранены
 DEBUG:Request:Старт цикла заполнения документов
 ERROR:Request:Ошибка заполнения документов; Ошибка: Такой товар не найден: None
 CRITICAL:root:Непредвиденная ошибка: Такой товар не найден: None
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: Такой товар не найден: None
+CRITICAL:root:Непредвиденная ошибка: Такой товар не найден: None
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: Такой товар не найден: None
+CRITICAL:root:Непредвиденная ошибка: Такой товар не найден: None
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+CRITICAL:root:Непредвиденная ошибка: 'Connection' object has no attribute '__qualname__'
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: 'Product' object has no attribute 'shop_nom_id'
+CRITICAL:root:Непредвиденная ошибка: 'Product' object has no attribute 'shop_nom_id'
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: 'Product' object has no attribute 'shop_nom_id'
+CRITICAL:root:Непредвиденная ошибка: 'Product' object has no attribute 'shop_nom_id'
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: tuple index out of range
+CRITICAL:root:Непредвиденная ошибка: tuple index out of range
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: tuple index out of range
+CRITICAL:root:Непредвиденная ошибка: tuple index out of range
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: tuple index out of range
+CRITICAL:root:Непредвиденная ошибка: tuple index out of range
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+ERROR:Request:Ошибка заполнения документов; Ошибка: can only concatenate str (not "int") to str
+CRITICAL:root:Непредвиденная ошибка: can only concatenate str (not "int") to str
+DEBUG:Getter:ROSSKO: Инициализация класса
+DEBUG:Getter:ROSSKO: Запрос на сервер
+INFO:Getter:ROSSKO: Запрос успешен, итератор получен
+DEBUG:Request:Старт цикла создания документов
+INFO:Request:Документы созданы и сохранены
+DEBUG:Request:Старт цикла заполнения документов
+INFO:Request:Документы заполнены и сохранены

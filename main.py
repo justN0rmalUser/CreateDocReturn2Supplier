@@ -12,7 +12,6 @@ def run():
     """Функция запуска"""
     # Получение данных с API
     try:
-        print("das")
         data = Request()
     except AssertionError:
         log.warning('Пустой ответ в модуле "get_data"')

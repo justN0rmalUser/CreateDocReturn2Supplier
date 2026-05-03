@@ -1,11 +1,11 @@
-from autodealerAPI import Connection, DatabaseConfig
+from autodealerAPI import Connection, DatabaseConfig, setup_logging
 from typing import Literal, Tuple, Iterable
-from pprint import pprint
 from utilities._utils import logger
 
 
 LOG = logger(name="Request", fpath="logs\\req.log")
 ERRDATA = logger(name="Errors", fpath="logs\\corrupt_data.log")
+setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\logs\\frame.log")
 
 
 def main(*, contractorHeader: Tuple[
