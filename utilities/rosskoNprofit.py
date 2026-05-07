@@ -61,12 +61,15 @@ class RosskoAPI:
         )
 
         data = serialize_object(raw_response)
-        if not data.get("success"):
-            raise RuntimeError("API Rossko вернул статус success=False")
+        if not data.get("success") and data.get("message") != "Ничего не найдено":
+            raise RuntimeError(f"API Rossko вернул статус False, ошибка: <{data.get("message")}>")
             
-        orders = data.get("OrdersList", {}).get("Order")
+        orders = data.get("OrdersList", {})
+
         if not orders:
             return []
+        
+        orders = orders.get("Order", {})
         return orders if isinstance(orders, list) else [orders]
 
     def __iter__(self) -> Iterator[Dict[str, str | int | float]]:
@@ -79,10 +82,15 @@ class RosskoAPI:
                 while current_date <= self.end_date:
                     sleep(0.5)
                     raw_orders = self._fetch_orders_for_date(current_date)
+
+                    current_date += timedelta(days=1)
+
+                    if not raw_orders:
+                        continue
+
                     for item in self.filter_successful_orders(raw_orders):
                         self._cache.append(item)
                         yield item
-                    current_date += timedelta(days=1)
         except Exception as exc:
             # Сброс кэша гарантирует корректную перезагрузку при следующем вызове
             self._cache = None
