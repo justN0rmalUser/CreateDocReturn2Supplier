@@ -9,12 +9,13 @@ from zeep.helpers import serialize_object
 from time import sleep
 
 from autodealerAPI.utils.functions.standard import std
-from ._utils import get_config
+from ._utils import get_config, logger
 
 cfg = get_config()
 DATE = date.today() - timedelta(days=int(cfg["DEFAULT"]["delta_days"]))
 
 # Настройка логгера для ошибок данных
+GET_DATA_LOGGER = logger(name="Getter", fpath="logs/get.log")
 ERRDATA_LOGGER = logging.getLogger("Errors")
 ERRDATA_LOGGER.addHandler(logging.FileHandler("logs/corrupt_data.log", encoding="utf-8"))
 ERRDATA_LOGGER.setLevel(logging.WARNING)
@@ -41,7 +42,9 @@ class RosskoAPI:
     """
     def __init__(self, url: str, key_1: str, key_2: str, start_date: date, end_date: date):
         if start_date > end_date:
-            raise ValueError("Стартовая дата больше конечной")
+            GET_DATA_LOGGER.error(err := "Стартовая дата больше конечной")
+            raise ValueError(err)
+        GET_DATA_LOGGER.info(f"Выборка даты: {start_date, end_date}")
         self.url = url
         self.key_1 = key_1
         self.key_2 = key_2
@@ -52,15 +55,18 @@ class RosskoAPI:
     def _fetch_orders_for_date(self, current_date: date) -> List[Dict[str, str | int | float]]:
         """Выполняет SOAP-запрос и возвращает структурированный список заказов."""
         client = Client(self.url)
+        GET_DATA_LOGGER.info(f"Запрос на дату: {current_date}")
         raw_response = client.service.GetOrders(
             KEY1=self.key_1, 
             KEY2=self.key_2, 
             start_date=current_date, 
             end_date=current_date, 
-            limit = 100
+            limit = 200
         )
 
         data = serialize_object(raw_response)
+        GET_DATA_LOGGER.info(f"Статус запроса: {data.get("success")}; Информация: {data.get("message")}")
+
         if not data.get("success") and data.get("message") != "Ничего не найдено":
             raise RuntimeError(f"API Rossko вернул статус False, ошибка: <{data.get("message")}>")
             
@@ -76,9 +82,11 @@ class RosskoAPI:
         """Реализует ленивую загрузку с однократным кэшированием."""
         try:
             if any(self._cache):
+                GET_DATA_LOGGER.info("Итерация с кэша")
                 yield from self._cache
             else:
                 current_date = self.start_date
+                GET_DATA_LOGGER.info("Старт запросов")
                 while current_date <= self.end_date:
                     sleep(0.5)
                     raw_orders = self._fetch_orders_for_date(current_date)
@@ -86,14 +94,17 @@ class RosskoAPI:
                     current_date += timedelta(days=1)
 
                     if not raw_orders:
+                        GET_DATA_LOGGER.warning("Ответ пустой!")
                         continue
 
                     for item in self.filter_successful_orders(raw_orders):
+                        GET_DATA_LOGGER.info(f"Объект: {item}")
                         self._cache.append(item)
                         yield item
         except Exception as exc:
             # Сброс кэша гарантирует корректную перезагрузку при следующем вызове
             self._cache = None
+            GET_DATA_LOGGER.critical(f"Неизвестная проблема: {exc}")
             print(f"Проблема: {exc}")
             raise
 
@@ -114,6 +125,7 @@ class RosskoAPI:
                 parts = [parts]
 
             for part in parts:
+                GET_DATA_LOGGER.info(f"Полученные данные: {part}")
                 guid = part["guid"]
                 name = part["name"]
                 brand = part['brand']

@@ -1,3 +1,5 @@
+from logging import INFO
+
 from autodealerAPI import Connection, DatabaseConfig, setup_logging
 from typing import Literal, Tuple, Iterable
 from utilities._utils import logger, get_config
@@ -5,7 +7,7 @@ from utilities._utils import logger, get_config
 
 LOG = logger(name="Request", fpath="logs\\req.log")
 ERRDATA = logger(name="Errors", fpath="logs\\corrupt_data.log")
-setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\logs\\frame.log")
+setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\logs\\frame.log", level=INFO)
 CFG = get_config()
 
 
