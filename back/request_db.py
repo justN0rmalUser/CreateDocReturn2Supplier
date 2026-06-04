@@ -14,12 +14,10 @@ CFG = get_config()
 def main(*, contractorHeader: Tuple[
     Tuple[
         Literal[8880],
-        float,
         Iterable
     ],
     Tuple[
         Literal[8876],
-        float,
         Iterable
     ] | None]):
 
@@ -39,11 +37,11 @@ def main(*, contractorHeader: Tuple[
             if value is None:
                 continue
 
-            agent_id, summa, data = value
+            agent_id, data = value
 
             try:
                 LOG.debug("Старт цикла создания документов")
-                docs_pks = trans.create_document_out(agent_id, summa)
+                docs_pks = trans.create_document_out(agent_id, 0)
                 LOG.info("Документы созданы и сохранены")
             except Exception as exc:
                 LOG.error(f"Ошибка создания документов; Ошибка: {exc}")
