@@ -19,7 +19,7 @@ def run():
     except Exception as exc:
         log.critical(f'Критическая ошибка в модуле "get_data": {exc}')
         sys.exit(1)
-    
+
     # Отправка данных в базу данных
     try:
         Update(contractorHeader=data) # True если успешно

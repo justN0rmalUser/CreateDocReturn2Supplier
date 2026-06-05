@@ -9247,3 +9247,19 @@
 [2026-05-08 18:21:34] <Getter>: INFO | Объект: {'name': 'Втулка стабилизатора | перед |', 'firm': 'LYNXauto', 'code': 'C9704', 'count': 2, 'price': 204.0}
 [2026-05-08 18:21:34] <Getter>: INFO | Итерация с кэша
 [2026-05-08 18:21:34] <Getter>: INFO | Итерация с кэша
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:12:11] <Getter>: CRITICAL | ROSSKO | Неизвестная ошибка: rossko init failed
+[2026-06-05 16:12:11] <Getter>: CRITICAL | ROSSKO | Неизвестная ошибка: rossko init failed
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: DEBUG | ROSSKO: Инициализация класса
+[2026-06-05 16:37:18] <Getter>: CRITICAL | ROSSKO | Неизвестная ошибка: rossko init failed
+[2026-06-05 16:37:18] <Getter>: CRITICAL | ROSSKO | Неизвестная ошибка: rossko init failed

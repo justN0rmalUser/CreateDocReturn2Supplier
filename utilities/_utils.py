@@ -32,8 +32,9 @@ def logger(*, name: str, fpath: Path | str):
         abstract_logger = log.getLogger(name)
         abstract_logger.setLevel(log.DEBUG)
 
-        abstract_logger_hand = log.FileHandler(filename=fpath, encoding='utf-8')
-        abstract_logger_hand.setFormatter(log.Formatter('[%(asctime)s] <%(name)s>: %(levelname)s | %(message)s', datefmt="%Y-%m-%d %H:%M:%S"))
+        if abstract_logger_hand := log.getHandlerByName(name) is None:
+            abstract_logger_hand = log.FileHandler(filename=fpath, encoding='utf-8')
+            abstract_logger_hand.setFormatter(log.Formatter('[%(asctime)s] <%(name)s>: %(levelname)s | %(message)s', datefmt="%Y-%m-%d %H:%M:%S"))
 
         abstract_logger.addHandler(abstract_logger_hand)
     except Exception as exc:

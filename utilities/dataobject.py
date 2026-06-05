@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Annotated, Iterator, TypeAlias, Self
-from typing_extensions import TypedDict
 import pickle
 
 import pydantic
@@ -13,22 +12,19 @@ from ._utils import validate_date_key, isodate
 DateKey: TypeAlias = Annotated[str, pydantic.AfterValidator(validate_date_key)]
 OrderID: TypeAlias = int
 Guid: TypeAlias = str
-class GuidInner(TypedDict):
-    status: int
-    path: tuple[int, int]
 
 
 ProductData: TypeAlias = dict[
     DateKey, dict[
         OrderID, dict[
-            Guid, GuidInner
+            int, tuple[Guid, int, tuple[int, int]]
         ]
     ]
 ]
 
 PDATA_ADAPTER = pydantic.TypeAdapter(ProductData)
 
-ACCEPTED_VALUES = (
+ROSSKO_ACCEPTED_VALUES = (
     list(range(1, 4)) +
     list(range(5, 10)) +
     list(range(31, 37))
@@ -67,28 +63,12 @@ class ProductList:
 
                 plist.add({
                     cur_date: {
-                            order_id: {guid: {"status": status, "path": (order_idx, part_idx)}}
+                        order_id: {
+                            part_idx: (guid, status, (order_idx, part_idx))
                         }
                     }
-                )
+                })
         return plist
-
-    @staticmethod
-    def to_plist_format(data: list[dict]) -> dict:
-        result = {}
-        for order in data:
-            cur_date: str = isodate(order["created_date"], "%d.%m.%Y %H:%M:%S")
-            if not result.get(cur_date):
-                result[cur_date] = {}
-
-            order_id: int = int(order["id"])
-            if not result.get(order_id):
-                result[cur_date][order_id] = {}
-
-            for part in order["parts"]["part"]:
-                guid = part["guid"]
-                result[cur_date][order_id][guid] = part
-        return result
 
     @property
     def data(self) -> ProductData:
@@ -106,7 +86,7 @@ class ProductList:
         return max(self.data) if self.data != {} else None
 
     @property
-    def products(self) -> Iterator[tuple[DateKey, OrderID, Guid, int, tuple[int, int]]]:
+    def products(self) -> Iterator[tuple[DateKey, OrderID, int, Guid, int, tuple[int, int]]]:
         """Возвращает итератор на все товары с полным путем
 
         Yields
@@ -118,19 +98,18 @@ class ProductList:
         # Итерация по всем значениям
         for day, day_dict in self.data.items():
             for order, order_dict in day_dict.items():
-                for guid, guid_dict in order_dict.items():
-                    status = guid_dict["status"]
-                    path = guid_dict["path"]
-                    yield day, order, guid, status, path
+                for item_idx, item in order_dict.items():
+                    guid, status, path = item
+                    yield day, order, item_idx, guid, status, path
 
     def _update(
         self,
         day: DateKey,
         order: int,
+        idx_item: int,
         guid: str,
         status: int,
-        path: tuple[int, int],
-        *,  must_overwrite: bool = True
+        path: tuple[int, int]
     ) -> None:
         """Добавление нового товара в список
 
@@ -146,8 +125,6 @@ class ProductList:
             Статус т-ра; он создается
         **path** : `tuple[int, int]`
             Путь т-ра относительно ответа сервера; он создается
-        **must_overwrite** : `Optional[bool]`
-            Перезаписывать ли статус товара, by default True
         """
         if self.data.get(day) is None:
             self._data[day] = {}
@@ -155,11 +132,7 @@ class ProductList:
         if self.data[day].get(order) is None:
             self._data[day][order] = {}
 
-        if must_overwrite:
-            self._data[day][order][guid] = GuidInner(status=status, path=path)
-        else:
-            if self.data[day][order].get(guid) is None:
-                self._data[day][order][guid] = GuidInner(status=status, path=path)
+        self._data[day][order][idx_item] = (guid, status, path)
 
     def add(self, data: ProductList | ProductData) -> None:
         """Слияние списков
@@ -175,8 +148,8 @@ class ProductList:
             else ProductList(data)
         )
 
-        for day, order, guid, status, path in data.products:
-            self._update(day, order, guid, status, path)
+        for inner in data.products:
+            self._update(*inner)
 
     def __add__(self, other):
         self.add(other)
@@ -189,15 +162,15 @@ class ProductList:
         self,
         old_product: ProductList,
         *,
-        allow_statuses: tuple[int] | tuple[int, ...] = (31, 36)
+        allow_statuses: tuple[int] | tuple[int, ...]
     ) -> Iterator[tuple[DateKey, OrderID, Guid, tuple[int, int], tuple[int, int]]]:
         """Находит товары, которые поменяли свой статус
 
         Parameters
         ----------
-        **product_list** : `ProductList`
+        **old_product** : `ProductList`
             Список товаров за предыдущий день
-        **valid_statuses** : `tuple[int]`
+        **allow_statuses** : `tuple[int]`
             Список допустимых статусов, по умолчанию
 
         Yields
@@ -225,25 +198,23 @@ class ProductList:
                 raise ValueError("Максимальный день прошлого ProductList > максимального нынешнего")
 
         # Проверка статусов
-        if allow_statuses != (31, 36):
-            if not allow_statuses:
-                raise ValueError("Нет вообще никаких статусов")
-            if not set(allow_statuses).issubset(ACCEPTED_VALUES):
-                raise ValueError("Недопустимые значения")
+        if not allow_statuses:
+            raise ValueError("Нет вообще никаких статусов")
+        if not set(allow_statuses).issubset(ROSSKO_ACCEPTED_VALUES):
+            raise ValueError("Недопустимые значения")
 
         # Перебор подходящих товаров
         for product in old_product.products:
-            day, order, guid, old_status, _ = product
+            day, order, item_idx, old_guid, old_status, _ = product
 
             if old_product.min_day != day:
-                _guid_inner = self.data[day][order][guid]
-
-                new_status = _guid_inner["status"]
-                path = _guid_inner["path"]
-
-                statuses = (old_status, new_status)
+                guid, new_status, path = self.data[day][order][item_idx]
+                if guid != old_guid:
+                    raise ValueError(f"Товар не один и тот же: {day, order, old_guid} | {guid}")
             else:
                 continue
+
+            statuses = (old_status, new_status)
 
             if old_status != new_status and new_status in allow_statuses:
                 yield day, order, guid, statuses, path
@@ -310,4 +281,7 @@ def read_plist(path: Path | str) -> ProductList:
         raise ValueError("Расширение файла должно быть .pkl")
 
     with open(path, 'rb') as fpkl:
-        return pickle.load(fpkl)
+        obj = pickle.load(fpkl)
+        if not isinstance(obj, ProductList):
+            raise TypeError("Объект не является \"ProductList\"")
+        return obj

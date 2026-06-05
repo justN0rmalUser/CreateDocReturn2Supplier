@@ -4,7 +4,7 @@ from pathlib import Path
 from utilities.rosskoNprofit import RosskoAPI#, ProfitLigaAPI
 from utilities._utils import isodate, logger, get_config, day_of_week
 from utilities.dataobject import ProductList, write_plist, read_plist
-from functools import partial
+
 
 # --- Настройка логгирования ---
 GET_DATA_LOGGER = logger(name="Getter", fpath="logs/get.log")
@@ -51,7 +51,7 @@ def get_rossko_data(start_date: date, end_date: date):
         data: list[dict[str, float | str]] = []
 
         # Фильтрация, перепроверка данных
-        for created_date, order_id, guid, statuses, (idx_order, idx_product) in new_data.difference(old_data):
+        for created_date, order_id, guid, statuses, (idx_order, idx_product) in new_data.difference(old_data, allow_statuses=(31, 36)):
             if statuses == (31, 36):
                 continue
 
@@ -79,13 +79,14 @@ def get_rossko_data(start_date: date, end_date: date):
                     firm=product["brand"],
                     code=product["partnumber"],
                     count=float(product["count"]),
-                    price=float(product["count"])
+                    price=float(product["price"])
                 )
             )
 
         # Возврать ID агента и итератора готовых данных
-        return (8880, iter(data))
-
+        if data:
+            return (8880, iter(data))
+        raise AssertionError
 
 def main():
     """

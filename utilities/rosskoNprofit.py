@@ -65,8 +65,9 @@ class RosskoAPI:
 
         if not data.get("success"):
             if data.get("message") != "Ничего не найдено":
-                raise RuntimeError("API Rossko вернул статус False, ошибка: <%s>",
-                                   data.get('message'))
+                raise RuntimeError(f"API Rossko вернул статус False, ошибка: <{data.get('message')}>")
+            else:
+                raise AssertionError("Ничего не найдено")
 
         orders = data.get("OrdersList", {}).get("Order", [])
         return orders if isinstance(orders, list) else [orders]
