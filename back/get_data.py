@@ -29,20 +29,24 @@ def get_rossko_data(start_date: date, end_date: date):
 
     try:
         # Получение товаров за весь промежуток
+        GET_DATA_LOGGER.info('ROSSKO: Получение товаров за весь промежуток')
         raw_products = rossko_api.get_orders(
             start=start_date.isoformat(),
             end=end_date.isoformat()
         )
 
         # Пути к pkl данным
+        GET_DATA_LOGGER.debug('ROSSKO: Формирование путей для данных')
         _yesterday = Path(r"data\temp") / (day_of_week(-1)+'.pkl')
         _today = Path(r"data\temp") / (day_of_week()+'.pkl')
 
         # Запись данных за сегодняшний день
+        GET_DATA_LOGGER.info('ROSSKO: Формирование данных для класса данных')
         new_data = ProductList.from_rossko(raw_products)
         write_plist(new_data, _today)
 
         # Получение данных за предыдущий
+        GET_DATA_LOGGER.info('ROSSKO: Получение данных за вчерашний день')
         old_data: ProductList = read_plist(_yesterday)
     except Exception as e:
         GET_DATA_LOGGER.critical("ROSSKO | Неизвестная ошибка: %s", e)
@@ -51,42 +55,44 @@ def get_rossko_data(start_date: date, end_date: date):
         data: list[dict[str, float | str]] = []
 
         # Фильтрация, перепроверка данных
-        for created_date, order_id, guid, statuses, (idx_order, idx_product) in new_data.difference(old_data, allow_statuses=(31, 36)):
+        GET_DATA_LOGGER.info('ROSSKO: Итерация и сверка результатов')
+        for created_date, order_id, guid, statuses, (order_idx, product_idx) in new_data.difference(old_data, allow_statuses=(31, 36)):
             if statuses == (31, 36):
                 continue
 
-            order: dict = raw_products[idx_order]
+            raw_order: dict = raw_products[order_idx]
 
-            old_created_date: str = isodate(order["created_date"], "%d.%m.%Y %H:%M:%S")
+            old_created_date: str = isodate(raw_order["created_date"], "%d.%m.%Y %H:%M:%S")
             if old_created_date != created_date:
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | Дата не соответствует заявленной (raw: {old_created_date}; cls: {created_date})")
                 raise ValueError(err)
 
-            old_order_id: int = order["id"]
+            old_order_id: int = raw_order["id"]
             if old_order_id != order_id:
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | ID заказа не соответствует заявленной (raw: {old_order_id}; cls: {order_id})")
                 raise ValueError(err)
 
-            product = order["parts"]["part"][idx_product]
+            raw_product: dict = raw_order["parts"]["part"][product_idx]
 
-            old_guid: str = product["guid"]
+            old_guid: str = raw_product["guid"]
             if old_guid != guid:
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | ID товара не соответствует заявленной (raw: {old_guid}; cls: {guid})")
                 raise ValueError(err)
 
-            data.append(dict(
-                    name=product["name"],
-                    firm=product["brand"],
-                    code=product["partnumber"],
-                    count=float(product["count"]),
-                    price=float(product["price"])
+            data.append(good := dict(
+                    name=raw_product["name"],
+                    firm=raw_product["brand"],
+                    code=raw_product["partnumber"],
+                    count=float(raw_product["count"]),
+                    price=float(raw_product["price"])
                 )
             )
+            GET_DATA_LOGGER.info(f'ROSSKO: Добавлен товар <{good}>')
 
         # Возврать ID агента и итератора готовых данных
         if data:
             return (8880, iter(data))
-        raise AssertionError
+        return None
 
 def main():
     """
