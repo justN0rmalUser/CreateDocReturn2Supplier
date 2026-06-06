@@ -1,13 +1,14 @@
 # utilities/rosskoNprofit.py
 from datetime import date, timedelta, datetime
-from typing import Dict, List, Optional, Literal, Iterator, OrderedDict
+from typing import Dict, List, Optional, Literal, Iterator, OrderedDict, overload
 from time import sleep
 
+import requests 
 from zeep import Client
 from zeep.helpers import serialize_object
 from autodealerAPI.utils.functions.standard import std
 
-from ._utils import get_config, logger, split_iso_date_range
+from ._utils import get_config, logger, split_iso_date_range, isodate
 
 
 cfg = get_config()
@@ -60,7 +61,7 @@ class RosskoAPI:
         )
 
         data = serialize_object(raw_response)
-        GET_DATA_LOGGER.info("Статус запроса: %s; Информация: %s",
+        GET_DATA_LOGGER.info("Статус запроса: %s; Информация: %s;",
                              data.get('success'), data.get('message'))
 
         if not data.get("success"):
@@ -70,6 +71,7 @@ class RosskoAPI:
                 raise AssertionError("Ничего не найдено")
 
         orders = data.get("OrdersList", {}).get("Order", [])
+        GET_DATA_LOGGER.debug("Длина ответа: %i", len(orders))
         return orders if isinstance(orders, list) else [orders]
 
     def get_orders(
@@ -82,9 +84,9 @@ class RosskoAPI:
         Parameters
         ----------
         **start** : `str`
-            iso дата
+            Дата, старт выборки заказов
         **end** : `str`
-            iso дата
+            Дата, конец выборки заказов
 
         Returns
         -------
@@ -97,7 +99,8 @@ class RosskoAPI:
                 start,
                 end
             )
-            if len(answer) == 500 and start != end:
+            if len(answer) >= 495 and start != end:
+                GET_DATA_LOGGER.info("Ответ слишком большой, дробление запроса")
                 raise ValueError
         except ValueError:
             first_half, second_half = split_iso_date_range(start, end)
@@ -109,135 +112,103 @@ class RosskoAPI:
         return result
 
 
-# class ProfitLigaAPI:
-#     """
-#     Класс для взаимодействия с API Profit Liga.
-#     Предоставляет методы для получения и фильтрации заказов.
-#     """
-#     def __init__(self, url: str, api_key: str):
-#         self.url = url
-#         self.api_key = api_key
+class ProfitLigaAPI:
+    """
+    Класс для взаимодействия с API Profit Liga.
+    Предоставляет методы для получения и фильтрации заказов.
+    """
+    def __init__(self, url: str, api_key: str, start: str, end: str):
+        self.url = url
+        self.api_key = api_key
+        self.start_date = start
+        self.end_date = end
 
-#     def _make_request(self, page_num: int) -> dict:
-#         """Выполняет GET-запрос к API Profit Liga."""
-#         params = {"secret": self.api_key, "page": page_num}
-#         try:
-#             response = requests.get(self.url, params=params)
-#             response.raise_for_status()
-#             return response.json()
-#         except requests.RequestException as e:
-#             raise RuntimeError(f"Ошибка при выполнении запроса к Profit Liga: {e}")
+    @overload
+    def _make_request(self, page_num: int) -> tuple[int, list[dict]]: ...
+    @overload
+    def _make_request(self, page_num: int, *, with_pages: bool) -> tuple[int, list[dict], int]: ...
 
+    def _make_request(self, page_num: int, *, with_pages: bool=False) -> tuple[int, list[dict]] | tuple[int, list[dict], int]:
+        """Делает запрос на сервер
 
-#     def _should_fetch_next_page(self, page_data: List[dict], page_size: int) -> bool:
-#         """Определяет, нужно ли запрашивать следующую страницу."""
-#         top_date = datetime.strptime(page_data[0]['delivery_date'], "%Y-%m-%d").date()
-#         end_date = datetime.strptime(page_data[page_size - 1]['delivery_date'], "%Y-%m-%d").date()
-#         if top_date < DATE:
-#             return False
-#         if DATE <= end_date:
-#             return True
-#         # Если дата находится между первым и последним элементом страницы
-#         return top_date >= DATE > end_date
+        Parameters
+        ----------
+        **page_num** : `int`
+            Номер страницы во внутренней системе "Profit"
+        **with_pages** : `bool`
+            С количеством страниц
 
+        Returns
+        -------
+        `tuple[int, list[dict]] | tuple[int, list[dict], int]`
+            Результат запроса: [размер-страницы, данные, Опционально(количество-всех-страниц)]
 
-#     def _is_target_date_on_page(self, page_data: List[dict], page_size: int) -> bool:
-#         """Проверяет, содержится ли целевая дата на текущей странице."""
-#         top_date = datetime.strptime(page_data[0]['delivery_date'], "%Y-%m-%d").date()
-#         end_date = datetime.strptime(page_data[page_size - 1]['delivery_date'], "%Y-%m-%d").date()
-#         return top_date >= DATE >= end_date
+        Raises
+        ------
+        `requests.RequestException`
+            Ошикбка выполнения запроса
+        `RuntimeError`
+            Статус ответа не успешен 
+        """
+        params = {"secret": self.api_key, "page": page_num}
+        try:
+            response = requests.get(self.url, params=params)
+            response.raise_for_status()
+            sleep(0.5)
+        except requests.RequestException as e:
+            raise requests.RequestException(f"Ошибка при выполнении запроса к Profit Liga: {e}")
+        else:
+            answer = response.json()
+            if (status := answer["status"]) != "success":
+                raise RuntimeError(f"Статус не успешен: {status}")
+            return ( (answer["pageSize"], answer["data"], answer["pages"]) 
+                    if with_pages
+                    else (answer["pageSize"], answer["data"]) )
 
+    def validate_list(self, page: list[dict]):
+        _date_pattern = r"%Y-%m-%d %H:%M:%S"
 
-#     def get_filtered_orders(self) -> Dict[Tuple[str, str], Tuple[float, float]]:
-#         """
-#         Получает все страницы и фильтрует заказы по дате и статусу.
-#         Возвращает словарь в формате {(brand, code): (price, count)}.
-#         """
-#         all_relevant_orders = []
-#         current_page = 1
+        # Получаем даты верхнюю и нижнюю
+        top_of_page = isodate(page[0]["datetime"], _date_pattern)
+        bot_of_page = isodate(page[-1]["datetime"], _date_pattern)
 
-#         while True:
-#             response = self._make_request(current_page)
+        # Если весь лист внутри диапазона
+        if self.end_date >= top_of_page and self.start_date <= bot_of_page:
+            return page
 
-#             if response.get("status") != "success":
-#                 raise AssertionError(f"Статус ответа от Profit Liga не 'success': {response.get('status')}")
+        # Ищем индекс первой даты, которая <= end_date (верхняя граница)
+        start_idx = end_idx = None
+        for i, item in enumerate(page):
+            current_date = isodate(item["datetime"], _date_pattern)
+            if self.end_date >= current_date >= self.start_date:
+                if start_idx is None:
+                    start_idx = end_idx = i
+                else:
+                    end_idx = i
 
-#             page_data = response.get("data", [])
-#             if not page_data:
-#                 break
+        if start_idx is None:
+            return []
+        return page[start_idx:end_idx + 1]
+    
+    def get_orders(self) -> list[dict[str, str | float | int | dict]]:
+        """Получает список всех товаров за проделенный промежуток
 
-#             page_size = int(response.get("pageSize", 0))
-#             if not page_size or len(page_data) != page_size:
-#                  # Если страница короче, чем ожидалось, это конец
-#                  if not self._is_target_date_on_page(page_data, len(page_data)):
-#                      break
-#                  # Иначе добавляем и выходим
-#                  all_relevant_orders.extend(page_data)
-#                  break
+        Returns
+        -------
+        `list[dict[str, str | float | int | dict]]`
+            Список заказов
+        """
+        _, data, count_pages = self._make_request(1, with_pages=True)
+        result = self.validate_list(data)
 
-#             if self._is_target_date_on_page(page_data, page_size):
-#                 all_relevant_orders.extend(page_data)
-
-#             if not self._should_fetch_next_page(page_data, page_size):
-#                 break
-
-#             current_page += 1
-#             # Задержка для соблюдения ограничений API
-#             import time
-#             time.sleep(2.7)
-
-#         if not all_relevant_orders:
-#             raise AssertionError("Не найдено страниц с заказами на целевую дату от Profit Liga")
-
-#         # Фильтрация по статусу и дате доставки
-#         filtered_products = {}
-#         for order in all_relevant_orders:
-#             delivery_date = datetime.strptime(order['delivery_date'], "%Y-%m-%d").date()
-#             if delivery_date == DATE:
-#                 for product in order.get("products", []):
-#                     if product.get("status_id") == "20":  # Успешный статус
-#                         raw_brand = product.get('brand', '')
-#                         raw_article = product.get('article', '')
-
-#                         brand = fmt_firm.get(std(raw_brand))
-#                         code = fmt_code.get(std(raw_article))
-
-#                         try:
-#                             price = float(product.get('price', '0'))
-#                             count = float(product.get('quantity', '0'))
-#                         except ValueError:
-#                             ERRDATA_LOGGER.warning(
-#                                 f"Модуль: roskoNprofit | Поставщик: Profit Liga | "
-#                                 f"Тип ошибки: Некорректное числовое значение; "
-#                                 f"У товара <{product.get('description', 'Неизвестно')}> | "
-#                                 f"Код: <{code if code else 'НЕ НАЙДЕН'}>"
-#                                 f"Производитель: <{brand if brand else 'НЕ НАЙДЕН'}>"
-#                             )
-#                             continue
-
-#                         if brand and code:
-#                             key = (brand, code)
-#                             if key in filtered_products:
-#                                 # Если товар уже есть, суммируем количество
-#                                 old_price, old_count = filtered_products[key]
-#                                 if old_price == price:
-#                                     filtered_products[key] = (old_price, old_count + count)
-#                                 else:
-#                                     # Цены различаются, возможно, разные поставки. Логично перезаписать?
-#                                     # Или логировать? Пока перезаписываем, как в оригинальном коде.
-#                                     filtered_products[key] = (price, old_count + count)
-#                             else:
-#                                 filtered_products[key] = (price, count)
-#                         else:
-#                             ERRDATA_LOGGER.warning(
-#                                 f"Модуль: roskoNprofit | Поставщик: Profit Liga | "
-#                                 f"Тип ошибки: Отсутствие кода или бренда; "
-#                                 f"У товара <{product.get('description', 'Неизвестно')}> | "
-#                                 f"Код: <{code if code else 'НЕ НАЙДЕН'}> | "
-#                                 f"Производитель: <{brand if brand else 'НЕ НАЙДЕН'}>"
-#                             )
-
-#         if not filtered_products:
-#             raise AssertionError("После фильтрации не найдено подходящих товаров от Profit Liga")
-
-#         return filtered_products
+        for page in range(2, count_pages):
+            _, data = self._make_request(page)
+            
+            valid_data = self.validate_list(data)
+            
+            if result and not valid_data:
+                break
+            
+            result += valid_data
+        
+        return result

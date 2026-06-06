@@ -28,13 +28,16 @@ def logger(*, name: str, fpath: Path | str):
     if not isinstance(fpath, Path):
         fpath = Path(fpath)
 
+    loggers_dict = log.Logger.manager.loggerDict
     try:
+        if name in loggers_dict:
+            # logging.getLogger безопасно вернет уже созданный объект логгера
+            return log.getLogger(name)
         abstract_logger = log.getLogger(name)
         abstract_logger.setLevel(log.DEBUG)
 
-        if abstract_logger_hand := log.getHandlerByName(name) is None:
-            abstract_logger_hand = log.FileHandler(filename=fpath, encoding='utf-8')
-            abstract_logger_hand.setFormatter(log.Formatter('[%(asctime)s] <%(name)s>: %(levelname)s | %(message)s', datefmt="%Y-%m-%d %H:%M:%S"))
+        abstract_logger_hand = log.FileHandler(filename=fpath, encoding='utf-8')
+        abstract_logger_hand.setFormatter(log.Formatter('[%(asctime)s] <%(name)s>: %(levelname)s | %(message)s', datefmt="%Y-%m-%d %H:%M:%S"))
 
         abstract_logger.addHandler(abstract_logger_hand)
     except Exception as exc:
@@ -97,7 +100,7 @@ def isodate(stime: str, from_: str) -> str:
     return datetime.strptime(stime, from_).date().isoformat()
 
 
-def day_of_week(delta_days: int = 0) -> str:
+def day_of_week(delta_days: int = 0, *, postfix: str) -> str:
     week_days = (
         "Monday", "Tuesday",
         "Wednesday", "Thursday",
@@ -105,4 +108,4 @@ def day_of_week(delta_days: int = 0) -> str:
         "Sunday"
     )
     target_date = date.today() + timedelta(days=delta_days)
-    return week_days[target_date.weekday()]
+    return week_days[target_date.weekday()] + postfix

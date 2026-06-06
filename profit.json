@@ -1,0 +1,3952 @@
+{
+  "data": [
+    {
+      "order_id": "55774405",
+      "comment": "",
+      "datetime": "2026-06-06 10:53:41",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-07 08:30:00",
+        "supply": "2026-06-07 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71513156",
+          "article_id": "15164423",
+          "product_code": "Номенклатура#df927195-36dd-11ee-85c5-3cecef800ff5",
+          "price": 16354,
+          "quantity": 1,
+          "comment": "Пшипий Ауди Саплинов",
+          "article": "KR0119M",
+          "brand": "KRAUF",
+          "description": "Деталь",
+          "status_id": "12",
+          "status": "Перемещение резерва (наличие)",
+          "status_description": "<p>Ваш заказ <strong>находится в пути </strong>с транзитного на основной склад Профит-Лиги вашего региона. Заказ можно отменить.<br></p>",
+          "status_update": "2026-06-06 10:55:14",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55759152",
+      "comment": "",
+      "datetime": "2026-06-05 14:17:41",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-06 08:00:00",
+        "supply": "2026-06-06 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71492096",
+          "article_id": "401407965",
+          "product_code": "Номенклатура#6140c90a-4d0e-11f0-85fc-3cecef800ff5",
+          "price": 375.15,
+          "quantity": 3,
+          "comment": "в тз",
+          "article": "LES20101",
+          "brand": "LUZAR",
+          "description": "Прокладка клапанной крышки LADA 2108-21099 со втулками",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-06 10:13:18",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55741753",
+      "comment": "",
+      "datetime": "2026-06-04 17:16:14",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-05 08:00:00",
+        "supply": "2026-06-05 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71468187",
+          "article_id": "388204147",
+          "product_code": "Номенклатура#aa40ba12-2976-11ef-85df-3cecef800ff4",
+          "price": 8242.32,
+          "quantity": 1,
+          "comment": "шевелев ниссан",
+          "article": "LMAC1403",
+          "brand": "LUZAR",
+          "description": "Муфта электромагнитная компрес. конд. NISSAN TIIDA 04-",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-05 10:40:54",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55725673",
+      "comment": "",
+      "datetime": "2026-06-04 10:12:22",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-04",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-04 12:00:00",
+        "supply": "2026-06-04 10:12:23"
+      },
+      "products": [
+        {
+          "id": "71446729",
+          "article_id": "388369939",
+          "product_code": "Номенклатура#5cd1c33e-b0b5-11f0-aeba-3cecef99d7b9",
+          "price": 164.54,
+          "quantity": 1,
+          "comment": "Меркурьев спектра",
+          "article": "503101001",
+          "brand": "FREY",
+          "description": "Фильтр воздушный",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-04 13:56:25",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55723646",
+      "comment": "",
+      "datetime": "2026-06-04 09:12:47",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-07 08:30:00",
+        "supply": "2026-06-06 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71444084",
+          "article_id": "364658200",
+          "product_code": "f4f991a60252363d88aa3d924bdb2888",
+          "price": 596.21,
+          "quantity": 2,
+          "comment": "На склад",
+          "article": "AN70565",
+          "brand": "AKFIX",
+          "description": "Akfix Набор для экспресс склеивания 705,65 гр+200 мл AN705_65",
+          "status_id": "14",
+          "status": "Перемещение резерва (заказное)",
+          "status_description": "<p>Ваш заказ <strong>находится в пути </strong>с транзитного на основной склад Профит-Лиги вашего региона. Заказ нельзя отменить.<br></p>",
+          "status_update": "2026-06-06 09:11:15",
+          "custom_warehouse_name": "Москва-HL8",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55719143",
+      "comment": "",
+      "datetime": "2026-06-03 18:50:02",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-07 08:30:00",
+        "supply": "2026-06-06 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71437645",
+          "article_id": "15622559",
+          "product_code": "303f45fe971e416820718a509fa2044b",
+          "price": 1782,
+          "quantity": 1,
+          "comment": "Солтыс мазда Саплинов",
+          "article": "RPBP4W13250",
+          "brand": "ROERS-PARTS",
+          "description": "ФОРСУНКА ТОПЛИВНАЯ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-06 10:13:18",
+          "custom_warehouse_name": "Москва-AL2",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55719142",
+      "comment": "",
+      "datetime": "2026-06-03 18:50:02",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-07 08:30:00",
+        "supply": "2026-06-06 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71437644",
+          "article_id": "206883239",
+          "product_code": "6220c377cea11d6f314989e58e1e7488",
+          "price": 221.4,
+          "quantity": 3,
+          "comment": "Солтыс мазда Саплинов",
+          "article": "FKIT5",
+          "brand": "AUTO-GUR",
+          "description": "Ремкомплект форсунки Ford.Mazda.Volvo",
+          "status_id": "14",
+          "status": "Перемещение резерва (заказное)",
+          "status_description": "<p>Ваш заказ <strong>находится в пути </strong>с транзитного на основной склад Профит-Лиги вашего региона. Заказ нельзя отменить.<br></p>",
+          "status_update": "2026-06-05 16:56:19",
+          "custom_warehouse_name": "Москва-EZ1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55717939",
+      "comment": "",
+      "datetime": "2026-06-03 18:06:15",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-04",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-04 08:00:00",
+        "supply": "2026-06-03 18:06:16"
+      },
+      "products": [
+        {
+          "id": "71436006",
+          "article_id": "407282421",
+          "product_code": "Номенклатура#a0ccdee1-f5fd-11f0-8614-3cecef800ff5",
+          "price": 1155,
+          "quantity": 1,
+          "comment": "Мартынов Чери",
+          "article": "TFD1458",
+          "brand": "TATSUMI",
+          "description": "Ролик натяжителя ремня ГРМ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-04 10:31:09",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55715633",
+      "comment": "",
+      "datetime": "2026-06-03 17:07:05",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-04",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-04 08:00:00",
+        "supply": "2026-06-04 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71432754",
+          "article_id": "401324266",
+          "product_code": "Номенклатура#66784a7e-4b48-11f0-85fc-3cecef800ff5",
+          "price": 3040.27,
+          "quantity": 2,
+          "comment": "89184468193 джетур х70 Артем записать по приходу колодок Саплинов",
+          "article": "ADC3718V",
+          "brand": "ALLIED NIPPON",
+          "description": "Диск тормозной JETOUR DASHING/X70 PLUS/X90 PLUS перед.",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-04 10:31:09",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55715632",
+      "comment": "",
+      "datetime": "2026-06-03 17:07:05",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-07 08:30:00",
+        "supply": "2026-06-06 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71432753",
+          "article_id": "14097046",
+          "product_code": "6550192efcee17a737469f01c1007777",
+          "price": 4459.32,
+          "quantity": 1,
+          "comment": "89184468193 джетур х70 Артем записать по приходу Саплинов",
+          "article": "PN81001",
+          "brand": "NIBK",
+          "description": "Колодки тормозные дисковые PN81001",
+          "status_id": "14",
+          "status": "Перемещение резерва (заказное)",
+          "status_description": "<p>Ваш заказ <strong>находится в пути </strong>с транзитного на основной склад Профит-Лиги вашего региона. Заказ нельзя отменить.<br></p>",
+          "status_update": "2026-06-05 13:12:18",
+          "custom_warehouse_name": "Москва-FD7",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55701152",
+      "comment": "",
+      "datetime": "2026-06-03 11:13:59",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-04",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-04 08:00:00",
+        "supply": "2026-06-04 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71413196",
+          "article_id": "350068211",
+          "product_code": "Номенклатура#278a4602-3462-11ef-85e1-3cecef800ff5",
+          "price": 1078.21,
+          "quantity": 1,
+          "comment": "счетная палата",
+          "article": "MFT9023",
+          "brand": "MASUMA",
+          "description": "Фильтр трансмиссии Masuma (114240, JT545K) с прокладкой поддона",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-04 10:31:09",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55683494",
+      "comment": "",
+      "datetime": "2026-06-02 15:17:16",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-05 08:00:00",
+        "supply": "2026-06-04 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71389380",
+          "article_id": "17645831",
+          "product_code": "0f2b88e56529d6408344c7b782986e53",
+          "price": 11718,
+          "quantity": 1,
+          "comment": "Пшипий Ауди а8",
+          "article": "KR0118M",
+          "brand": "KRAUF",
+          "description": "Модуль в сборе с бензонасосом",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-05 10:40:54",
+          "custom_warehouse_name": "Москва-TA3",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55660226",
+      "comment": "",
+      "datetime": "2026-06-01 17:02:19",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-02",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-02 08:00:00",
+        "supply": "2026-06-02 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71357887",
+          "article_id": "354942409",
+          "product_code": "Номенклатура#0db27c1d-3860-11ef-85e3-3cecef800ff5",
+          "price": 1674.39,
+          "quantity": 1,
+          "comment": "Ельков Пассат",
+          "article": "AW0770700001",
+          "brand": "DOMINANT",
+          "description": "Регулятор давления топлива",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-02 10:34:46",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55647590",
+      "comment": "",
+      "datetime": "2026-06-01 11:45:53",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-02",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-02 08:00:00",
+        "supply": "2026-06-02 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71340918",
+          "article_id": "226543510",
+          "product_code": "Номенклатура#15c51420-110e-11ef-85d6-3cecef800ff5",
+          "price": 1318.17,
+          "quantity": 1,
+          "comment": "хуаз амарок",
+          "article": "11451822101",
+          "brand": "VIKA",
+          "description": "Автозапчасть/Патрубок резина армированная нитками",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-06-02 10:34:46",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55630929",
+      "comment": "",
+      "datetime": "2026-05-31 10:13:39",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-01",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-01 08:00:00",
+        "supply": "2026-05-31 10:13:40"
+      },
+      "products": [
+        {
+          "id": "71317539",
+          "article_id": "15640884",
+          "product_code": "Номенклатура#7814230b-538a-11ee-85c5-3cecef800ff5",
+          "price": 2249.03,
+          "quantity": 1,
+          "comment": "бунеева поло",
+          "article": "B18249",
+          "brand": "BORSEHUNG",
+          "description": "корпус термостата",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-06-01 17:12:37",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55626637",
+      "comment": "",
+      "datetime": "2026-05-30 17:12:43",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-31",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-31 08:30:00",
+        "supply": "2026-05-30 17:12:43"
+      },
+      "products": [
+        {
+          "id": "71311364",
+          "article_id": "9116913",
+          "product_code": "Номенклатура#6d58dd01-c388-11f0-aebe-3cecef99d7b9",
+          "price": 3063,
+          "quantity": 1,
+          "comment": "мельник витц на правую сторону",
+          "article": "TYIUYAR10",
+          "brand": "ASVA",
+          "description": "ШРУС ВНУТРЕННИЙ 19х38х23",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-31 09:42:39",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55626143",
+      "comment": "",
+      "datetime": "2026-05-30 16:49:46",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-31",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-31 08:30:00",
+        "supply": "2026-05-30 16:49:47"
+      },
+      "products": [
+        {
+          "id": "71310687",
+          "article_id": "8919964",
+          "product_code": "Номенклатура#2e40ef6d-1686-11ef-85d6-3cecef800ff5",
+          "price": 3248,
+          "quantity": 1,
+          "comment": "мельник витц",
+          "article": "01111SZFE",
+          "brand": "FEBEST",
+          "description": "ШРУС ВНУТРЕННИЙ 19х38х23",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-31 09:42:39",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55617711",
+      "comment": "",
+      "datetime": "2026-05-30 11:17:11",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-30",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-30 13:30:00",
+        "supply": "2026-05-30 11:17:12"
+      },
+      "products": [
+        {
+          "id": "71299473",
+          "article_id": "244733964",
+          "product_code": "Номенклатура#6c1938f9-538a-11ee-85c5-3cecef800ff5",
+          "price": 7512.52,
+          "quantity": 1,
+          "comment": "бунеева поло",
+          "article": "B19288",
+          "brand": "BORSEHUNG",
+          "description": "BORSEHUNG B19288",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-30 16:11:41",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55617604",
+      "comment": "",
+      "datetime": "2026-05-30 11:13:50",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-31",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-31 08:30:00",
+        "supply": "2026-05-31 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71299340",
+          "article_id": "34349058",
+          "product_code": "Номенклатура#8bb7ea2c-d04e-11ed-85c3-3cecef800ff5",
+          "price": 151.76,
+          "quantity": 1,
+          "comment": "сидоров лансер",
+          "article": "7550950SX",
+          "brand": "STELLOX",
+          "description": "75-50950-SX_крышка радиатора! Hyundai Santa Fe 2.7 06",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-31 09:42:39",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55608283",
+      "comment": "",
+      "datetime": "2026-05-29 16:56:31",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-30",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-30 08:00:00",
+        "supply": "2026-05-29 16:56:32"
+      },
+      "products": [
+        {
+          "id": "71286439",
+          "article_id": "332401260",
+          "product_code": "Номенклатура#42c5a1e0-1685-11ef-85d6-3cecef800ff5",
+          "price": 20,
+          "quantity": 20,
+          "comment": "в стол тормозные Саплинов",
+          "article": "88430101610C",
+          "brand": "FEBEST",
+          "description": "Кольцо уплотнительное 10X16X1",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-30 10:24:42",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55593309",
+      "comment": "",
+      "datetime": "2026-05-29 09:50:49",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 12:00:00",
+        "supply": "2026-05-29 09:50:50"
+      },
+      "products": [
+        {
+          "id": "71266038",
+          "article_id": "8946221",
+          "product_code": "Номенклатура#3e412c98-11c6-11e6-80be-0025909196a5",
+          "price": 617.89,
+          "quantity": 1,
+          "comment": "демидов мерседес",
+          "article": "812102330",
+          "brand": "VICTOR REINZ",
+          "description": "Сальник MB C/E/S(W114/W124/W108/109/116) 67-93 2.0-5.6 к/в передний",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-30 11:49:43",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55592090",
+      "comment": "",
+      "datetime": "2026-05-29 09:12:14",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 12:00:00",
+        "supply": "2026-05-29 09:12:15"
+      },
+      "products": [
+        {
+          "id": "71264419",
+          "article_id": "3573",
+          "product_code": "Номенклатура#25e4faf5-8cb8-11e5-aea9-50e54958e561",
+          "price": 485.9,
+          "quantity": 3,
+          "comment": "Поляков  Peugeot 207",
+          "article": "0242129510",
+          "brand": "BOSCH",
+          "description": "Свеча зажигания VR 8 SC+ (Super Plus +) [+40]",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-29 15:25:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55577237",
+      "comment": "",
+      "datetime": "2026-05-28 13:50:01",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-29 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71244100",
+          "article_id": "150287459",
+          "product_code": "Номенклатура#0d6548d1-625b-11ec-859f-3cecef800ff5",
+          "price": 2070.34,
+          "quantity": 1,
+          "comment": "Дикая заз ",
+          "article": "GO0941",
+          "brand": "TRIALLI",
+          "description": "ШРУС наруж. для а/м Chery Bonus (A13) (11-) (GO 0941)",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-30 11:53:47",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55575674",
+      "comment": "",
+      "datetime": "2026-05-28 13:06:04",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-28",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-28 16:00:00",
+        "supply": "2026-05-28 13:06:05"
+      },
+      "products": [
+        {
+          "id": "71241938",
+          "article_id": "38177",
+          "product_code": "Номенклатура#e095322e-8c73-11e5-aea9-50e54958e561",
+          "price": 255.27,
+          "quantity": 4,
+          "comment": "Горбунов Chevrolet Cruze",
+          "article": "4856",
+          "brand": "NGK",
+          "description": "Свеча зажигания V-LINE VL28 BKR6E (в уп. 4 шт)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-28 20:47:15",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55567038",
+      "comment": "",
+      "datetime": "2026-05-28 09:22:11",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-29 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71230473",
+          "article_id": "295067127",
+          "product_code": "Номенклатура#d9857164-d04e-11ed-85c3-3cecef800ff5",
+          "price": 142.17,
+          "quantity": 2,
+          "comment": "Демидова Audi Q5",
+          "article": "7909008SX",
+          "brand": "STELLOX",
+          "description": "79-09008-SX_болт ступ.колеса пер.!M12x1.5x45Audi A4/A6/A8,Seat Toledo III,VW Golf/Passat B6 all 94>",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-30 11:49:43",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55566101",
+      "comment": "",
+      "datetime": "2026-05-28 08:39:34",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-29 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71229296",
+          "article_id": "86401",
+          "product_code": "Номенклатура#1f23e67f-84f8-11ed-85c0-3cecef800ff5",
+          "price": 270.87,
+          "quantity": 4,
+          "comment": null,
+          "article": "BKR6E",
+          "brand": "NGK",
+          "description": "Свеча зажигания 6962",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-30 11:49:43",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55566100",
+      "comment": "",
+      "datetime": "2026-05-28 08:39:34",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-28",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-28 12:00:00",
+        "supply": "2026-05-28 08:39:35"
+      },
+      "products": [
+        {
+          "id": "71229295",
+          "article_id": "23014319",
+          "product_code": "Номенклатура#64e4a88c-9840-11ef-aea6-3cecef99d7b9",
+          "price": 594,
+          "quantity": 1,
+          "comment": null,
+          "article": "BRIC36",
+          "brand": "BRAVE",
+          "description": "Высоковольтные провода силикон 96211948 BR.IC.3.6",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-28 14:11:18",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55547264",
+      "comment": "",
+      "datetime": "2026-05-27 11:24:29",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-06-01",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-06-01 08:00:00",
+        "supply": "2026-05-31 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71203666",
+          "article_id": "13645604",
+          "product_code": "e74b90c824c5ebc39be0fcd9a44ea7ef",
+          "price": 2794.63,
+          "quantity": 1,
+          "comment": "Василию в расходку Саплинов",
+          "article": "3302170102201",
+          "brand": "GAZ",
+          "description": "Вал первичный КПП для а/м Газель 25 зуб 3302-1701022",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-31 09:42:39",
+          "custom_warehouse_name": "Москва-BP1",
+          "show_date": "3 (4) дн.",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55521492",
+      "comment": "",
+      "datetime": "2026-05-26 11:41:41",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-27",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-27 08:00:00",
+        "supply": "2026-05-27 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71169153",
+          "article_id": "406208559",
+          "product_code": "Номенклатура#cedd5e15-d5ad-11f0-860d-3cecef800ff5",
+          "price": 3501.86,
+          "quantity": 1,
+          "comment": "харин кашкай",
+          "article": "GIK05077",
+          "brand": "GANZ",
+          "description": "Ступица колеса NISSAN X-TRAIL 14- перед.лев./прав.",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-27 10:34:06",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55514198",
+      "comment": "",
+      "datetime": "2026-05-26 08:25:21",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-28",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-28 08:00:00",
+        "supply": "2026-05-28 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71159473",
+          "article_id": "390942641",
+          "product_code": "0091157ab2d059c3663241469c876ab6",
+          "price": 876.86,
+          "quantity": 1,
+          "comment": null,
+          "article": "L1S00041",
+          "brand": "CARVILLE RACING",
+          "description": "CR Масло компрессорное PAG46 500 ml (30)",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-26 17:04:04",
+          "custom_warehouse_name": "Симферополь-AV4",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55511303",
+      "comment": "",
+      "datetime": "2026-05-25 19:38:50",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-28 21:00:00"
+      },
+      "products": [
+        {
+          "id": "71155309",
+          "article_id": "14055990",
+          "product_code": "d72eedcb925aba89032c596db5764e84",
+          "price": 8715.6,
+          "quantity": 1,
+          "comment": "чернов лексус",
+          "article": "3723029015",
+          "brand": "TOYOTA",
+          "description": "ПОДШИПНИК ПОДВЕСНОЙ КАРДАННОГО ВАЛА N2 HARRIER MCU15, ACU/MCU35, IPSUM ACM26",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-28 10:40:21",
+          "custom_warehouse_name": "Москва-AP3",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55511302",
+      "comment": "",
+      "datetime": "2026-05-25 19:38:50",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-29 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71155308",
+          "article_id": "14334896",
+          "product_code": "16ccd4eb9d8fc5fe47eb7e59fc09ca1d",
+          "price": 9663.84,
+          "quantity": 1,
+          "comment": "чернов лексус",
+          "article": "3723049015",
+          "brand": "TOYOTA",
+          "description": "ПОДШИПНИК",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-29 10:31:46",
+          "custom_warehouse_name": "Москва-VS29",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55491540",
+      "comment": "",
+      "datetime": "2026-05-25 11:17:03",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-25",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-25 14:00:00",
+        "supply": "2026-05-25 11:17:04"
+      },
+      "products": [
+        {
+          "id": "71128709",
+          "article_id": "37731634",
+          "product_code": "Номенклатура#f9848714-841a-11ec-85a8-3cecef800ff5",
+          "price": 292,
+          "quantity": 2,
+          "comment": "Меркурьев",
+          "article": "KRB053",
+          "brand": "KORTEX",
+          "description": "Пыльник амортизатора HYUNDAI ELANTRA XD/KIA CERATO 04- зад.подв.",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-25 14:47:26",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55477907",
+      "comment": "",
+      "datetime": "2026-05-24 13:23:54",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-25",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-25 08:00:00",
+        "supply": "2026-05-25 02:00:00"
+      },
+      "products": [
+        {
+          "id": "71110074",
+          "article_id": "25945975",
+          "product_code": "Номенклатура#c378cf7e-f9fa-11ed-85c4-3cecef800ff4",
+          "price": 153.71,
+          "quantity": 4,
+          "comment": "школа13 газель Саплинов",
+          "article": "7902118SX",
+          "brand": "STELLOX",
+          "description": "79-02118-SX_гайка крепления колеса! с вращ. юбкой M18x1.5 H=25 SW32 MAN/Volvo/BPW/RVI/Iveco-Magirus",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-25 09:40:48",
+          "custom_warehouse_name": "Ростов 2 (хут.Ленина)",
+          "show_date": "24 ч.",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55477905",
+      "comment": "",
+      "datetime": "2026-05-24 13:23:54",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-25",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-25 08:00:00",
+        "supply": "2026-05-24 13:23:55"
+      },
+      "products": [
+        {
+          "id": "71110072",
+          "article_id": "25945975",
+          "product_code": "Номенклатура#c378cf7e-f9fa-11ed-85c4-3cecef800ff4",
+          "price": 153.71,
+          "quantity": 1,
+          "comment": null,
+          "article": "7902118SX",
+          "brand": "STELLOX",
+          "description": "79-02118-SX_гайка крепления колеса! с вращ. юбкой M18x1.5 H=25 SW32 MAN/Volvo/BPW/RVI/Iveco-Magirus",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-25 09:40:48",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55474688",
+      "comment": "",
+      "datetime": "2026-05-24 10:30:51",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-29",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-29 08:00:00",
+        "supply": "2026-05-29 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71105689",
+          "article_id": "15088502",
+          "product_code": "675b614e581b3d17980044fd66a43ebb",
+          "price": 10007.28,
+          "quantity": 1,
+          "comment": "иванелов кольт",
+          "article": "VKMA95663",
+          "brand": "SKF",
+          "description": "VKMA 95663 Ремкомплект ГРМ MITSUBISHI COLT V-VI (1995-2012)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-27 10:34:06",
+          "custom_warehouse_name": "Москва-VS11",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55473515",
+      "comment": "",
+      "datetime": "2026-05-24 08:52:39",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-25",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-25 08:00:00",
+        "supply": "2026-05-25 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71104152",
+          "article_id": "299895711",
+          "product_code": "Номенклатура#394802c1-f903-11ec-85b5-3cecef800ff5",
+          "price": 2257.45,
+          "quantity": 1,
+          "comment": "криворотов нот",
+          "article": "LTRV1406",
+          "brand": "LUZAR",
+          "description": "Клапан расш. кондиционера (ТРВ) для а/м Nissan Note (06-)/Micra (02-) (LTRV 1406)",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-30 11:49:44",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55460633",
+      "comment": "",
+      "datetime": "2026-05-23 11:22:27",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-23",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-23 13:30:00",
+        "supply": "2026-05-23 11:22:28"
+      },
+      "products": [
+        {
+          "id": "71086693",
+          "article_id": "14791",
+          "product_code": "Номенклатура#d49c9063-a951-11e6-80d3-0025906a28b9",
+          "price": 1072,
+          "quantity": 1,
+          "comment": null,
+          "article": "759371",
+          "brand": "ELRING",
+          "description": "Болт ГБЦ RENAULT R19/CLIO/MEGANE/LOGAN 88- 1.2/1.4/1.6 компл. (компл.)(10 шт)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-23 17:15:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55456757",
+      "comment": "",
+      "datetime": "2026-05-23 09:02:47",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-23",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-23 13:30:00",
+        "supply": "2026-05-23 09:02:48"
+      },
+      "products": [
+        {
+          "id": "71081580",
+          "article_id": "391243956",
+          "product_code": "Номенклатура#486a3e92-154a-11f0-aeaf-3cecef99d7b9",
+          "price": 1626.3,
+          "quantity": 1,
+          "comment": "авео",
+          "article": "QF41B00015",
+          "brand": "QUATTRO FRENI",
+          "description": "ТРУБКА РАДИАТОРА МАСЛЯНОГО",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-23 17:15:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "71081581",
+          "article_id": "366786296",
+          "product_code": "Номенклатура#8eaf3cb7-c748-11ee-85cf-3cecef800ff5",
+          "price": 1974.7,
+          "quantity": 1,
+          "comment": "авео",
+          "article": "QF41B00014",
+          "brand": "QUATTRO FRENI",
+          "description": "ТРУБКА РАДИАТОРА МАСЛЯНОГО",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-23 17:15:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55441293",
+      "comment": "",
+      "datetime": "2026-05-22 12:56:40",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-22",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-22 14:00:00",
+        "supply": "2026-05-22 12:56:41"
+      },
+      "products": [
+        {
+          "id": "71060337",
+          "article_id": "8932557",
+          "product_code": "Номенклатура#fb86f236-46ca-11e8-80b8-0cc47a3486cd",
+          "price": 234.73,
+          "quantity": 3,
+          "comment": "На склад",
+          "article": "LTS104",
+          "brand": "LUZAR",
+          "description": "Термопломба",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-22 18:04:52",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55418237",
+      "comment": "",
+      "datetime": "2026-05-21 14:39:29",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-26",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-26 08:00:00",
+        "supply": "2026-05-26 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71029441",
+          "article_id": "11019735",
+          "product_code": "2160cbd21cdd2e896c013cf13524fb6a",
+          "price": 139.32,
+          "quantity": 4,
+          "comment": "9891966572 Евгений, Саплинов",
+          "article": "MU140038",
+          "brand": "MITSUBISHI",
+          "description": "Деталь",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-25 09:40:48",
+          "custom_warehouse_name": "Москва-VS29",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55409484",
+      "comment": "",
+      "datetime": "2026-05-21 11:04:44",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-21",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-21 14:00:00",
+        "supply": "2026-05-21 11:04:45"
+      },
+      "products": [
+        {
+          "id": "71017841",
+          "article_id": "367499399",
+          "product_code": "Номенклатура#bfa22a7b-ed04-11ee-85d3-3cecef800ff5",
+          "price": 5578.06,
+          "quantity": 2,
+          "comment": "нехай rx350",
+          "article": "590283820",
+          "brand": "ZIMMERMANN",
+          "description": "Деталь",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-21 14:34:36",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55406917",
+      "comment": "",
+      "datetime": "2026-05-21 10:07:50",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-26",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-26 08:00:00",
+        "supply": "2026-05-26 03:00:00"
+      },
+      "products": [
+        {
+          "id": "71014455",
+          "article_id": "403289375",
+          "product_code": "f58444a20de04c385463a62a55232beb",
+          "price": 10590.48,
+          "quantity": 1,
+          "comment": "Теленьков теранно Саплинов на 27.03 в записи",
+          "article": "255678729R",
+          "brand": "LADA",
+          "description": "Суппорт подрулевых переключателей",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-26 10:02:07",
+          "custom_warehouse_name": "Москва-VS29",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55400148",
+      "comment": "",
+      "datetime": "2026-05-20 18:47:21",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-21",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-21 08:00:00",
+        "supply": "2026-05-20 18:47:22"
+      },
+      "products": [
+        {
+          "id": "71005150",
+          "article_id": "52191",
+          "product_code": "Номенклатура#a12840ac-8cef-11e5-aea9-50e54958e561",
+          "price": 299.55,
+          "quantity": 1,
+          "comment": "Фейферис",
+          "article": "93741069",
+          "brand": "DAEWOO",
+          "description": "Контактная группа GM ESPERO/NEXIA 95- замка зажиг.(DAEWOO)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-21 11:24:16",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55384202",
+      "comment": "",
+      "datetime": "2026-05-20 11:56:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-20",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-20 14:00:00",
+        "supply": "2026-05-20 11:56:33"
+      },
+      "products": [
+        {
+          "id": "70983872",
+          "article_id": "402369461",
+          "product_code": "Номенклатура#60df4b11-6888-11f0-85fd-3cecef800ff5",
+          "price": 283.25,
+          "quantity": 1,
+          "comment": "Ларгус",
+          "article": "GIE31073",
+          "brand": "GANZ",
+          "description": "Шкив коленвала LADA 21116 11-",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-20 14:06:48",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55382361",
+      "comment": "",
+      "datetime": "2026-05-20 11:15:02",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-20",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-20 14:00:00",
+        "supply": "2026-05-20 11:15:03"
+      },
+      "products": [
+        {
+          "id": "70981483",
+          "article_id": "18933758",
+          "product_code": "Номенклатура#212f5277-0172-11ef-85d5-3cecef800ff5",
+          "price": 7964,
+          "quantity": 1,
+          "comment": "аркада ларгус",
+          "article": "NSP07491105510R",
+          "brand": "NSP",
+          "description": "Насос ГУР Renault RENAULT Duster",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-20 14:06:48",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55369927",
+      "comment": "",
+      "datetime": "2026-05-19 17:35:34",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-20",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-20 08:00:00",
+        "supply": "2026-05-19 17:35:35"
+      },
+      "products": [
+        {
+          "id": "70964543",
+          "article_id": "10011954",
+          "product_code": "Номенклатура#b343a4a6-0f49-11ea-80dd-0cc47a3486cd",
+          "price": 5182,
+          "quantity": 1,
+          "comment": "Чухно киа",
+          "article": "1211IX354WDRH",
+          "brand": "FEBEST",
+          "description": "Р/к-т шруса внутрен. Fr R 24X44X26 Hyundai IX35",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-20 10:15:42",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55363521",
+      "comment": "",
+      "datetime": "2026-05-19 15:08:36",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-20",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-20 08:00:00",
+        "supply": "2026-05-19 15:08:37"
+      },
+      "products": [
+        {
+          "id": "70955853",
+          "article_id": "39192251",
+          "product_code": "Номенклатура#cb8b2be4-eb05-11ed-85c3-3cecef800ff5",
+          "price": 5691.4,
+          "quantity": 1,
+          "comment": null,
+          "article": "QF31M00020",
+          "brand": "QUATTRO FRENI",
+          "description": "БЛОК РОЗЖИГА",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-20 10:15:42",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55325690",
+      "comment": "",
+      "datetime": "2026-05-18 11:39:04",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-18",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-18 14:00:00",
+        "supply": "2026-05-18 11:39:05"
+      },
+      "products": [
+        {
+          "id": "70904191",
+          "article_id": "13796001",
+          "product_code": "Номенклатура#f1e2d789-69be-11ee-85c6-3cecef800ff5",
+          "price": 7221.4,
+          "quantity": 1,
+          "comment": "кулабухова вокси",
+          "article": "1026320SX",
+          "brand": "STELLOX",
+          "description": "10-26320-SX_радиатор системы охлаждения! Toyota Avensis Verso 2.0i 16V 01-05",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-18 14:45:28",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55325441",
+      "comment": "",
+      "datetime": "2026-05-18 11:33:54",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-18",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-18 14:00:00",
+        "supply": "2026-05-18 11:33:55"
+      },
+      "products": [
+        {
+          "id": "70903874",
+          "article_id": "391473920",
+          "product_code": "Номенклатура#faf2ef77-9840-11ef-aea6-3cecef99d7b9",
+          "price": 797,
+          "quantity": 2,
+          "comment": "бужинский корса",
+          "article": "BRRP175",
+          "brand": "BRAVE",
+          "description": "Подшипник опоры амортизатора 344653 BR.RP.1.75 Opel Corsa D, Fiat Gand Punto 06",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-18 14:45:28",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55316189",
+      "comment": "",
+      "datetime": "2026-05-17 19:41:57",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-18",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-18 08:00:00",
+        "supply": "2026-05-17 19:41:58"
+      },
+      "products": [
+        {
+          "id": "70891182",
+          "article_id": "14092883",
+          "product_code": "Номенклатура#b639900e-6b0c-11ed-85bd-3cecef800ff5",
+          "price": 779,
+          "quantity": 1,
+          "comment": "бужинский эпика",
+          "article": "HBFC51X254",
+          "brand": "MILES",
+          "description": "Труба гофрированная с металлорукавом 51X254 HBFC51X254",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-18 10:15:37",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55315443",
+      "comment": "",
+      "datetime": "2026-05-17 18:25:19",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-19",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-19 08:00:00",
+        "supply": "2026-05-19 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70890118",
+          "article_id": "9268230",
+          "product_code": "9ecadd284fb9e07edae698158aaaac55",
+          "price": 623.38,
+          "quantity": 1,
+          "comment": "Клиновой Саплинов",
+          "article": "391802B000",
+          "brand": "HYUNDAI/KIA/MOBIS",
+          "description": "Датчик положения коленвала",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-25 17:57:31",
+          "custom_warehouse_name": "Ростов-AV10",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55304227",
+      "comment": "",
+      "datetime": "2026-05-16 18:23:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-17",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-17 08:30:00",
+        "supply": "2026-05-16 18:23:33"
+      },
+      "products": [
+        {
+          "id": "70874173",
+          "article_id": "38300",
+          "product_code": "Номенклатура#ac5ebbb9-8c79-11e5-aea9-50e54958e561",
+          "price": 914.9,
+          "quantity": 4,
+          "comment": "Тумаева Skoda ",
+          "article": "5758",
+          "brand": "NGK",
+          "description": "Свеча зажигания SINGLE ELEC PZFR6R (в уп. 4 шт)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-17 10:26:39",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70874174",
+          "article_id": "365796695",
+          "product_code": "Номенклатура#2edb013d-596a-11ef-85e7-3cecef800ff5",
+          "price": 575,
+          "quantity": 4,
+          "comment": "Тумаева Skoda ",
+          "article": "PB192903",
+          "brand": "PARTBERRY",
+          "description": "РЕМКОМПЛЕКТ ТОПЛИВНОЙ ФОРСУНКИ",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-18 13:09:25",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70874175",
+          "article_id": "336976337",
+          "product_code": "Номенклатура#88b2fd7a-c748-11ee-85cf-3cecef800ff5",
+          "price": 118.3,
+          "quantity": 4,
+          "comment": "Тумаева Skoda ",
+          "article": "QF76A00066",
+          "brand": "QUATTRO FRENI",
+          "description": "ПРОКЛАДКА ВПУСКНОГО КОЛЛЕКТОРА",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-17 10:26:39",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70874176",
+          "article_id": "346733530",
+          "product_code": "Номенклатура#88b2fd2d-c748-11ee-85cf-3cecef800ff5",
+          "price": 291.2,
+          "quantity": 1,
+          "comment": "Тумаева Skoda ",
+          "article": "QF76A00103",
+          "brand": "QUATTRO FRENI",
+          "description": "ПРОКЛАДКА ДРОССЕЛЬНОЙ ЗАСЛОНКИ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-17 10:26:39",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55288662",
+      "comment": "",
+      "datetime": "2026-05-15 19:51:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-16 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70852826",
+          "article_id": "5413323",
+          "product_code": "Номенклатура#735c6210-1df5-11e7-80c5-0cc47a3486cd",
+          "price": 572.75,
+          "quantity": 1,
+          "comment": "фоменко гарантия мазда ",
+          "article": "5PK716EE",
+          "brand": "DAYCO",
+          "description": null,
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-16 10:59:43",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55282645",
+      "comment": "",
+      "datetime": "2026-05-15 16:10:40",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-16 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70844293",
+          "article_id": "8891311",
+          "product_code": "Номенклатура#15adcdeb-cb99-11e7-80d0-0cc47a3486cd",
+          "price": 549,
+          "quantity": 1,
+          "comment": "Аркада Бонго",
+          "article": "ECF00065M",
+          "brand": "MANDO",
+          "description": "Фильтр салона",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-16 10:59:43",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55276394",
+      "comment": "",
+      "datetime": "2026-05-15 13:10:43",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-23",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-23 08:00:00",
+        "supply": "2026-05-22 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70835848",
+          "article_id": "391468794",
+          "product_code": "df15d81bcbeb5e6865a16606e80853ed",
+          "price": 1162.86,
+          "quantity": 2,
+          "comment": "в тз",
+          "article": "BCVPO68",
+          "brand": "BECOOL",
+          "description": "МАСЛО ДЛЯ ВАКУУМНЫХ НАСОСОВ BC-VPO 68 (1Л) BECOOL",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-21 11:24:16",
+          "custom_warehouse_name": "Москва-LF5",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55273473",
+      "comment": "",
+      "datetime": "2026-05-15 11:42:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-17",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-17 08:30:00",
+        "supply": "2026-05-16 19:00:00"
+      },
+      "products": [
+        {
+          "id": "70831900",
+          "article_id": "15333019",
+          "product_code": "55fdeba25cdb4716fc4faa2b12fbdd0e",
+          "price": 3410.43,
+          "quantity": 1,
+          "comment": "Эдедбвейс Кодиак Запись на 20.05",
+          "article": "0CP409189B",
+          "brand": "VAG",
+          "description": "МАНЖЕТНОЕУПЛОТНЕНИЕ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-17 10:26:39",
+          "custom_warehouse_name": "Москва-TM1",
+          "show_date": "2 (3) дн.",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55260996",
+      "comment": "",
+      "datetime": "2026-05-14 17:00:22",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-15",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-15 08:00:00",
+        "supply": "2026-05-14 17:00:23"
+      },
+      "products": [
+        {
+          "id": "70814997",
+          "article_id": "331686523",
+          "product_code": "Номенклатура#3ef92053-f940-11ed-85c4-3cecef800ff4",
+          "price": 929,
+          "quantity": 1,
+          "comment": "фоминов фиат",
+          "article": "6300002",
+          "brand": "METACO",
+          "description": "Датчик ABS передний",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-18 17:35:49",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55246436",
+      "comment": "",
+      "datetime": "2026-05-14 11:19:50",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 14:00:00",
+        "supply": "2026-05-14 11:19:53"
+      },
+      "products": [
+        {
+          "id": "70795395",
+          "article_id": "94637283",
+          "product_code": "Номенклатура#2e8e336f-44cb-11ef-85e4-3cecef800ff5",
+          "price": 7752,
+          "quantity": 2,
+          "comment": "Нехай лексус ",
+          "article": "RN1932",
+          "brand": "NIBK",
+          "description": "Диск тормозной NiBK RN1932",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-15 14:01:33",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55245838",
+      "comment": "",
+      "datetime": "2026-05-14 11:05:54",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 14:00:00",
+        "supply": "2026-05-14 11:05:57"
+      },
+      "products": [
+        {
+          "id": "70794610",
+          "article_id": "40284751",
+          "product_code": "Номенклатура#8a82b2fb-619b-11ec-859f-3cecef800ff5",
+          "price": 998,
+          "quantity": 1,
+          "comment": "1700 музыка мэрс ",
+          "article": "MFT9009",
+          "brand": "MASUMA",
+          "description": "MASUMA MFT9009",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-15 13:56:00",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55237065",
+      "comment": "",
+      "datetime": "2026-05-13 19:29:36",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-17",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-17 08:30:00",
+        "supply": "2026-05-16 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70782610",
+          "article_id": "13617342",
+          "product_code": "a97d60a2ceb729d87fbb168b656a0c11",
+          "price": 2700,
+          "quantity": 1,
+          "comment": "пеклич тиида",
+          "article": "22690ED000",
+          "brand": "NISSAN",
+          "description": "КИСЛОРОДНЫЙ ДАТЧИК",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-17 10:26:39",
+          "custom_warehouse_name": "Москва-ST6",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55237064",
+      "comment": "",
+      "datetime": "2026-05-13 19:29:36",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-18",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-18 08:00:00",
+        "supply": "2026-05-17 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70782609",
+          "article_id": "25880436",
+          "product_code": "d653c36c050fefde8c20ccdad7321a83",
+          "price": 4264.92,
+          "quantity": 1,
+          "comment": "данильченко субару",
+          "article": "NPWSB010",
+          "brand": "NTY",
+          "description": "Полуось, SUBARU IMPREZA 08-",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-19 11:12:11",
+          "custom_warehouse_name": "Москва-DE1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55232905",
+      "comment": "",
+      "datetime": "2026-05-13 17:11:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 08:00:00",
+        "supply": "2026-05-13 17:11:33"
+      },
+      "products": [
+        {
+          "id": "70776632",
+          "article_id": "13926689",
+          "product_code": "Номенклатура#baeb43f8-f660-11ea-8f99-0cc47a3486cd",
+          "price": 1025.7,
+          "quantity": 1,
+          "comment": "мельник витц",
+          "article": "QF50A00015",
+          "brand": "QUATTRO FRENI",
+          "description": "ДАТЧИК ДЕТОНАЦИИ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-14 10:40:33",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55228403",
+      "comment": "",
+      "datetime": "2026-05-13 15:30:44",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 08:00:00",
+        "supply": "2026-05-13 15:30:45"
+      },
+      "products": [
+        {
+          "id": "70770595",
+          "article_id": "14149766",
+          "product_code": "Номенклатура#5bc81402-633d-11ee-85c6-3cecef800ff5",
+          "price": 1601,
+          "quantity": 1,
+          "comment": "бужинский эпика",
+          "article": "NSP0196945329",
+          "brand": "NSP",
+          "description": "ПОДУШКА",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-19 07:35:45",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55224022",
+      "comment": "",
+      "datetime": "2026-05-13 13:48:12",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-13",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-13 16:00:00",
+        "supply": "2026-05-13 13:48:13"
+      },
+      "products": [
+        {
+          "id": "70764687",
+          "article_id": "11668429",
+          "product_code": "Номенклатура#b8b2902b-3bb2-11eb-8f9c-0cc47a3486cd",
+          "price": 842.4,
+          "quantity": 1,
+          "comment": "2100 волга сайбер Деменишин(R)",
+          "article": "QF00T01679",
+          "brand": "QUATTRO FRENI",
+          "description": "QF00T01679 ДАТЧИК ДАВЛЕНИЯ МАСЛА",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-27 13:41:17",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55208226",
+      "comment": "",
+      "datetime": "2026-05-12 19:35:37",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 08:00:00",
+        "supply": "2026-05-14 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70743411",
+          "article_id": "315508656",
+          "product_code": "704ba0353d84d0bdf7c7b7dab611f53a",
+          "price": 2123.6,
+          "quantity": 1,
+          "comment": "Бутко Чери саплинов 3400",
+          "article": "802000277AA",
+          "brand": "CHERY",
+          "description": "ДАТЧИК ДАВЛЕНИЯ В ШИНЕ T19C",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-14 10:40:33",
+          "custom_warehouse_name": "Ростов-AV10",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55207394",
+      "comment": "",
+      "datetime": "2026-05-12 18:55:55",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-13",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-13 08:00:00",
+        "supply": "2026-05-12 18:55:56"
+      },
+      "products": [
+        {
+          "id": "70742185",
+          "article_id": "400967853",
+          "product_code": "Номенклатура#86c7dd0e-407d-11f0-85fc-3cecef800ff5",
+          "price": 1060,
+          "quantity": 1,
+          "comment": "астра 89883116886 Алексей, набрать заберет",
+          "article": "MIPU527",
+          "brand": "MASUMA",
+          "description": "Ролик ремня ГРМ CHEVROLET AVEO -13",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-13 10:18:26",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55203504",
+      "comment": "",
+      "datetime": "2026-05-12 17:09:04",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-15 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70736839",
+          "article_id": "315508656",
+          "product_code": "704ba0353d84d0bdf7c7b7dab611f53a",
+          "price": 2041.2,
+          "quantity": 1,
+          "comment": "Бутко Чери",
+          "article": "802000277AA",
+          "brand": "CHERY",
+          "description": "ДАТЧИК ДАВЛЕНИЯ В ШИНЕ T19C",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-12 18:14:57",
+          "custom_warehouse_name": "Москва-LT3",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55199142",
+      "comment": "",
+      "datetime": "2026-05-12 15:40:28",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-13",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-13 08:00:00",
+        "supply": "2026-05-13 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70730927",
+          "article_id": "13538964",
+          "product_code": "Номенклатура#88cb0f06-06bc-11ee-85c4-3cecef800ff4",
+          "price": 3108,
+          "quantity": 1,
+          "comment": "гагнидзе ларгус",
+          "article": "TRK0203",
+          "brand": "TORK",
+          "description": "КУЛАК ПОВОРОТНЫЙ ПРАВЫЙ C АБС - ЛАРГУС 8 КЛ (ТОРМ СУП - 80 ММ) (102180400111170019710003, КИТА",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-12 15:45:08",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55161324",
+      "comment": "",
+      "datetime": "2026-05-11 09:28:41",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-15",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-15 08:00:00",
+        "supply": "2026-05-15 02:00:00"
+      },
+      "products": [
+        {
+          "id": "70678937",
+          "article_id": "29018011",
+          "product_code": "e77a729639ddc099c96a49abbda73f90",
+          "price": 297,
+          "quantity": 1,
+          "comment": "Саплинов в расходку Саплинов",
+          "article": "KU5205",
+          "brand": "KUDO",
+          "description": "Эмаль для дисков стальная 5205 KUDO",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-25 16:34:26",
+          "custom_warehouse_name": "Владикавказ-MA2",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55161323",
+      "comment": "",
+      "datetime": "2026-05-11 09:28:41",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-15 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70678936",
+          "article_id": "13650556",
+          "product_code": "f8acbaf3e2d3a943e4a9cf534ffb9768",
+          "price": 306.72,
+          "quantity": 1,
+          "comment": "Саплинов в расходку Саплинов",
+          "article": "KU9010",
+          "brand": "KUDO",
+          "description": "Лак спрей 1К акриловый, 520 мл. KUDO KU-9010",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-25 16:34:25",
+          "custom_warehouse_name": "Москва-PT7",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55155710",
+      "comment": "",
+      "datetime": "2026-05-10 14:10:30",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-15 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70670863",
+          "article_id": "36790791",
+          "product_code": "4d00d92e799d52a0c5de5a5e69621ea3",
+          "price": 189.68,
+          "quantity": 2,
+          "comment": "рустам х себе",
+          "article": "B11477",
+          "brand": "BORSEHUNG",
+          "description": "Распылитель омывателя SKODA FABIA (00- ), OCTAVIA (07-11)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-15 10:09:59",
+          "custom_warehouse_name": "Москва-IT1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55155668",
+      "comment": "",
+      "datetime": "2026-05-10 14:08:05",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-16",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-16 08:00:00",
+        "supply": "2026-05-15 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70670792",
+          "article_id": "36790791",
+          "product_code": "4d00d92e799d52a0c5de5a5e69621ea3",
+          "price": 189.68,
+          "quantity": 2,
+          "comment": "рустам х себе",
+          "article": "B11477",
+          "brand": "BORSEHUNG",
+          "description": "Распылитель омывателя SKODA FABIA (00- ), OCTAVIA (07-11)",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-10 14:09:46",
+          "custom_warehouse_name": "Москва-IT1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55153327",
+      "comment": "",
+      "datetime": "2026-05-10 11:08:57",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-14",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-14 08:00:00",
+        "supply": "2026-05-13 19:00:00"
+      },
+      "products": [
+        {
+          "id": "70667601",
+          "article_id": "71341270",
+          "product_code": "6e38a7a3c078dd4ca568e8e2620f0581",
+          "price": 5140.8,
+          "quantity": 1,
+          "comment": "тарабанов киа",
+          "article": "JPR0121",
+          "brand": "JUST DRIVE",
+          "description": "Радиатор двигателя A/T",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-14 09:57:35",
+          "custom_warehouse_name": "Краснодар-PF1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55149173",
+      "comment": "",
+      "datetime": "2026-05-09 13:24:03",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-17",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-17 08:30:00",
+        "supply": "2026-05-16 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70661846",
+          "article_id": "28555955",
+          "product_code": "6902c36ea74ef50de71a228ab0fbccdc",
+          "price": 4359.36,
+          "quantity": 1,
+          "comment": "Елфимов Дастер",
+          "article": "226906393R",
+          "brand": "RENAULT",
+          "description": "Датчик кислорода лямбда зонд верхний H4M 226906393R RENAULT",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-15 10:09:59",
+          "custom_warehouse_name": "Москва-ST6",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55132421",
+      "comment": "",
+      "datetime": "2026-05-08 10:36:44",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-08",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-08 12:00:00",
+        "supply": "2026-05-08 10:36:45"
+      },
+      "products": [
+        {
+          "id": "70638743",
+          "article_id": "215912121",
+          "product_code": "Номенклатура#f6a0fc7e-c78d-11ec-85b1-3cecef800ff5",
+          "price": 2966,
+          "quantity": 2,
+          "comment": "Еремеева  Mitsubishi Minica (Ю)",
+          "article": "RN2035",
+          "brand": "NIBK",
+          "description": "Диск тормозной NiBK RN2035",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-08 15:32:58",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55122678",
+      "comment": "",
+      "datetime": "2026-05-07 17:06:30",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-11",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-11 00:00:00",
+        "supply": "2026-05-08 19:00:00"
+      },
+      "products": [
+        {
+          "id": "70624875",
+          "article_id": "404584291",
+          "product_code": "cd97838a457b31aacd09ac37e1e951c4",
+          "price": 266.76,
+          "quantity": 1,
+          "comment": "Плитус",
+          "article": "LN2468",
+          "brand": "LAVR",
+          "description": "2468 ЛАВР Очиститель кондиционера MANGO, 210мл",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-08 15:27:50",
+          "custom_warehouse_name": "Краснодар-NM1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55109757",
+      "comment": "",
+      "datetime": "2026-05-07 11:19:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-07 14:00:00",
+        "supply": "2026-05-07 11:19:34"
+      },
+      "products": [
+        {
+          "id": "70607608",
+          "article_id": "120843792",
+          "product_code": "Номенклатура#5bc8151d-633d-11ee-85c6-3cecef800ff5",
+          "price": 65,
+          "quantity": 4,
+          "comment": "тарабанов киа",
+          "article": "NSP022244323000",
+          "brand": "NSP",
+          "description": "Прокладки свечных колодцев KIA Sportage II (04-08)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 14:32:38",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70607609",
+          "article_id": "352337",
+          "product_code": "Номенклатура#c8d58b3d-f7d6-11e5-ab5a-50e54958e561",
+          "price": 260,
+          "quantity": 1,
+          "comment": "тарабанов киа",
+          "article": "293946",
+          "brand": "ELRING",
+          "description": "Сальник HYUNDAI ACCENT/TUCSON/SONATA/CARIZMA/LANCER 9/CEED 94- 1.3-2.0 р/в передний",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 14:32:38",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70607610",
+          "article_id": "14666081",
+          "product_code": "Номенклатура#ca2c8b50-7809-11eb-8fa6-0cc47a3486cd",
+          "price": 785,
+          "quantity": 1,
+          "comment": "тарабанов киа",
+          "article": "434860",
+          "brand": "ELRING",
+          "description": "САЛЬНИК КОЛЕНВАЛА ПЕРЕДНИЙ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 14:32:38",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70607611",
+          "article_id": "393252430",
+          "product_code": "Номенклатура#f9673c96-45bc-11ef-ae9b-3cecef99d7b9",
+          "price": 513.62,
+          "quantity": 1,
+          "comment": "тарабанов киа",
+          "article": "LES20820",
+          "brand": "LUZAR",
+          "description": "Прокладка клапанной крышки HYUNDAI TUCSON 04-",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 14:32:38",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55094125",
+      "comment": "",
+      "datetime": "2026-05-06 16:07:25",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-08",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-08 08:00:00",
+        "supply": "2026-05-07 19:00:00"
+      },
+      "products": [
+        {
+          "id": "70586172",
+          "article_id": "404584291",
+          "product_code": "cd97838a457b31aacd09ac37e1e951c4",
+          "price": 266.76,
+          "quantity": 1,
+          "comment": "Плитус",
+          "article": "LN2468",
+          "brand": "LAVR",
+          "description": "2468 ЛАВР Очиститель кондиционера MANGO, 210мл",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-07 14:32:38",
+          "custom_warehouse_name": "Краснодар-NM1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55085624",
+      "comment": "",
+      "datetime": "2026-05-06 12:33:59",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 14:00:00",
+        "supply": "2026-05-06 12:34:00"
+      },
+      "products": [
+        {
+          "id": "70575050",
+          "article_id": "26857584",
+          "product_code": "Номенклатура#8f96df1c-0a9a-11e9-80ca-0cc47a3486cd",
+          "price": 4374,
+          "quantity": 1,
+          "comment": "Чернова Лексус",
+          "article": "NLZ4823030NEW",
+          "brand": "AUTOFAMILY",
+          "description": "Защита картера TOYOTA CAMRY 09-11 AT (крепеж в комплекте)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-06 14:31:07",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55085565",
+      "comment": "",
+      "datetime": "2026-05-06 12:32:19",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 14:00:00",
+        "supply": "2026-05-06 12:32:25"
+      },
+      "products": [
+        {
+          "id": "70574974",
+          "article_id": "97578596",
+          "product_code": "Номенклатура#72c28636-5765-11ec-859d-3cecef800ff5",
+          "price": 1311,
+          "quantity": 1,
+          "comment": "Колюбакина Авео",
+          "article": "CHSBAVFKIT",
+          "brand": "FEBEST",
+          "description": "ВТУЛКА ПЕРЕДНЕГО СТАБИЛИЗАТОРА КОМПЛЕКТ D21.7",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-07 14:44:28",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55076758",
+      "comment": "",
+      "datetime": "2026-05-06 08:51:32",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 12:00:00",
+        "supply": "2026-05-06 08:51:33"
+      },
+      "products": [
+        {
+          "id": "70563334",
+          "article_id": "358289774",
+          "product_code": "Номенклатура#1586da8f-df6b-11ed-85c3-3cecef800ff5",
+          "price": 1249,
+          "quantity": 1,
+          "comment": "Чернова Лексус",
+          "article": "77ES880",
+          "brand": "MASTERKIT",
+          "description": "77ES880 Датчик, положение коленвала LEXUS IS/GS/RX 05->",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-07 14:40:35",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55076609",
+      "comment": "",
+      "datetime": "2026-05-06 08:44:13",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-07 08:00:00",
+        "supply": "2026-05-07 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70563150",
+          "article_id": "15302286",
+          "product_code": "Номенклатура#514bb6a6-c85f-11eb-8590-3cecef800ff5",
+          "price": 142.4,
+          "quantity": 4,
+          "comment": "На склад",
+          "article": "JTCD20PMA",
+          "brand": "JTC",
+          "description": "СОЕДИНИТЕЛЬ БЫСТРОСЪЕМНЫЙ 14 РТ MALE (ЕВРОПЕЙСКИЙ СТАНДАРТ) JTC 1",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 11:37:00",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55071385",
+      "comment": "",
+      "datetime": "2026-05-05 18:16:45",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-11",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-11 08:00:00",
+        "supply": "2026-05-10 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70555727",
+          "article_id": "369380399",
+          "product_code": "7c2a4adfa6981c9b7f88df623a0dc71d",
+          "price": 664.14,
+          "quantity": 1,
+          "comment": "Склад",
+          "article": "VR50263",
+          "brand": "VERTUL",
+          "description": "VR50263 Ключ для замены топливного фильтра дизельного двигателя FORD transit 2.2",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-11 11:31:08",
+          "custom_warehouse_name": "Москва-GK3",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55070941",
+      "comment": "",
+      "datetime": "2026-05-05 18:02:24",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-09",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-09 08:00:00",
+        "supply": "2026-05-08 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70555098",
+          "article_id": "391425260",
+          "product_code": "976f733135e3b1507a668301e9efd51a",
+          "price": 3024,
+          "quantity": 1,
+          "comment": "бжассо хендэ",
+          "article": "ZVKAM006",
+          "brand": "ZZVF",
+          "description": "КАМЕРА СИСТЕМЫ ПОМОЩИ ПРИ ПАРКОВКЕ HYUDAI GRAND SANTA FE (13-18), SANTA FE (12-18)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-11 11:31:08",
+          "custom_warehouse_name": "Москва-BZ1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55068294",
+      "comment": "",
+      "datetime": "2026-05-05 16:57:07",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 08:00:00",
+        "supply": "2026-05-05 16:57:07"
+      },
+      "products": [
+        {
+          "id": "70551474",
+          "article_id": "33168",
+          "product_code": "Номенклатура#194a4b42-8c7c-11e5-aea9-50e54958e561",
+          "price": 581.94,
+          "quantity": 1,
+          "comment": "Плитус",
+          "article": "W6106",
+          "brand": "MANN-FILTER",
+          "description": "Фильтр масляный HONDA ACCORD/CIVIC/CR-V 1.4-2.4",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-06 10:16:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55063116",
+      "comment": "",
+      "datetime": "2026-05-05 14:59:24",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-05 16:00:00",
+        "supply": "2026-05-05 14:59:25"
+      },
+      "products": [
+        {
+          "id": "70544438",
+          "article_id": "10279909",
+          "product_code": "Номенклатура#01956ffd-8cf5-11e5-aea9-50e54958e561",
+          "price": 2605,
+          "quantity": 1,
+          "comment": "Черемных Сид Саплинов",
+          "article": "1041002",
+          "brand": "HYUNDAI XTEER",
+          "description": "МАСЛО МОТОРНОЕ  XTeer Gasoline Ultra Protection 5W30  (4L)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-06 10:16:56",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55061344",
+      "comment": "",
+      "datetime": "2026-05-05 14:16:27",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-08",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-08 08:00:00",
+        "supply": "2026-05-07 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70542074",
+          "article_id": "13725672",
+          "product_code": "24d99b91f422b4815b6ff5bf3caf329b",
+          "price": 3780,
+          "quantity": 1,
+          "comment": "Сарташ Ахмед Мерседес Саплинов",
+          "article": "A2059053414",
+          "brand": "MERCEDES-BENZ",
+          "description": "Преобразователь напряжения",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 11:37:00",
+          "custom_warehouse_name": "Москва-OE170",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55061265",
+      "comment": "",
+      "datetime": "2026-05-05 14:13:52",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 08:00:00",
+        "supply": "2026-05-06 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70541967",
+          "article_id": "58671",
+          "product_code": "Номенклатура#4ab5320c-4413-11e6-80ce-0025906a28b9",
+          "price": 2801.5,
+          "quantity": 1,
+          "comment": "черноова лексус",
+          "article": "111032031",
+          "brand": "АВТОБРОНЯ",
+          "description": "Защита картера LEXUS RX 03- (крепеж в комплекте)",
+          "status_id": "6",
+          "status": "Отменен",
+          "status_description": "<p><strong>Заказ отменен по причине:</strong><br></p>",
+          "status_update": "2026-05-07 08:31:07",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55056511",
+      "comment": "",
+      "datetime": "2026-05-05 12:09:29",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-05 14:00:00",
+        "supply": "2026-05-05 12:09:30"
+      },
+      "products": [
+        {
+          "id": "70535685",
+          "article_id": "30844",
+          "product_code": "Номенклатура#68e245fe-e74e-11e5-abe8-50e54958e561",
+          "price": 10942.72,
+          "quantity": 1,
+          "comment": "бутко фабия",
+          "article": "620332600",
+          "brand": "LUK",
+          "description": "Сцепление компл. VAG FABIA/OCTAVIA/GOLF 5/POLO 99- 1.4",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-05 14:21:15",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55051038",
+      "comment": "",
+      "datetime": "2026-05-05 10:00:07",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-09",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-09 08:00:00",
+        "supply": "2026-05-08 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70528127",
+          "article_id": "364693901",
+          "product_code": "452f5f26095cf08840a833bc3f78de5a",
+          "price": 4596.48,
+          "quantity": 1,
+          "comment": "Спк Нива",
+          "article": "CP07K6",
+          "brand": "MTF",
+          "description": "Светодиодные лампы MTF Light серия CYBER LIGHT PRO, H7/18, 12V, 65W, 6500lm, 600",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-11 11:31:08",
+          "custom_warehouse_name": "Москва-XP1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55051035",
+      "comment": "",
+      "datetime": "2026-05-05 10:00:07",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-05 12:00:00",
+        "supply": "2026-05-05 10:00:11"
+      },
+      "products": [
+        {
+          "id": "70528124",
+          "article_id": "14688985",
+          "product_code": "Номенклатура#6033ee8d-047e-11ea-80dd-0cc47a3486cd",
+          "price": 7296.28,
+          "quantity": 1,
+          "comment": null,
+          "article": "KP15670XS",
+          "brand": "GATES",
+          "description": "НАСОС ВОДЯНОЙ  КОМПЛЕКТ РЕМНЯ ГРМ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-05 14:59:28",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55050867",
+      "comment": "",
+      "datetime": "2026-05-05 09:55:10",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-09",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-09 08:00:00",
+        "supply": "2026-05-08 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70527877",
+          "article_id": "35953285",
+          "product_code": "068040317f10f98f2d2265050ac764ad",
+          "price": 819.33,
+          "quantity": 1,
+          "comment": "Склад",
+          "article": "317050",
+          "brand": "ДЕЛО ТЕХНИКИ",
+          "description": "Молоток слесарный 0,5 кг. цельнокованный Дело техники",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-08 15:32:57",
+          "custom_warehouse_name": "Москва-DT3",
+          "show_date": "",
+          "sale": null
+        },
+        {
+          "id": "70527878",
+          "article_id": "10872357",
+          "product_code": "c7a13f829e6db1a1a7c81ee338b69820",
+          "price": 1032.48,
+          "quantity": 1,
+          "comment": "Склад",
+          "article": "511120",
+          "brand": "ДЕЛО ТЕХНИКИ",
+          "description": "НАБОР КЛЮЧЕЙ Р/Н 12ШТ. №511120 ДТ (ХОЛДЕР)",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-08 15:32:57",
+          "custom_warehouse_name": "Москва-DT3",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55050866",
+      "comment": "",
+      "datetime": "2026-05-05 09:55:10",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-07 08:00:00",
+        "supply": "2026-05-07 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70527876",
+          "article_id": "10872064",
+          "product_code": "34447d1c29cf0676d9833635eab574ad",
+          "price": 140.62,
+          "quantity": 1,
+          "comment": "Склад",
+          "article": "371215",
+          "brand": "ДЕЛО ТЕХНИКИ",
+          "description": "ЗУБИЛО 15х150 ММ ДТ",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 11:37:00",
+          "custom_warehouse_name": "ЮФО-UW3",
+          "show_date": "2 (3) дн.",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55034286",
+      "comment": "",
+      "datetime": "2026-05-04 14:36:10",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-05 08:00:00",
+        "supply": "2026-05-05 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70504862",
+          "article_id": "328708553",
+          "product_code": "Номенклатура#609ce596-1f3b-11f0-aeb0-3cecef99d7b9",
+          "price": 12924,
+          "quantity": 1,
+          "comment": "Тарабанов Краун",
+          "article": "STK2GRFE",
+          "brand": "MOUSSON",
+          "description": "Комплект цепи ГРМ  3,5 2",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-05 10:27:20",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55032546",
+      "comment": "",
+      "datetime": "2026-05-04 13:54:12",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-07",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-07 08:00:00",
+        "supply": "2026-05-07 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70502493",
+          "article_id": "6445360",
+          "product_code": "6156573ae9affed83683d871be879598",
+          "price": 1006.56,
+          "quantity": 1,
+          "comment": "Тарабанов Краун",
+          "article": "1121431020",
+          "brand": "TOYOTA",
+          "description": null,
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-07 11:37:00",
+          "custom_warehouse_name": "Волгоград-AD1",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55032545",
+      "comment": "",
+      "datetime": "2026-05-04 13:54:12",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-08",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-08 08:00:00",
+        "supply": "2026-05-07 21:00:00"
+      },
+      "products": [
+        {
+          "id": "70502492",
+          "article_id": "284403869",
+          "product_code": "2534e1a057e74fdddd65b130b41c5cfd",
+          "price": 1905.26,
+          "quantity": 1,
+          "comment": "Тарабанов Краун",
+          "article": "KA103393",
+          "brand": "KP",
+          "description": "Прокладка головки блока цилиндров КР",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-08 15:32:57",
+          "custom_warehouse_name": "Москва-YF4",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55032543",
+      "comment": "",
+      "datetime": "2026-05-04 13:54:12",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-06",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-06 08:00:00",
+        "supply": "2026-05-05 19:00:00"
+      },
+      "products": [
+        {
+          "id": "70502489",
+          "article_id": "6445331",
+          "product_code": "5dd45b57b4070c5be9a1ee9f65e75b18",
+          "price": 922.32,
+          "quantity": 1,
+          "comment": "Тарабанов Краун",
+          "article": "1121331040",
+          "brand": "TOYOTA",
+          "description": null,
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-06 10:16:56",
+          "custom_warehouse_name": "Симферополь-UB1",
+          "show_date": "4 (5) дн.",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55031643",
+      "comment": "",
+      "datetime": "2026-05-04 13:32:07",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-05",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-05 08:00:00",
+        "supply": "2026-05-05 03:00:00"
+      },
+      "products": [
+        {
+          "id": "70501287",
+          "article_id": "404549517",
+          "product_code": "Номенклатура#5e480967-d5ab-11f0-860d-3cecef800ff5",
+          "price": 3400,
+          "quantity": 1,
+          "comment": "Сарташ Ахмед",
+          "article": "E9YTX141",
+          "brand": "ARNEZI",
+          "description": "Аккумулятор ARNEZI мото AGM 14 А ч прямой L+ 150x86x146 EN 170 А",
+          "status_id": "20",
+          "status": "Возвращен",
+          "status_description": "<p>По данной позиции был осуществлен <strong>возврат.</strong></p>",
+          "status_update": "2026-05-06 13:49:53",
+          "custom_warehouse_name": "Ростов 1 (Батайск)",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    },
+    {
+      "order_id": "55017077",
+      "comment": "",
+      "datetime": "2026-05-03 18:09:02",
+      "point_code": "ПЛ_ТорговыеТочки#db5d30cc-0a3e-11e7-80c4-0cc47a3486cd",
+      "delivery_point_id": "0",
+      "point_name": "Клочанов В.Ю. (Ленина)",
+      "point_delivery_address": "385140, Адыгея Респ, Тахтамукайский р-н, Яблоновский пгт, Ленина ул, дом № 38/1",
+      "delivery_name": "Плановая доставка",
+      "delivery_method_id": "2",
+      "delivery_date": "2026-05-04",
+      "payment_id": "2",
+      "payment_name": "Безналичные",
+      "params": {
+        "delivery": "2026-05-04 08:00:00",
+        "supply": "2026-05-03 18:09:12"
+      },
+      "products": [
+        {
+          "id": "70481171",
+          "article_id": "21950006",
+          "product_code": "Номенклатура#f2d0df3b-debf-11e9-80dc-0cc47a3486cd",
+          "price": 195.08,
+          "quantity": 5,
+          "comment": "в тз",
+          "article": "1807",
+          "brand": "ВМПАВТО",
+          "description": "VMPAUTO",
+          "status_id": "9",
+          "status": "Получен клиентом",
+          "status_description": "<p>Заказ был <strong>получен клиентом </strong>(иногда данный статус присваивается по факту передачи заказа водителю на доставку).<strong></strong></p>",
+          "status_update": "2026-05-04 09:47:34",
+          "custom_warehouse_name": "Краснодар",
+          "show_date": "",
+          "sale": null
+        }
+      ]
+    }
+  ],
+  "pages": 122,
+  "currentPage": 0,
+  "pageSize": 100,
+  "status": "success"
+}

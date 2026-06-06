@@ -15,7 +15,7 @@ def main(*, contractorHeader: Tuple[
     Tuple[
         Literal[8880],
         Iterable
-    ],
+    ] | None,
     Tuple[
         Literal[8876],
         Iterable

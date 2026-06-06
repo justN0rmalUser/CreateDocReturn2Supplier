@@ -30,6 +30,8 @@ ROSSKO_ACCEPTED_VALUES = (
     list(range(31, 37))
 )
 
+PROFIT_ACCEPTED_VALUES = list(range(1, 28))
+
 
 class ProductList:
     def __init__(self, data: ProductData | None = None):
@@ -65,6 +67,26 @@ class ProductList:
                     cur_date: {
                         order_id: {
                             part_idx: (guid, status, (order_idx, part_idx))
+                        }
+                    }
+                })
+        return plist
+    
+    @classmethod
+    def from_profit(cls, data: list[dict]) -> Self:
+        plist = cls()
+        for order_idx, order in enumerate(data):
+            for part_idx, part in enumerate(order["products"]):
+                cur_date:       str = isodate(order["datetime"], "%Y-%m-%d %H:%M:%S")
+                order_id:       int = int(order["order_id"])
+                pos_product_id: int = int(part["id"])
+                guid:           str = part["article_id"]
+                status:         int = int(part["status_id"])
+
+                plist.add({
+                    cur_date: {
+                        order_id: {
+                            pos_product_id: (guid, status, (order_idx, part_idx))
                         }
                     }
                 })
@@ -200,7 +222,7 @@ class ProductList:
         # Проверка статусов
         if not allow_statuses:
             raise ValueError("Нет вообще никаких статусов")
-        if not set(allow_statuses).issubset(ROSSKO_ACCEPTED_VALUES):
+        if not (set(allow_statuses).issubset(ROSSKO_ACCEPTED_VALUES) or set(allow_statuses).issubset(PROFIT_ACCEPTED_VALUES)):
             raise ValueError("Недопустимые значения")
 
         # Перебор подходящих товаров
@@ -268,6 +290,8 @@ def read_plist(path: Path | str) -> ProductList:
         Недопустимый тип входной переменной
     `ValueError`
         Расширение файла не "**.pkl**"
+    `FileNotFoundError`
+        Файл не найден (скорее всего это первый прогон)
     """
     if not isinstance(path, (str, Path)):
         raise TypeError("Недопустимый тип переменной для чтения")
