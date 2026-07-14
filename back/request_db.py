@@ -30,15 +30,15 @@ def main(*, contractorHeader: Tuple[
     )
 
     connection = Connection(db_cfg)
-    transaction = connection.transaction()
+    
+    for value in contractorHeader:
+        if value is None:
+            continue
 
-    with transaction.start_transaction(type_api="high", read_only=False) as trans:
-        for value in contractorHeader:
-            if value is None:
-                continue
-
-            agent_id, data = value
-
+        agent_id, data = value
+        
+        transaction = connection.transaction()
+        with transaction.start_transaction(type_api="high", read_only=False) as trans:
             try:
                 LOG.debug("Старт цикла создания документов")
                 docs_pks = trans.create_document_out(agent_id, 0)

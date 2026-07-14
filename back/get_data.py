@@ -6,6 +6,8 @@ from utilities._utils import isodate, logger, get_config, day_of_week
 from utilities.dataobject import ProductList, write_plist, read_plist
 
 
+TDATA_PATH = Path(r"C:\Program Files\_Scripts\Create_ReturnNomeclature\data\temp")
+
 # --- Настройка логгирования ---
 GET_DATA_LOGGER = logger(name="Getter", fpath="logs/get.log")
 cfg = get_config()
@@ -38,8 +40,8 @@ def get_rossko_data(start_date: date, end_date: date):
 
         # Пути к pkl данным
         GET_DATA_LOGGER.debug('ROSSKO: Формирование путей для данных')
-        _yesterday = Path(r"data\temp") / (day_of_week(-1, postfix="_rossko") + '.pkl')
-        _today = Path(r"data\temp") / (day_of_week(postfix="_rossko") + '.pkl')
+        _yesterday = TDATA_PATH / (day_of_week(-1, postfix="_rossko") + '.pkl')
+        _today = TDATA_PATH / (day_of_week(postfix="_rossko") + '.pkl')
 
         # Запись данных за сегодняшний день
         GET_DATA_LOGGER.info('ROSSKO: Формирование данных для класса данных')
@@ -67,19 +69,19 @@ def get_rossko_data(start_date: date, end_date: date):
             raw_order: dict = raw_products[order_idx]
 
             old_created_date: str = isodate(raw_order["created_date"], "%d.%m.%Y %H:%M:%S")
-            if old_created_date != created_date:
+            if str(old_created_date) != str(created_date):
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | Дата не соответствует заявленной (raw: {old_created_date}; cls: {created_date})")
                 raise ValueError(err)
 
             old_order_id: int = raw_order["id"]
-            if old_order_id != order_id:
+            if int(old_order_id) != int(order_id):
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | ID заказа не соответствует заявленной (raw: {old_order_id}; cls: {order_id})")
                 raise ValueError(err)
 
             raw_product: dict = raw_order["parts"]["part"][product_idx]
 
             old_guid: str = raw_product["guid"]
-            if old_guid != guid:
+            if str(old_guid) != str(guid):
                 GET_DATA_LOGGER.critical(err := f"ROSSKO | ID товара не соответствует заявленной (raw: {old_guid}; cls: {guid})")
                 raise ValueError(err)
 
@@ -118,8 +120,8 @@ def get_profit_data(start_date: date, end_date: date):
 
         # Пути к pkl данным
         GET_DATA_LOGGER.debug('PROFIT: Формирование путей для данных')
-        _yesterday = Path(r"data\temp") / (day_of_week(-1, postfix="_profit") + '.pkl')
-        _today = Path(r"data\temp") / (day_of_week(postfix="_profit") + '.pkl')
+        _yesterday = TDATA_PATH / (day_of_week(-1, postfix="_profit") + '.pkl')
+        _today = TDATA_PATH / (day_of_week(postfix="_profit") + '.pkl')
 
         # Запись данных за сегодняшний день
         GET_DATA_LOGGER.info('PROFIT: Формирование данных для класса данных')
@@ -144,19 +146,19 @@ def get_profit_data(start_date: date, end_date: date):
             raw_order: dict = raw_products[order_idx]
 
             old_created_date: str = isodate(raw_order["datetime"], "%Y-%m-%d %H:%M:%S")
-            if old_created_date != created_date:
+            if str(old_created_date) != str(created_date):
                 GET_DATA_LOGGER.critical(err := f"PROFIT | Дата не соответствует заявленной (raw: {old_created_date}; cls: {created_date})")
                 raise ValueError(err)
 
             old_order_id: int = raw_order["order_id"]
-            if old_order_id != order_id:
+            if int(old_order_id) != int(order_id):
                 GET_DATA_LOGGER.critical(err := f"PROFIT | ID заказа не соответствует заявленной (raw: {old_order_id}; cls: {order_id})")
                 raise ValueError(err)
 
             raw_product: dict = raw_order["products"][product_idx]
 
             old_guid: str = raw_product["article_id"]
-            if old_guid != guid:
+            if str(old_guid) != str(guid):
                 GET_DATA_LOGGER.critical(err := f"PROFIT | ID товара не соответствует заявленной (raw: {old_guid}; cls: {guid})")
                 raise ValueError(err)
 
@@ -193,4 +195,5 @@ def main():
         end_date=end
     )
 
+    GET_DATA_LOGGER.info("Товары пробрасываются, успех!")
     return (rossko_data, profit_data)

@@ -123,11 +123,6 @@ class ProfitLigaAPI:
         self.start_date = start
         self.end_date = end
 
-    @overload
-    def _make_request(self, page_num: int) -> tuple[int, list[dict]]: ...
-    @overload
-    def _make_request(self, page_num: int, *, with_pages: bool) -> tuple[int, list[dict], int]: ...
-
     def _make_request(self, page_num: int, *, with_pages: bool=False) -> tuple[int, list[dict]] | tuple[int, list[dict], int]:
         """Делает запрос на сервер
 
@@ -202,7 +197,7 @@ class ProfitLigaAPI:
         result = self.validate_list(data)
 
         for page in range(2, count_pages):
-            _, data = self._make_request(page)
+            _, data = self._make_request(page, with_pages=False)
             
             valid_data = self.validate_list(data)
             
