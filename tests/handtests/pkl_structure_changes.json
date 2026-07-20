@@ -1,0 +1,431 @@
+{
+    "base_path": "C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\data\\temp",
+    "output_path": "C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\tests\\handtests\\pkl_structure_changes.json",
+    "sources": {
+        "profit": {
+            "files": [
+                "Thursday_profit.pkl",
+                "Monday_profit.pkl",
+                "Tuesday_profit.pkl",
+                "Wednesday_profit.pkl",
+                "Friday_profit.pkl",
+                "Saturday_profit.pkl",
+                "Sunday_profit.pkl"
+            ],
+            "comparisons": [
+                {
+                    "old_file": "Thursday_profit.pkl",
+                    "new_file": "Monday_profit.pkl",
+                    "old_days": [
+                        "2026-04-29",
+                        "2026-07-01"
+                    ],
+                    "new_days": [
+                        "2026-05-10",
+                        "2026-07-12"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Monday_profit.pkl",
+                    "new_file": "Tuesday_profit.pkl",
+                    "old_days": [
+                        "2026-05-10",
+                        "2026-07-12"
+                    ],
+                    "new_days": [
+                        "2026-05-11",
+                        "2026-07-13"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Tuesday_profit.pkl",
+                    "new_file": "Wednesday_profit.pkl",
+                    "old_days": [
+                        "2026-05-11",
+                        "2026-07-13"
+                    ],
+                    "new_days": [
+                        "2026-05-12",
+                        "2026-07-14"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Wednesday_profit.pkl",
+                    "new_file": "Friday_profit.pkl",
+                    "old_days": [
+                        "2026-05-12",
+                        "2026-07-14"
+                    ],
+                    "new_days": [
+                        "2026-05-14",
+                        "2026-07-16"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Friday_profit.pkl",
+                    "new_file": "Saturday_profit.pkl",
+                    "old_days": [
+                        "2026-05-14",
+                        "2026-07-16"
+                    ],
+                    "new_days": [
+                        "2026-05-15",
+                        "2026-07-17"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Saturday_profit.pkl",
+                    "new_file": "Sunday_profit.pkl",
+                    "old_days": [
+                        "2026-05-15",
+                        "2026-07-17"
+                    ],
+                    "new_days": [
+                        "2026-05-16",
+                        "2026-07-18"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                }
+            ]
+        },
+        "rossko": {
+            "files": [
+                "Tuesday_rossko.pkl",
+                "Wednesday_rossko.pkl",
+                "Thursday_rossko.pkl",
+                "Friday_rossko.pkl",
+                "Saturday_rossko.pkl",
+                "Sunday_rossko.pkl",
+                "Monday_rossko.pkl"
+            ],
+            "comparisons": [
+                {
+                    "old_file": "Tuesday_rossko.pkl",
+                    "new_file": "Wednesday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-11",
+                        "2026-07-13"
+                    ],
+                    "new_days": [
+                        "2026-05-11",
+                        "2026-07-14"
+                    ],
+                    "has_changes": true,
+                    "changes": {
+                        "missing_orders": [
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176345121,
+                                "old_part_count": 4
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176348373,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176348532,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176349020,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176351963,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176360145,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176360181,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176361392,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176366593,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176370800,
+                                "old_part_count": 2
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176386429,
+                                "old_part_count": 2
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176392102,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176417182,
+                                "old_part_count": 2
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176419269,
+                                "old_part_count": 1
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176424286,
+                                "old_part_count": 3
+                            },
+                            {
+                                "day": "2026-05-11",
+                                "order_id": 176425467,
+                                "old_part_count": 1
+                            }
+                        ],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Wednesday_rossko.pkl",
+                    "new_file": "Thursday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-11",
+                        "2026-07-14"
+                    ],
+                    "new_days": [
+                        "2026-05-13",
+                        "2026-07-15"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Thursday_rossko.pkl",
+                    "new_file": "Friday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-13",
+                        "2026-07-15"
+                    ],
+                    "new_days": [
+                        "2026-05-14",
+                        "2026-07-16"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Friday_rossko.pkl",
+                    "new_file": "Saturday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-14",
+                        "2026-07-16"
+                    ],
+                    "new_days": [
+                        "2026-05-15",
+                        "2026-07-17"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Saturday_rossko.pkl",
+                    "new_file": "Sunday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-15",
+                        "2026-07-17"
+                    ],
+                    "new_days": [
+                        "2026-05-16",
+                        "2026-07-18"
+                    ],
+                    "has_changes": false,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [],
+                        "missing_items": [],
+                        "added_items": [],
+                        "guid_changed_at_index": []
+                    }
+                },
+                {
+                    "old_file": "Sunday_rossko.pkl",
+                    "new_file": "Monday_rossko.pkl",
+                    "old_days": [
+                        "2026-05-16",
+                        "2026-07-18"
+                    ],
+                    "new_days": [
+                        "2026-05-17",
+                        "2026-07-19"
+                    ],
+                    "has_changes": true,
+                    "changes": {
+                        "missing_orders": [],
+                        "added_orders": [],
+                        "part_count_changed": [
+                            {
+                                "day": "2026-07-15",
+                                "order_id": 184633498,
+                                "old_part_count": 10,
+                                "new_part_count": 11
+                            }
+                        ],
+                        "missing_items": [],
+                        "added_items": [
+                            {
+                                "day": "2026-07-15",
+                                "order_id": 184633498,
+                                "new": {
+                                    "day": "2026-07-15",
+                                    "order_id": 184633498,
+                                    "item_idx": 10,
+                                    "guid": "NSII0024849198",
+                                    "status": 2,
+                                    "raw_path": [
+                                        867,
+                                        10
+                                    ]
+                                }
+                            }
+                        ],
+                        "guid_changed_at_index": [
+                            {
+                                "day": "2026-07-15",
+                                "order_id": 184633498,
+                                "item_idx": 8,
+                                "old": {
+                                    "guid": "NSIN0019715986",
+                                    "status": 2,
+                                    "raw_path": [
+                                        856,
+                                        8
+                                    ]
+                                },
+                                "new": {
+                                    "guid": "NSII0007151917",
+                                    "status": 31,
+                                    "raw_path": [
+                                        867,
+                                        8
+                                    ]
+                                }
+                            },
+                            {
+                                "day": "2026-07-15",
+                                "order_id": 184633498,
+                                "item_idx": 9,
+                                "old": {
+                                    "guid": "NSII0024849198",
+                                    "status": 2,
+                                    "raw_path": [
+                                        856,
+                                        9
+                                    ]
+                                },
+                                "new": {
+                                    "guid": "NSIN0019715986",
+                                    "status": 2,
+                                    "raw_path": [
+                                        867,
+                                        9
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

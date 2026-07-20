@@ -6,7 +6,11 @@ import pickle
 
 import pydantic
 
-from ._utils import validate_date_key, isodate
+from ._utils import validate_date_key, isodate, logger
+
+
+fetch_data_log = logger(name="dataobject", fpath=Path(r"C:\Program Files\_Scripts\Create_ReturnNomeclature\logs\dataobject.log"))
+fetch_data_log.propagate = False
 
 
 DateKey: TypeAlias = Annotated[str, pydantic.AfterValidator(validate_date_key)]
@@ -35,11 +39,16 @@ PROFIT_ACCEPTED_VALUES = list(range(1, 28))
 
 class ProductList:
     def __init__(self, data: ProductData | None = None):
+        fetch_data_log.debug("Создание класса...")
+        
         self._data: ProductData | dict = (
             PDATA_ADAPTER.validate_python(data)
             if data is not None
             else {}
         )
+        
+        get_data_msg = "Данные получены успешно!" if self._data != {} else "Входящие данные пустые (по умолчанию)"
+        fetch_data_log.info(get_data_msg)
 
     @classmethod
     def from_rossko(cls, data: list[dict]) -> Self:
@@ -55,6 +64,7 @@ class ProductList:
         `Self`
             Экземпляр класса `ProductList`
         """
+        fetch_data_log.info("Получение данных из ROSSKO")
         plist = cls()
         for order_idx, order in enumerate(data):
             for part_idx, part in enumerate(order["parts"]["part"]):
@@ -74,6 +84,7 @@ class ProductList:
     
     @classmethod
     def from_profit(cls, data: list[dict]) -> Self:
+        fetch_data_log.info("Получение данных из PROFIT-LIGA")
         plist = cls()
         for order_idx, order in enumerate(data):
             for part_idx, part in enumerate(order["products"]):
@@ -122,7 +133,8 @@ class ProductList:
             for order, order_dict in day_dict.items():
                 for item_idx, item in order_dict.items():
                     guid, status, path = item
-                    yield day, order, item_idx, guid, status, path
+                    fetch_data_log.info("Данные шага итератора: %s", data := (day, order, item_idx, guid, status, path))
+                    yield data
 
     def _update(
         self,
@@ -149,12 +161,15 @@ class ProductList:
             Путь т-ра относительно ответа сервера; он создается
         """
         if self.data.get(day) is None:
+            fetch_data_log.debug(f"Дата-ключ не найден, создается новый: <{day}>")
             self._data[day] = {}
 
         if self.data[day].get(order) is None:
+            fetch_data_log.debug(f"ID заказа в {day} как ключ не найден, создается новый: <{order}>")
             self._data[day][order] = {}
 
         self._data[day][order][idx_item] = (guid, status, path)
+        fetch_data_log.info(f"Товар добавлен: {day}:{order}:{idx_item}:{(guid, status, path)}")
 
     def add(self, data: ProductList | ProductData) -> None:
         """Слияние списков
@@ -232,14 +247,16 @@ class ProductList:
             if old_product.min_day != day:
                 guid, new_status, path = self.data[day][order][item_idx]
                 if guid != old_guid:
-                    raise ValueError(f"Товар не один и тот же: {day, order, old_guid} | {guid}")
+                    fetch_data_log.error(errmsg := f"Товар не один и тот же: {day, order, item_idx, old_guid} | {guid}")
+                    raise ValueError(errmsg)
             else:
                 continue
 
             statuses = (old_status, new_status)
 
             if old_status != new_status and new_status in allow_statuses:
-                yield day, order, guid, statuses, path
+                fetch_data_log.info("Готовые данные для обработки: %s", data := (day, order, guid, statuses, path))
+                yield data
 
 
 def write_plist(data: ProductList, path: Path | str) -> None:
@@ -269,6 +286,7 @@ def write_plist(data: ProductList, path: Path | str) -> None:
 
     with open(path, 'wb') as fpkl:
         pickle.dump(data, fpkl)
+        fetch_data_log.info(f"Файл \"{path.name}\" - записан")
 
 
 def read_plist(path: Path | str) -> ProductList:
@@ -308,4 +326,5 @@ def read_plist(path: Path | str) -> ProductList:
         obj = pickle.load(fpkl)
         if not isinstance(obj, ProductList):
             raise TypeError("Объект не является \"ProductList\"")
+        fetch_data_log.info(f"Файл \"{path.name}\" - прочитан")
         return obj

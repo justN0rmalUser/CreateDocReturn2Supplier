@@ -1,12 +1,15 @@
 # get_data.py
 from datetime import date, timedelta
 from pathlib import Path
+import json
+
 from utilities.rosskoNprofit import RosskoAPI, ProfitLigaAPI
 from utilities._utils import isodate, logger, get_config, day_of_week
 from utilities.dataobject import ProductList, write_plist, read_plist
 
 
 TDATA_PATH = Path(r"C:\Program Files\_Scripts\Create_ReturnNomeclature\data\temp")
+
 
 # --- Настройка логгирования ---
 GET_DATA_LOGGER = logger(name="Getter", fpath="logs/get.log")
@@ -37,6 +40,10 @@ def get_rossko_data(start_date: date, end_date: date):
             start=start_date.isoformat(),
             end=end_date.isoformat()
         )
+
+        # Запись росско
+        with open(f"data/data_backup/{day_of_week(postfix="_rossko")}.json", 'w', encoding="utf-8") as FILE:
+            json.dump(raw_products, FILE, ensure_ascii=False, indent=4)
 
         # Пути к pkl данным
         GET_DATA_LOGGER.debug('ROSSKO: Формирование путей для данных')
@@ -97,7 +104,9 @@ def get_rossko_data(start_date: date, end_date: date):
 
         # Возврать ID агента и итератора готовых данных
         if data:
+            GET_DATA_LOGGER.info('ROSSKO: Возврат значений')
             return (8880, iter(data))
+        GET_DATA_LOGGER.warning('ROSSKO: Никакие данные не найдены')
         return None
 
 def get_profit_data(start_date: date, end_date: date):
@@ -117,6 +126,10 @@ def get_profit_data(start_date: date, end_date: date):
         # Получение товаров за весь промежуток
         GET_DATA_LOGGER.info('PROFIT: Получение товаров за весь промежуток')
         raw_products = profit_api.get_orders()
+
+        # Запись профита
+        with open(f"data/data_backup/{day_of_week(postfix="_profit")}.json", 'w', encoding="utf-8") as FILE:
+            json.dump(raw_products, FILE, ensure_ascii=False, indent=4)
 
         # Пути к pkl данным
         GET_DATA_LOGGER.debug('PROFIT: Формирование путей для данных')
@@ -174,7 +187,9 @@ def get_profit_data(start_date: date, end_date: date):
 
         # Возврать ID агента и итератора готовых данных
         if data:
+            GET_DATA_LOGGER.info('PROFIT: Возврат значений')
             return (8876, iter(data))
+        GET_DATA_LOGGER.warning('PROFIT: Никакие данные не найдены')
         return None
 
 def main():
@@ -186,14 +201,19 @@ def main():
     start = end - timedelta(days=63)
 
     # Rossko
+    GET_DATA_LOGGER.debug("Запуск функции сбора данных с ROSSKO")
     rossko_data = get_rossko_data(
         start_date=start,
         end_date=end
     )
+    GET_DATA_LOGGER.info("Данные с ROSSKO собраны")
+
+    GET_DATA_LOGGER.debug("Запуск функции сбора данных с PROFIT-LIGA")
     profit_data = get_profit_data(
         start_date=start,
         end_date=end
     )
+    GET_DATA_LOGGER.info("Данные с PROFIT-LIGA собраны")
 
     GET_DATA_LOGGER.info("Товары пробрасываются, успех!")
     return (rossko_data, profit_data)
