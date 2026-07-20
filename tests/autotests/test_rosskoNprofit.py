@@ -150,6 +150,15 @@ class RosskoAPITestCase(unittest.TestCase):
         self.assertEqual(result, [{"id": 1}])
         self.api._fetch_orders_for_date.assert_called_once_with("2026-01-01", "2026-01-31")
 
+    def test_get_orders_does_not_split_response_below_threshold(self):
+        orders = [{"id": idx} for idx in range(494)]
+        self.api._fetch_orders_for_date = Mock(return_value=orders)
+
+        result = self.api.get_orders("2026-01-01", "2026-01-31")
+
+        self.assertEqual(result, orders)
+        self.api._fetch_orders_for_date.assert_called_once()
+
     def test_get_orders_does_not_split_500_orders_for_single_day(self):
         orders = [{"id": idx} for idx in range(500)]
         self.api._fetch_orders_for_date = Mock(return_value=orders)
@@ -210,6 +219,104 @@ class RosskoAPITestCase(unittest.TestCase):
         get_orders_call = Mock(return_value=raw_response)
         fake_client = types.SimpleNamespace(service=types.SimpleNamespace(GetOrders=get_orders_call))
         return Mock(return_value=fake_client)
+
+
+class ProfitLigaAPITestCase(unittest.TestCase):
+    def setUp(self):
+        self.api = rossko_module.ProfitLigaAPI(
+            url="https://profit.test/orders",
+            api_key="secret",
+            start="2026-01-05",
+            end="2026-01-15",
+        )
+
+    def test_init_stores_request_and_date_settings(self):
+        self.assertEqual(self.api.url, "https://profit.test/orders")
+        self.assertEqual(self.api.api_key, "secret")
+        self.assertEqual(self.api.start_date, "2026-01-05")
+        self.assertEqual(self.api.end_date, "2026-01-15")
+
+    def test_make_request_returns_page_data_with_optional_page_count(self):
+        response = Mock()
+        response.json.return_value = {
+            "status": "success", "pageSize": 2,
+            "data": [{"id": 1}, {"id": 2}], "pages": 4,
+        }
+
+        with patch.object(rossko_module.requests, "get", return_value=response) as get_mock, \
+             patch.object(rossko_module, "sleep") as sleep_mock:
+            short_result = self.api._make_request(2)
+            full_result = self.api._make_request(1, with_pages=True)
+
+        self.assertEqual(short_result, (2, [{"id": 1}, {"id": 2}]))
+        self.assertEqual(full_result, (2, [{"id": 1}, {"id": 2}], 4))
+        self.assertEqual(get_mock.call_args_list, [
+            unittest.mock.call("https://profit.test/orders", params={"secret": "secret", "page": 2}),
+            unittest.mock.call("https://profit.test/orders", params={"secret": "secret", "page": 1}),
+        ])
+        self.assertEqual(response.raise_for_status.call_count, 2)
+        self.assertEqual(sleep_mock.call_args_list, [unittest.mock.call(0.5), unittest.mock.call(0.5)])
+
+    def test_make_request_wraps_request_errors(self):
+        error = rossko_module.requests.RequestException("network down")
+        with patch.object(rossko_module.requests, "get", side_effect=error):
+            with self.assertRaisesRegex(rossko_module.requests.RequestException, "Profit Liga.*network down"):
+                self.api._make_request(1)
+
+    def test_make_request_rejects_unsuccessful_api_status(self):
+        response = Mock()
+        response.json.return_value = {
+            "status": "error", "pageSize": 0, "data": [], "pages": 0,
+        }
+        with patch.object(rossko_module.requests, "get", return_value=response), \
+             patch.object(rossko_module, "sleep"):
+            with self.assertRaisesRegex(RuntimeError, "error"):
+                self.api._make_request(1)
+
+    @staticmethod
+    def _page(*dates):
+        return [{"datetime": f"{day} 12:00:00", "id": idx} for idx, day in enumerate(dates)]
+
+    def test_validate_list_returns_whole_page_inside_range(self):
+        page = self._page("2026-01-15", "2026-01-10", "2026-01-05")
+        self.assertIs(self.api.validate_list(page), page)
+
+    def test_validate_list_slices_items_to_date_range(self):
+        page = self._page("2026-01-20", "2026-01-15", "2026-01-10", "2026-01-05", "2026-01-01")
+        self.assertEqual(self.api.validate_list(page), page[1:4])
+
+    def test_validate_list_returns_empty_when_page_is_outside_range(self):
+        page = self._page("2026-02-10", "2026-02-01")
+        self.assertEqual(self.api.validate_list(page), [])
+
+    def test_get_orders_collects_pages_and_stops_after_range(self):
+        first_page = self._page("2026-01-15", "2026-01-12")
+        second_page = self._page("2026-01-10", "2026-01-05")
+        outside_page = self._page("2026-01-04", "2026-01-01")
+        self.api._make_request = Mock(side_effect=[
+            (2, first_page, 5),
+            (2, second_page),
+            (2, outside_page),
+        ])
+
+        result = self.api.get_orders()
+
+        self.assertEqual(result, first_page + second_page)
+        self.assertEqual(self.api._make_request.call_args_list, [
+            unittest.mock.call(1, with_pages=True),
+            unittest.mock.call(2, with_pages=False),
+            unittest.mock.call(3, with_pages=False),
+        ])
+
+    def test_get_orders_keeps_scanning_when_first_page_has_no_valid_rows(self):
+        outside_new = self._page("2026-02-10", "2026-02-01")
+        valid = self._page("2026-01-15", "2026-01-10")
+        self.api._make_request = Mock(side_effect=[
+            (2, outside_new, 3),
+            (2, valid),
+        ])
+
+        self.assertEqual(self.api.get_orders(), valid)
 
 
 if __name__ == "__main__":

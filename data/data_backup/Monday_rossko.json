@@ -31557,7 +31557,7 @@
                     "count": 1,
                     "delivery": 1,
                     "comment": "Коняхина рено Саплинов",
-                    "status": 0
+                    "status": 2
                 }
             ]
         }
@@ -32741,7 +32741,7 @@
                     "count": 20,
                     "delivery": 1,
                     "comment": "в тз саплинов как расходка",
-                    "status": 3
+                    "status": 2
                 }
             ]
         }
@@ -33328,7 +33328,7 @@
         "id": 184785332,
         "created_date": "16.07.2026 17:31:50",
         "delivery_date": "17.07.2026",
-        "total_price": "32335.25",
+        "total_price": "31508.25",
         "extra": 0,
         "stock_address": "Краснодар, Новороссийская улица, 240/1",
         "detail": {
@@ -33395,7 +33395,7 @@
                     "count": 1,
                     "delivery": 1,
                     "comment": "Донцов Рав4 Саплинов",
-                    "status": 31
+                    "status": 36
                 },
                 {
                     "guid": "NSIN0019715920",

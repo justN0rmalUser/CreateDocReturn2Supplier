@@ -1,22 +1,5 @@
-from zeep import Client
-from datetime import date
-from zeep.helpers import serialize_object
-import requests
-from pprint import pprint
+a = [[1, (0, 0)], [2, (0, 1)], [3, (1, 0)]]
+b = [['a', (2, 2)], ['b', (2, 1)], ['c', (1, 1)]]
 
-print(date.today())
-
-params = {"secret": "MCGtSmtUuyjzKGMJERVTaKeMjQBzSrLV"}
-try:
-    client = Client("http://api.rossko.ru/service/v2.1/GetOrders")
-    raw_response = client.service.GetOrders(
-        KEY1="29a962af3ba240b014147bc6271e9de6",
-        KEY2="9e1f5e4bfbb91f2359a897fc8664a643", 
-        start_date=date.fromisoformat('2026-01-02'), 
-        end_date=date.fromisoformat('2026-01-02'),
-        limit=100
-    )    
-    pprint(raw_response)
-except requests.RequestException as e:
-    raise RuntimeError(f"Ошибка при выполнении запроса к Profit Liga: {e}")
-
+for i in zip(a, b):
+    print(i)
