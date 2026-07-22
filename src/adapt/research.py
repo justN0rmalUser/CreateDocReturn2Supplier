@@ -1,22 +1,32 @@
 import pickle
 from functools import cache
 from pathlib import Path
-from typing import Iterator
+from typing import Iterator, TypeAlias
 
-from .format import ProductList
+from .format import ProductEntry, ProductList, UnifiedProduct
 
 
 SUPPLIER_STATUSES = {
     "ROSSKO": list(range(1, 4)) + list(range(5, 10)) + list(range(31, 37)),
-    "PROFIT": list(range(1, 28))
+    "PROFIT": list(range(1, 28)),
 }
+
+ResearchResult: TypeAlias = tuple[
+    str,
+    int,
+    str,
+    int,
+    str,
+    tuple[int, int],
+    UnifiedProduct,
+]
 
 
 def difference(
-    old_plist: ProductList, 
-    new_plist: ProductList, 
-    allowed_statuses: tuple[int, ...]
-) -> Iterator[tuple[str, int, str, tuple[int, int], tuple[int, int]]]:
+    old_plist: ProductList,
+    new_plist: ProductList,
+    allowed_statuses: tuple[int, ...],
+) -> Iterator[ResearchResult]:
     """Находит товары, которые поменяли свой статус
 
     Parameters
@@ -30,9 +40,9 @@ def difference(
 
     Yields
     ------
-    Iterator[tuple[DateKey, OrderID, Guid, tuple[int, int], tuple[int, int]]]
+    Iterator[ResearchResult]
         Список товаров
-        [_дата_, _ID заказа_, _ID товара_, (старый _статус_, новый _статус_), (_индекс заказа_, _индекс товара в заказе_)]
+        [_имя заказчика_, _ID заказчика_, _дата_, _ID заказа_, _ID товара_, (старый _статус_, новый _статус_), _товар_]
 
     Raises
     ------
@@ -44,12 +54,17 @@ def difference(
         Полученные статусы не соответствуют допустимым
     """
     # Проверка типов входных данных
-    if not isinstance(old_plist, ProductList) or not isinstance(new_plist, ProductList):
+    if not isinstance(old_plist, ProductList) or not isinstance(
+        new_plist, ProductList
+    ):
         raise TypeError("Недопустимый тип входных данных")
 
     # Проверка соответствия агентов
     if old_plist.agent_id != new_plist.agent_id:
         raise ValueError("Поставщики должны быть идентичны")
+    
+    agent_name = new_plist.agent_name
+    agent_id = new_plist.agent_id
 
     # Проверка типов входных данных
     if not isinstance(allowed_statuses, tuple):
@@ -58,13 +73,17 @@ def difference(
     # Проверка дней
     if old_plist.max_day is not None and new_plist.max_day is not None:
         if old_plist.max_day > new_plist.max_day:
-            raise ValueError("Максимальный день прошлого ProductList > максимального нынешнего")
-    
+            raise ValueError(
+                "Максимальный день прошлого ProductList > "
+                "максимального нынешнего"
+            )
+
     # Проверка статусов
     if not allowed_statuses:
         raise ValueError("Нет вообще никаких статусов")
-    
-    if (accepted_statuses := SUPPLIER_STATUSES.get(new_plist.agent_name)) is not None:
+
+    accepted_statuses = SUPPLIER_STATUSES.get(agent_name)
+    if accepted_statuses is not None:
         if not set(allowed_statuses).issubset(accepted_statuses):
             raise ValueError("Недопустимые значения статусов")
     else:
@@ -78,17 +97,40 @@ def difference(
         new_product_type = new_plist.data[day][order][guid]
 
         if len(old_product_type) == len(new_product_type):
-            for old_product, new_product in zip(old_product_type, new_product_type):
-                old_status, old_count, old_comment, old_path = old_product
-                new_status, new_count, new_comment, new_path = new_product
+            for old_product, new_product in zip(
+                old_product_type,
+                new_product_type,
+            ):
+                old_status, old_count, old_comment, old_path, _ = old_product
+                (
+                    new_status,
+                    new_count,
+                    new_comment,
+                    new_path,
+                    new_data,
+                ) = new_product
 
-                if (old_count == new_count and
-                    old_comment == new_comment and
-                    old_path[1] == new_path[1]):
-                    if old_status != new_status and new_status in allowed_statuses:
-                        yield day, order, guid, (old_status, new_status), new_path
+                if (
+                    old_count == new_count
+                    and old_comment == new_comment
+                ):
+                    if _is_return_transition(
+                        agent_name,
+                        old_status,
+                        new_status,
+                        allowed_statuses,
+                    ):
+                        yield (
+                            agent_name, 
+                            agent_id, 
+                            day, 
+                            order, 
+                            guid, 
+                            (old_status, new_status), 
+                            new_data
+                        )
                 else:
-                    #TODO логгирование аномалии с флагом warning
+                    # TODO логгирование аномалии с флагом warning
                     pass
         else:
             alignment = _align_product_type(old_product_type, new_product_type)
@@ -98,33 +140,66 @@ def difference(
 
             for old_product, new_product, partial_return in alignment:
                 old_status = old_product[0]
-                new_status, _, _, new_path = new_product
+                new_status, _, _, _, new_data = new_product
 
-                # Полный возврат: статус изменился у самой исходной позиции.
-                if old_status != new_status and new_status in allowed_statuses:
-                    yield day, order, guid, (old_status, new_status), new_path
+                # Полный возврат: статус изменился у исходной
+                # позиции.
+                if _is_return_transition(
+                    agent_name,
+                    old_status,
+                    new_status,
+                    allowed_statuses,
+                ):
+                    yield (
+                        agent_name, 
+                        agent_id, 
+                        day, 
+                        order, 
+                        guid, 
+                        (old_status, new_status), 
+                        new_data
+                    )
 
-                # Частичный возврат: в new_product_type появилась дополнительная запись сразу за исходной.
+                # Частичный возврат: после исходной позиции
+                # появилась дополнительная запись.
                 if partial_return is not None:
-                    partial_status, _, _, partial_path = partial_return
-                    if partial_status in allowed_statuses:
+                    partial_status, _, _, _, partial_data = partial_return
+                    if _is_return_transition(
+                        agent_name,
+                        old_status,
+                        partial_status,
+                        allowed_statuses,
+                    ):
                         yield (
+                            agent_name,
+                            agent_id,
                             day,
                             order,
                             guid,
                             (old_status, partial_status),
-                            partial_path,
+                            partial_data,
                         )
 
 
-Product = tuple[int, int, str | None, tuple[int, int]]
+def _is_return_transition(
+    agent_name: str,
+    old_status: int,
+    new_status: int,
+    allowed_statuses: tuple[int, ...],
+) -> bool:
+    return (
+        old_status != new_status
+        and new_status in allowed_statuses
+        and not (agent_name == "ROSSKO" and (old_status, new_status) == (31, 36))
+    )
 
 
 def _align_product_type(
-    old_products: list[Product],
-    new_products: list[Product],
-) -> list[tuple[Product, Product, Product | None]] | None:
+    old_products: list[ProductEntry],
+    new_products: list[ProductEntry],
+) -> list[tuple[ProductEntry, ProductEntry, ProductEntry | None]] | None:
     """Сопоставляет старые позиции с новыми и отделяет частичные возвраты."""
+
     @cache
     def align(
         old_idx: int,
@@ -172,13 +247,19 @@ def _align_product_type(
 
 
 def _is_partial_return(
-    old_product: Product,
-    new_product: Product,
-    adjacent_product: Product,
+    old_product: ProductEntry,
+    new_product: ProductEntry,
+    adjacent_product: ProductEntry,
 ) -> bool:
     old_status = old_product[0]
-    new_status, new_count, new_comment, new_path = new_product
-    adjacent_status, adjacent_count, adjacent_comment, adjacent_path = adjacent_product
+    new_status, new_count, new_comment, new_path, _ = new_product
+    (
+        adjacent_status,
+        adjacent_count,
+        adjacent_comment,
+        adjacent_path,
+        _,
+    ) = adjacent_product
 
     return (
         old_status == new_status

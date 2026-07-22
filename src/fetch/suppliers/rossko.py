@@ -5,8 +5,8 @@ from zeep import Client
 from zeep.helpers import serialize_object
 
 from ..supplier_pattern import Supplier
-from src.utils.config import load_config
-from src.utils.other import split_iso_date_range
+from ...utils.config import load_config
+from ...utils.other import split_iso_date_range
 
 
 cfg = load_config()

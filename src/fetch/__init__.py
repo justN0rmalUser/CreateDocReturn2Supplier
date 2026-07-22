@@ -1,10 +1,9 @@
 from datetime import date, timedelta
+from typing import Iterable, TypeAlias
 
-from src.utils.config import load_config
-from .suppliers import (
-    rossko,
-    profit
-)
+from .suppliers import profit, rossko
+from ..utils.archive import archive_json
+from ..utils.config import load_config
 
 
 cfg = load_config()
@@ -15,16 +14,28 @@ SUPPLIERS = (
     profit.ProfitLigaAPI()
 )
 
+SupplierName: TypeAlias = str
+SupplierId: TypeAlias = str
+
 
 def run() -> list[tuple[str, int, list[dict[str, str | float | int | dict]]], ...]:
     end: date = date.today() - timedelta(days=cfg["DEFAULT"]["delta_days"])
     start: date = end - timedelta(days=63)
     
-    result: list[tuple[str, int, list[dict[str, str | float | int | dict]]], ...] = []
+    result: list[tuple[SupplierName, SupplierId, Iterable[dict]], ...] = []
     
     for provider in SUPPLIERS:
-        result.append((provider.NAME, provider.ID, provider.pull_data(start=start, end=end)))
+        data = provider.pull_data(start=start, end=end)
+        
+        archive_json(
+            data, 
+            provider.NAME.lower(),
+            archive_dir=cfg["Backup"]["archive"]["server_answers"]
+        )
+        
+        result.append((provider.NAME, provider.ID, data))
 
+        
     if result:
         return result
     raise ValueError("Все ответы пустые!")

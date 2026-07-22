@@ -62,7 +62,7 @@ def load_config(file_path: str | Path | None = None) -> dict[str, Any]:
     """
     # Проверка входных параметров
     if file_path is None:
-        file_path = os.getenv("CONFIG_PATH", None)
+        file_path = os.environ.get("path_to_config")
 
     fpath = _normalize_config_path(file_path)
 

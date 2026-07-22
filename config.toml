@@ -14,3 +14,11 @@ db_path = "C:\\Program Files (x86)\\AutoDealer\\AutoDealer\\Database\\AutoDealer
 db_path_test = "D:\\test_database\\AutoDealer.fdb"
 db_user = "SYSDBA"
 db_password = "masterkey"
+
+[Backup]
+cache = "backup/cache"
+archive.server_answers = "backup/archive/jsons"
+archive.product_difference_checkup = "backup/archive/pkls"
+
+[Logging]
+log_day_delay = 64

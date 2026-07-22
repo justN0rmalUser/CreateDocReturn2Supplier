@@ -3,8 +3,8 @@ from time import sleep
 import requests 
 
 from ..supplier_pattern import Supplier
-from src.utils.config import load_config
-from src.utils.other import isodate
+from ...utils.config import load_config
+from ...utils.other import isodate
 
 
 cfg = load_config()

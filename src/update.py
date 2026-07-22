@@ -1,8 +1,8 @@
 from logging import INFO
 
 from autodealerAPI import Connection, DatabaseConfig, setup_logging
-from typing import Literal, Tuple, Iterable
-from utilities._utils import logger, get_config
+
+from .utils.other import get_config, logger
 
 
 LOG = logger(name="Request", fpath="logs\\req.log")
@@ -11,33 +11,14 @@ setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\l
 CFG = get_config()
 
 
-def main(*, contractorHeader: Tuple[
-    Tuple[
-        Literal[8880],
-        Iterable
-    ] | None,
-    Tuple[
-        Literal[8876],
-        Iterable
-    ] | None]):
-
-
-    db_cfg = DatabaseConfig.from_ini(
-        "config.ini",
-        path_key="db_path",
-        user_key="db_user",
-        pass_key="db_password"
-    )
+def run(data):
+    db_cfg = DatabaseConfig()
 
     connection = Connection(db_cfg)
     
-    for value in contractorHeader:
-        if value is None:
-            continue
-
-        agent_id, data = value
-        
+    for agent_name, agent_id, products in data:
         transaction = connection.transaction()
+
         with transaction.start_transaction(type_api="high", read_only=False) as trans:
             try:
                 LOG.debug("Старт цикла создания документов")
@@ -50,7 +31,7 @@ def main(*, contractorHeader: Tuple[
             try:
                 LOG.debug("Старт цикла заполнения документов")
                 trans.fill_document_out(
-                    data,
+                    products,
                     docs_pks["DOCUMENT_OUT"],
                     docs_pks["DOCUMENT_OUT_HEADER"]
                 )
