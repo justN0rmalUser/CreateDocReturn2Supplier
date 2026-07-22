@@ -32,7 +32,7 @@ dependencies = [
     { name = "rapidfuzz" },
 ]
 wheels = [
-    { filename = "autodealer_api-0.1.7-py3-none-any.whl", hash = "sha256:49a5c2d601d437e99012b76063869c3c347610f20dc92b890ed961fba790cab1" },
+    { filename = "autodealer_api-0.1.7-py3-none-any.whl", hash = "sha256:8b9a49e5830a96e0f9150ba2f73467a98d9a2650f8d9336011673c71aa687fea" },
 ]
 
 [package.metadata]

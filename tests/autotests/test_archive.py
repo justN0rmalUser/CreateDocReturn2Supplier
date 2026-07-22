@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from datetime import date, datetime
 from pathlib import Path
+from unittest.mock import patch
 
 from src.utils.archive import archive_json, archive_pkl, flush
 
@@ -94,6 +95,56 @@ class ArchiveTestCase(unittest.TestCase):
                 archive_pkl({}, "supplier", "2026-02-30", archive_dir=tmp_dir)
             with self.assertRaises(TypeError):
                 flush(123, archive_dir=tmp_dir)  # type: ignore[arg-type]
+
+    def test_default_date_supplier_and_archive_directory_validation(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            with patch("src.utils.archive.date") as fake_date:
+                fake_date.today.return_value = date(2026, 7, 22)
+                target = archive_json({}, "supplier", archive_dir=tmp_dir)
+            self.assertEqual(target.name, "2026-07-22.json")
+
+            with self.assertRaises(TypeError):
+                archive_json({}, 123, archive_dir=tmp_dir)  # type: ignore[arg-type]
+            with self.assertRaises(TypeError):
+                archive_json({}, "supplier", archive_dir=object())  # type: ignore[arg-type]
+
+    def test_failed_atomic_write_removes_temporary_file(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            supplier_dir = Path(tmp_dir) / "supplier"
+            with self.assertRaises(TypeError):
+                archive_json(object(), "supplier", archive_dir=tmp_dir)
+            self.assertEqual(list(supplier_dir.iterdir()), [])
+
+        with tempfile.TemporaryDirectory() as tmp_dir, patch(
+            "src.utils.archive.Path.mkdir", side_effect=PermissionError("denied")
+        ):
+            with self.assertRaises(PermissionError):
+                archive_json({}, "supplier", archive_dir=tmp_dir)
+
+        with tempfile.TemporaryDirectory() as tmp_dir, patch(
+            "src.utils.archive.tempfile.NamedTemporaryFile",
+            side_effect=PermissionError("denied"),
+        ):
+            with self.assertRaises(PermissionError):
+                archive_json({}, "supplier", archive_dir=tmp_dir)
+
+    def test_flush_validates_root_and_skips_non_archives(self):
+        with self.assertRaises(TypeError):
+            flush("2026-07-03", archive_dir=object())  # type: ignore[arg-type]
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            plain_file = root / "plain"
+            plain_file.write_text("x", encoding="utf-8")
+            with self.assertRaises(NotADirectoryError):
+                flush("2026-07-03", archive_dir=plain_file)
+
+            (root / "top.txt").write_text("x", encoding="utf-8")
+            supplier = root / "supplier"
+            supplier.mkdir()
+            (supplier / "nested").mkdir()
+            (supplier / "2026-07-01.txt").write_text("x", encoding="utf-8")
+            self.assertEqual(flush("2026-07-03", archive_dir=root), ())
 
 
 if __name__ == "__main__":

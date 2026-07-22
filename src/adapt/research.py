@@ -2,6 +2,7 @@ import pickle
 from functools import cache
 from pathlib import Path
 from typing import Iterator, TypeAlias
+from os import makedirs
 
 from .format import ProductEntry, ProductList, UnifiedProduct
 
@@ -295,6 +296,8 @@ def write_plist(data: ProductList, path: Path | str) -> None:
 
     if path.suffix != ".pkl":
         raise ValueError("Расширение файла должно быть .pkl")
+    if not path.parent.exists():
+        makedirs(path.parent)
 
     with open(path, 'wb') as fpkl:
         pickle.dump(data, fpkl)

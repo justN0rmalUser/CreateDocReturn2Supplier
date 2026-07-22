@@ -22,7 +22,7 @@ class ProfitLigaAPI(Supplier):
     def __init__(
         self, 
         url: str = cfg["Suppliers"]["profit"]["URL"], 
-        api_key: str = cfg["Suppliers"]["profit"]["URL"]
+        api_key: str = cfg["Suppliers"]["profit"]["key"]
     ):
         self.url = url
         self.api_key = api_key
@@ -71,6 +71,9 @@ class ProfitLigaAPI(Supplier):
         end_date: str
     ):
         _date_pattern = r"%Y-%m-%d %H:%M:%S"
+        
+        if not page:
+            return []
 
         # Получаем даты верхнюю и нижнюю
         top_of_page = isodate(page[0]["datetime"], _date_pattern)
@@ -109,7 +112,7 @@ class ProfitLigaAPI(Supplier):
         _, data, count_pages = self._make_request(1, with_pages=True)
         result = self.validate_list(data, start, end)
 
-        for page in range(2, count_pages):
+        for page in range(2, count_pages+1):
             _, data = self._make_request(page, with_pages=False)
             
             valid_data = self.validate_list(data, start, end)

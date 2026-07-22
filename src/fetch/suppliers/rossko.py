@@ -64,8 +64,6 @@ class RosskoAPI(Supplier):
         if not data.get("success"):
             if data.get("message") != "Ничего не найдено":
                 raise RuntimeError(f"API Rossko вернул статус False, ошибка: <{data.get('message')}>")
-            else:
-                raise AssertionError("Ничего не найдено")
 
         orders = data.get("OrdersList", {}).get("Order", [])
         return orders if isinstance(orders, list) else [orders]
@@ -99,8 +97,8 @@ class RosskoAPI(Supplier):
                 raise ValueError
         except ValueError:
             first_half, second_half = split_iso_date_range(start, end)
-            result += self.get_orders(*first_half)
-            result += self.get_orders(*second_half)
+            result += self.pull_data(*first_half)
+            result += self.pull_data(*second_half)
         else:
             result += answer
 

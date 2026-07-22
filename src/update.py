@@ -17,6 +17,10 @@ def run(data):
     connection = Connection(db_cfg)
     
     for agent_name, agent_id, products in data:
+        if not products:
+            LOG.warning("Пустые данные у %s", agent_name)
+            continue
+        
         transaction = connection.transaction()
 
         with transaction.start_transaction(type_api="high", read_only=False) as trans:

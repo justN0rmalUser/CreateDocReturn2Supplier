@@ -25,7 +25,7 @@ def run() -> list[tuple[str, int, list[dict[str, str | float | int | dict]]], ..
     result: list[tuple[SupplierName, SupplierId, Iterable[dict]], ...] = []
     
     for provider in SUPPLIERS:
-        data = provider.pull_data(start=start, end=end)
+        data = provider.pull_data(start=start.isoformat(), end=end.isoformat())
         
         archive_json(
             data, 

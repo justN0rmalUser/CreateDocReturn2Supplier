@@ -38,7 +38,8 @@ def run(data: list[tuple[SupplierName, SupplierId, Iterable[dict]], ...]):
             difference(old_plist, plist, ALLOWED_STATUSES.get(plist.agent_name))
         ]
         
-        result.append((agent_name, agent_id, got_data))
+        if got_data:
+            result.append((agent_name, agent_id, got_data))
         
         archive_pkl(
             plist,
