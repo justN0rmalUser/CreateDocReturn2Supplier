@@ -1,5 +1,6 @@
 import pickle
 from pathlib import Path
+from typing import Iterator, Literal
 
 from .format import ProductList
 
@@ -10,7 +11,11 @@ SUPPLIER_STATUSES = {
 }
 
 
-def difference(old_plist: ProductList, new_plist: ProductList, allow_statuses: tuple[int, ...]):
+def difference(
+    old_plist: ProductList, 
+    new_plist: ProductList, 
+    allowed_statuses: tuple[int, ...]
+) -> Iterator[tuple[str, int, str, tuple[int, int], tuple[int, int]]]:
     """Находит товары, которые поменяли свой статус
 
     Parameters
@@ -19,7 +24,7 @@ def difference(old_plist: ProductList, new_plist: ProductList, allow_statuses: t
         Список товаров за предыдущий день
     **new_plist** : `ProductList`
         Список товаров за сегодняшний день
-    **allow_statuses** : `tuple[int, ...]`
+    **allowed_statuses** : `tuple[int, ...]`
         Список допустимых статусов
 
     Yields
@@ -41,10 +46,12 @@ def difference(old_plist: ProductList, new_plist: ProductList, allow_statuses: t
     if not isinstance(old_plist, ProductList) or not isinstance(new_plist, ProductList):
         raise TypeError("Недопустимый тип входных данных")
 
+    # Проверка соответствия агентов
     if old_plist.agent_id != new_plist.agent_id:
         raise ValueError("Поставщики должны быть идентичны")
 
-    if not isinstance(allow_statuses, tuple):
+    # Проверка типов входных данных
+    if not isinstance(allowed_statuses, tuple):
         raise TypeError("Недопустимый тип входных данных")
 
     # Проверка дней
@@ -53,16 +60,80 @@ def difference(old_plist: ProductList, new_plist: ProductList, allow_statuses: t
             raise ValueError("Максимальный день прошлого ProductList > максимального нынешнего")
     
     # Проверка статусов
-    if not allow_statuses:
+    if not allowed_statuses:
         raise ValueError("Нет вообще никаких статусов")
     
     if (accepted_statuses := SUPPLIER_STATUSES.get(new_plist.agent_name)) is not None:
-        if not set(allow_statuses).issubset(accepted_statuses):
+        if not set(allowed_statuses).issubset(accepted_statuses):
             raise ValueError("Недопустимые значения статусов")
     else:
         raise AttributeError("Допустимые статусы поставщика не найдены")
 
-    
+    for day, order, guid in old_plist.type_products:
+        if old_plist.min_day == day:
+            continue
+
+        old_product_type = old_plist[day][order][guid]
+        new_product_type = new_plist[day][order][guid]
+
+        if len(old_product_type) == len(new_product_type):
+            for old_product, new_product in zip(old_product_type, new_product_type):
+                old_status, old_count, old_comment, old_path = old_product
+                new_status, new_count, new_comment, new_path = new_product
+
+                if (old_count == new_count and
+                    old_comment == new_comment and
+                    old_path[1] == new_path[1]):
+                    if old_status != new_status and new_status in allowed_statuses:
+                        yield day, order, guid, (old_status, new_status), new_path
+                else:
+                    #TODO логгирование аномалии с флагом warning
+                    pass
+        else:
+            while True:
+                # шаг по списку
+                old_product = next(old_product_type, None)
+                new_product = next(new_product_type, None)
+
+                if old_product is None or new_product is None:
+                    break
+                else:
+                    old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = old_product
+                    new_status, new_count, new_comment, (new_path_to_order, new_path_to_product) = new_product
+
+                diff_on = _create_diff_dict(old_product, new_product)
+
+                if not diff_on["status"] and not diff_on["comment"] and not diff_on["count"]:
+                    adjacent_product = next(new_product_type, None)
+
+                    adj_status, adj_count, adj_comment, (adj_path_to_order, adj_path_to_product) = adjacent_product
+
+                    diff_ca = _create_diff_dict(new_product, adjacent_product)
+                    if not diff_ca["comment"] and diff_ca["status"] and (adj_path_to_product == new_path_to_product + 1): 
+                        if adj_status in allowed_statuses:
+                            yield day, order, guid, (new_status, adj_status), (adj_path_to_order, adj_path_to_product)
+                            continue
+                    elif diff_ca["comment"]:
+                        old_product = next(old_product_type, None)
+                        old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = old_product
+                        
+                        diff_oa = _create_diff_dict(old_product, adjacent_product)
+
+
+                    
+def _create_diff_dict(
+    product: tuple[int, int, str, tuple[int, int]], 
+    other_product: tuple[int, int, str, tuple[int, int]]
+) -> dict[Literal["status", "count", "comment", "rel_path"], bool]:
+    old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = product
+    new_status, new_count, new_comment, (new_path_to_order, new_path_to_product) = other_product
+
+    return  {
+                "status": old_status != new_status,
+                "count": old_count != new_count,
+                "comment": old_comment != new_comment,
+                "rel_path": old_path_to_product != new_path_to_product
+            }
 
 
 def write_plist(data: ProductList, path: Path | str) -> None:
