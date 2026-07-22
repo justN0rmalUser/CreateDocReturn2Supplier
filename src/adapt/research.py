@@ -1,6 +1,7 @@
 import pickle
+from functools import cache
 from pathlib import Path
-from typing import Iterator, Literal
+from typing import Iterator
 
 from .format import ProductList
 
@@ -73,8 +74,8 @@ def difference(
         if old_plist.min_day == day:
             continue
 
-        old_product_type = old_plist[day][order][guid]
-        new_product_type = new_plist[day][order][guid]
+        old_product_type = old_plist.data[day][order][guid]
+        new_product_type = new_plist.data[day][order][guid]
 
         if len(old_product_type) == len(new_product_type):
             for old_product, new_product in zip(old_product_type, new_product_type):
@@ -90,50 +91,103 @@ def difference(
                     #TODO логгирование аномалии с флагом warning
                     pass
         else:
-            while True:
-                # шаг по списку
-                old_product = next(old_product_type, None)
-                new_product = next(new_product_type, None)
+            alignment = _align_product_type(old_product_type, new_product_type)
+            if alignment is None:
+                # TODO логгирование аномалии с флагом warning
+                continue
 
-                if old_product is None or new_product is None:
-                    break
-                else:
-                    old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = old_product
-                    new_status, new_count, new_comment, (new_path_to_order, new_path_to_product) = new_product
+            for old_product, new_product, partial_return in alignment:
+                old_status = old_product[0]
+                new_status, _, _, new_path = new_product
 
-                diff_on = _create_diff_dict(old_product, new_product)
+                # Полный возврат: статус изменился у самой исходной позиции.
+                if old_status != new_status and new_status in allowed_statuses:
+                    yield day, order, guid, (old_status, new_status), new_path
 
-                if not diff_on["status"] and not diff_on["comment"] and not diff_on["count"]:
-                    adjacent_product = next(new_product_type, None)
-
-                    adj_status, adj_count, adj_comment, (adj_path_to_order, adj_path_to_product) = adjacent_product
-
-                    diff_ca = _create_diff_dict(new_product, adjacent_product)
-                    if not diff_ca["comment"] and diff_ca["status"] and (adj_path_to_product == new_path_to_product + 1): 
-                        if adj_status in allowed_statuses:
-                            yield day, order, guid, (new_status, adj_status), (adj_path_to_order, adj_path_to_product)
-                            continue
-                    elif diff_ca["comment"]:
-                        old_product = next(old_product_type, None)
-                        old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = old_product
-                        
-                        diff_oa = _create_diff_dict(old_product, adjacent_product)
+                # Частичный возврат: в new_product_type появилась дополнительная запись сразу за исходной.
+                if partial_return is not None:
+                    partial_status, _, _, partial_path = partial_return
+                    if partial_status in allowed_statuses:
+                        yield (
+                            day,
+                            order,
+                            guid,
+                            (old_status, partial_status),
+                            partial_path,
+                        )
 
 
-                    
-def _create_diff_dict(
-    product: tuple[int, int, str, tuple[int, int]], 
-    other_product: tuple[int, int, str, tuple[int, int]]
-) -> dict[Literal["status", "count", "comment", "rel_path"], bool]:
-    old_status, old_count, old_comment, (old_path_to_order, old_path_to_product) = product
-    new_status, new_count, new_comment, (new_path_to_order, new_path_to_product) = other_product
+Product = tuple[int, int, str | None, tuple[int, int]]
 
-    return  {
-                "status": old_status != new_status,
-                "count": old_count != new_count,
-                "comment": old_comment != new_comment,
-                "rel_path": old_path_to_product != new_path_to_product
-            }
+
+def _align_product_type(
+    old_products: list[Product],
+    new_products: list[Product],
+) -> list[tuple[Product, Product, Product | None]] | None:
+    """Сопоставляет старые позиции с новыми и отделяет частичные возвраты."""
+    @cache
+    def align(
+        old_idx: int,
+        new_idx: int,
+    ) -> tuple[tuple[int, int, int | None], ...] | None:
+        if old_idx == len(old_products):
+            return () if new_idx == len(new_products) else None
+        if new_idx >= len(new_products):
+            return None
+
+        old_product = old_products[old_idx]
+        new_product = new_products[new_idx]
+
+        # Путь может смещаться после вставок, а статус — меняться
+        # при полном возврате. Исходную позицию определяют
+        # неизменные количество и комментарий.
+        if old_product[1:3] != new_product[1:3]:
+            return None
+
+        adjacent_idx = new_idx + 1
+        if adjacent_idx < len(new_products):
+            adjacent_product = new_products[adjacent_idx]
+            if _is_partial_return(old_product, new_product, adjacent_product):
+                tail = align(old_idx + 1, new_idx + 2)
+                if tail is not None:
+                    return ((old_idx, new_idx, adjacent_idx),) + tail
+
+        tail = align(old_idx + 1, new_idx + 1)
+        if tail is None:
+            return None
+        return ((old_idx, new_idx, None),) + tail
+
+    indexes = align(0, 0)
+    if indexes is None:
+        return None
+
+    return [
+        (
+            old_products[old_idx],
+            new_products[new_idx],
+            new_products[partial_idx] if partial_idx is not None else None,
+        )
+        for old_idx, new_idx, partial_idx in indexes
+    ]
+
+
+def _is_partial_return(
+    old_product: Product,
+    new_product: Product,
+    adjacent_product: Product,
+) -> bool:
+    old_status = old_product[0]
+    new_status, new_count, new_comment, new_path = new_product
+    adjacent_status, adjacent_count, adjacent_comment, adjacent_path = adjacent_product
+
+    return (
+        old_status == new_status
+        and adjacent_status != new_status
+        and adjacent_count < new_count
+        and adjacent_comment == new_comment
+        and adjacent_path[0] == new_path[0]
+        and adjacent_path[1] == new_path[1] + 1
+    )
 
 
 def write_plist(data: ProductList, path: Path | str) -> None:

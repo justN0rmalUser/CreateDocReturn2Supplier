@@ -5,7 +5,7 @@ from typing import Annotated, Iterator, TypeAlias, Self
 
 import pydantic
 
-from .src.utils.other import validate_date_key, isodate, logger
+from ..utils.other import validate_date_key, isodate, logger
 
 
 fetch_data_log = logger(name="dataobject", fpath=Path(r"C:\Program Files\_Scripts\Create_ReturnNomeclature\logs\dataobject.log"))
@@ -309,4 +309,3 @@ class ProductList:
             if old_status != new_status and new_status in allow_statuses:
                 fetch_data_log.info("Готовые данные для обработки: %s", data := (day, order, guid, statuses, path))
                 yield data
-
