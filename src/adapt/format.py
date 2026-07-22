@@ -2,11 +2,10 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Annotated, Iterator, TypeAlias, Self
-import pickle
 
 import pydantic
 
-from ._utils import validate_date_key, isodate, logger
+from .src.utils.other import validate_date_key, isodate, logger
 
 
 fetch_data_log = logger(name="dataobject", fpath=Path(r"C:\Program Files\_Scripts\Create_ReturnNomeclature\logs\dataobject.log"))
@@ -21,7 +20,7 @@ Guid: TypeAlias = str
 ProductData: TypeAlias = dict[
     DateKey, dict[
         OrderID, dict[
-            int, tuple[Guid, int, tuple[int, int]]
+            Guid, list[ tuple[int, int, str | None, tuple[int, int]], ... ]
         ]
     ]
 ]
@@ -38,21 +37,57 @@ PROFIT_ACCEPTED_VALUES = list(range(1, 28))
 
 
 class ProductList:
-    def __init__(self, data: ProductData | None = None):
-        fetch_data_log.debug("Создание класса...")
-        
+    def __init__(self, agent_name: str, agent_id: int, data: ProductData | None = None):        
         self._data: ProductData | dict = (
             PDATA_ADAPTER.validate_python(data)
             if data is not None
             else {}
         )
         
-        get_data_msg = "Данные получены успешно!" if self._data != {} else "Входящие данные пустые (по умолчанию)"
-        fetch_data_log.info(get_data_msg)
+        self.agent_name = agent_name
+        self.agent_id = agent_id
 
     @classmethod
-    def from_rossko(cls, data: list[dict]) -> Self:
+    def from_rossko(cls, data: list[tuple[str, int, list[dict]]]) -> Self:
         """Получение данных на основе api Rossko
+
+        Parameters
+        ----------
+        **data** : `list[tuple[str, int, list[dict]]]`
+            Преобразованный json в список товаров
+
+        Returns
+        -------
+        `Self`
+            Экземпляр класса `ProductList`
+        """
+        fetch_data_log.info("Получение данных из ROSSKO")
+
+        agent_name, agent_id, fetched_data = data
+        plist = cls(agent_name, agent_id)
+
+        for order_idx, order in enumerate(fetched_data):
+            for part_idx, part in enumerate(order["parts"]["part"]):
+                cur_date:   str = isodate(order["created_date"], "%d.%m.%Y %H:%M:%S")
+                order_id:   int = int(order["id"])
+                guid:       str = part["guid"]
+                status:     int = int(part["status"])
+                count:      int = int(part["count"])
+                comment:    str | None = part["comment"]
+
+
+                plist.merge({
+                    cur_date: {
+                        order_id: {
+                            guid: (status, count, comment, (order_idx, part_idx))
+                        }
+                    }
+                })
+        return plist
+    
+    @classmethod
+    def from_profit(cls, data: list[dict]) -> Self:
+        """Получение данных на основе api Profit-Liga
 
         Parameters
         ----------
@@ -64,44 +99,43 @@ class ProductList:
         `Self`
             Экземпляр класса `ProductList`
         """
-        fetch_data_log.info("Получение данных из ROSSKO")
-        plist = cls()
-        for order_idx, order in enumerate(data):
-            for part_idx, part in enumerate(order["parts"]["part"]):
-                cur_date:   str = isodate(order["created_date"], "%d.%m.%Y %H:%M:%S")
-                order_id:   int = int(order["id"])
-                guid:       str = part["guid"]
-                status:     int = int(part["status"])
-
-                plist.add({
-                    cur_date: {
-                        order_id: {
-                            part_idx: (guid, status, (order_idx, part_idx))
-                        }
-                    }
-                })
-        return plist
-    
-    @classmethod
-    def from_profit(cls, data: list[dict]) -> Self:
         fetch_data_log.info("Получение данных из PROFIT-LIGA")
-        plist = cls()
-        for order_idx, order in enumerate(data):
-            for part_idx, part in enumerate(order["products"]):
-                cur_date:       str = isodate(order["datetime"], "%Y-%m-%d %H:%M:%S")
-                order_id:       int = int(order["order_id"])
-                pos_product_id: int = int(part["id"])
-                guid:           str = part["article_id"]
-                status:         int = int(part["status_id"])
 
-                plist.add({
+        agent_name, agent_id, fetched_data = data
+        plist = cls(agent_name, agent_id)
+
+        for order_idx, order in enumerate(fetched_data):
+            for part_idx, part in enumerate(order["products"]):
+                cur_date:   str = isodate(order["datetime"], "%Y-%m-%d %H:%M:%S")
+                order_id:   int = int(order["order_id"])
+                guid:       str = part["article_id"]
+                status:     int = int(part["status_id"])
+                count:      int = int(part["quantity"])
+                comment:    str | None = part["comment"]
+
+                plist.merge({
                     cur_date: {
                         order_id: {
-                            pos_product_id: (guid, status, (order_idx, part_idx))
+                            guid: (status, count, comment, (order_idx, part_idx))
                         }
                     }
                 })
         return plist
+
+    @classmethod
+    def adapt(cls, data: tuple[str, int, list[dict]]) -> Self:
+        adapter = {
+            "ROSSKO": cls.from_rossko,
+            "PROFIT": cls.from_profit
+        }
+
+        agent_name, agent_id, fetched_data = data
+
+        init_func = adapter.get(agent_name)
+
+        if init_func is not None:
+            return init_func(data)
+        raise ValueError("Неизвестный поставщик")
 
     @property
     def data(self) -> ProductData:
@@ -119,6 +153,22 @@ class ProductList:
         return max(self.data) if self.data != {} else None
 
     @property
+    def type_products(self) -> Iterator[tuple[DateKey, OrderID, Guid], ...]:
+        """Возвращает итератор на все типы товаров в заказе с полным путем
+
+        Yields
+        ------
+        Iterator[tuple[DateKey, OrderID, Guid], ...]
+            Список товаров
+            [_дата_, _ID заказа_, _ID товара_]
+        """
+        # Итерация по всем значениям
+        for day, day_dict in self.data.items():
+            for order, order_dict in day_dict.items():
+                for guid in order_dict:
+                    yield day, order, guid
+
+    @property
     def products(self) -> Iterator[tuple[DateKey, OrderID, int, Guid, int, tuple[int, int]]]:
         """Возвращает итератор на все товары с полным путем
 
@@ -129,20 +179,19 @@ class ProductList:
             [_дата_, _ID заказа_, _ID товара_, _статус_, (_индекс заказа_, _индекс товара в заказе_)]
         """
         # Итерация по всем значениям
-        for day, day_dict in self.data.items():
-            for order, order_dict in day_dict.items():
-                for item_idx, item in order_dict.items():
-                    guid, status, path = item
-                    fetch_data_log.info("Данные шага итератора: %s", data := (day, order, item_idx, guid, status, path))
-                    yield data
+        for day, order, guid in self.type_products:
+            for item in self.data[day][order][guid]:
+                status, count, comment, path = item
+                yield day, order, guid, status, count, comment, path
 
-    def _update(
+    def add(
         self,
         day: DateKey,
         order: int,
-        idx_item: int,
         guid: str,
         status: int,
+        count: int,
+        comment: str,
         path: tuple[int, int]
     ) -> None:
         """Добавление нового товара в список
@@ -168,10 +217,13 @@ class ProductList:
             fetch_data_log.debug(f"ID заказа в {day} как ключ не найден, создается новый: <{order}>")
             self._data[day][order] = {}
 
-        self._data[day][order][idx_item] = (guid, status, path)
-        fetch_data_log.info(f"Товар добавлен: {day}:{order}:{idx_item}:{(guid, status, path)}")
+        if self.data[day][order].get(guid) is None:
+            fetch_data_log.debug(f"ID товара в {order} как ключ не найден, создается новый: <{guid}>")
+            self._data[day][order][guid] = []
 
-    def add(self, data: ProductList | ProductData) -> None:
+        self._data[day][order][guid].append((status, count, comment, path))
+
+    def merge(self, data: ProductList | ProductData) -> None:
         """Слияние списков
 
         Parameters
@@ -182,14 +234,14 @@ class ProductList:
         data = (
             data
             if isinstance(data, ProductList)
-            else ProductList(data)
+            else ProductList(self.agent_name, self.agent_id, data)
         )
 
         for inner in data.products:
-            self._update(*inner)
+            self.add(*inner)
 
     def __add__(self, other):
-        self.add(other)
+        self.merge(other)
         return ProductList(self.data)
 
     def __radd__(self, other):
@@ -258,73 +310,3 @@ class ProductList:
                 fetch_data_log.info("Готовые данные для обработки: %s", data := (day, order, guid, statuses, path))
                 yield data
 
-
-def write_plist(data: ProductList, path: Path | str) -> None:
-    """Запись `ProductList` в .pkl формат
-
-    Parameters
-    ----------
-    **data** : `ProductList`
-        Класс данных, который надо записать
-    **path** : `Path | str`
-        Полный/относительный путь куда сохранять
-
-    Raises
-    ------
-    `TypeError`
-        Недопустимый тип входной переменной
-    `ValueError`
-        Расширение файла не "**.pkl**"
-    """
-    if not isinstance(path, (str, Path)) or not isinstance(data, ProductList):
-        raise TypeError("Недопустимый тип входной переменной")
-
-    path = path if isinstance(path, Path) else Path(path)
-
-    if path.suffix != ".pkl":
-        raise ValueError("Расширение файла должно быть .pkl")
-
-    with open(path, 'wb') as fpkl:
-        pickle.dump(data, fpkl)
-        fetch_data_log.info(f"Файл \"{path.name}\" - записан")
-
-
-def read_plist(path: Path | str) -> ProductList:
-    """Получение класса `ProductList` из файла
-
-    Parameters
-    ----------
-    **path** : `Path | str`
-        Полный путь до файла
-
-    Returns
-    -------
-    `ProductList`
-        Класс с данными
-
-    Raises
-    ------
-    `TypeError`
-        Недопустимый тип входной переменной
-    `ValueError`
-        Расширение файла не "**.pkl**"
-    `FileNotFoundError`
-        Файл не найден (скорее всего это первый прогон)
-    """
-    if not isinstance(path, (str, Path)):
-        raise TypeError("Недопустимый тип переменной для чтения")
-
-    path = path if isinstance(path, Path) else Path(path)
-
-    if not path.exists():
-        raise FileNotFoundError("Такого пути не существует")
-
-    if path.suffix != ".pkl":
-        raise ValueError("Расширение файла должно быть .pkl")
-
-    with open(path, 'rb') as fpkl:
-        obj = pickle.load(fpkl)
-        if not isinstance(obj, ProductList):
-            raise TypeError("Объект не является \"ProductList\"")
-        fetch_data_log.info(f"Файл \"{path.name}\" - прочитан")
-        return obj

@@ -1,0 +1,35 @@
+[project]
+name = "createdocreturn2supplier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.14"
+dependencies = [
+    "annotated-types==0.7.0",
+    "attrs==25.3.0",
+    "autodealer-api",
+    "certifi==2025.8.3",
+    "charset-normalizer==3.4.3",
+    "fdb==2.0.4",
+    "idna==3.10",
+    "isodate==0.7.2",
+    "levenshtein==0.27.3",
+    "lxml==6.0.2",
+    "platformdirs==4.4.0",
+    "pydantic==2.12.5",
+    "pydantic-core==2.41.5",
+    "pypika==0.51.1",
+    "python-levenshtein==0.27.3",
+    "pytz==2025.2",
+    "rapidfuzz==3.14.3",
+    "requests==2.32.5",
+    "requests-file==2.1.0",
+    "requests-toolbelt==1.0.0",
+    "typing-extensions==4.15.0",
+    "typing-inspection==0.4.2",
+    "urllib3==2.5.0",
+    "zeep==4.3.2",
+]
+
+[tool.uv.sources]
+autodealer-api = { path = "../../ALL/autodealerAPI/dist/autodealer_api-0.1.7-py3-none-any.whl" }
