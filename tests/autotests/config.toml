@@ -1,0 +1,29 @@
+[Suppliers]
+delta_days = 1
+
+rossko.URL = "https://rossko.test"
+rossko.first_secret = "rossko-key-1"
+rossko.second_secret = "rossko-key-2"
+
+profit.URL = "https://profit.test"
+profit.key = "profit-key"
+
+[Database]
+db_path = "test.fdb"
+db_path_test = "test.fdb"
+db_user = "test"
+db_password = "test"
+
+[Cache]
+path = ".pytest_cache/test-cache"
+statuses.rossko = [31, 36]
+statuses.profit = [20]
+
+[Archive]
+path.server_answers = ".pytest_cache/test-archive/jsons"
+path.product_difference_checkup = ".pytest_cache/test-archive/pkls"
+flush_delay = 64
+
+[Logging]
+path = ".pytest_cache/test-logs"
+flush_delay = 64

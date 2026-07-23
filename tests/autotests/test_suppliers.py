@@ -1,11 +1,11 @@
 import os
 import unittest
-from datetime import date
+from pathlib import Path
 from unittest.mock import Mock, call, patch
 
 import requests
 
-os.environ.setdefault("path_to_config", "config.toml")
+os.environ["CONFIG_PATH"] = str(Path(__file__).with_name("config.toml"))
 
 from src.fetch.supplier_pattern import Supplier
 from src.fetch.suppliers import profit as profit_module
@@ -26,7 +26,6 @@ class ProfitTests(unittest.TestCase):
     def setUp(self):
         self.api = ProfitLigaAPI("https://profit.test", "secret")
 
-    @unittest.expectedFailure
     def test_default_api_key_uses_configured_key(self):
         api = ProfitLigaAPI()
         self.assertEqual(api.api_key, profit_module.cfg["Suppliers"]["profit"]["key"])
@@ -87,7 +86,6 @@ class ProfitTests(unittest.TestCase):
         with patch.object(self.api, "_make_request", side_effect=lambda page, with_pages=False: pages[(page, with_pages)]):
             self.assertEqual(self.api.pull_data("2026-06-03", "2026-06-05"), [profit_row("2026-06-04")])
 
-    @unittest.expectedFailure
     def test_pull_data_includes_last_reported_page(self):
         pages = {
             (1, True): (1, [profit_row("2026-06-05")], 3),
@@ -122,10 +120,13 @@ class RosskoTests(unittest.TestCase):
                 self.api._fetch_orders_for_date("2026-01-01", "2026-01-02")
 
         with patch("src.fetch.suppliers.rossko.Client", return_value=client), patch(
-            "src.fetch.suppliers.rossko.serialize_object", return_value={"success": False, "message": "Ничего не найдено"}
+            "src.fetch.suppliers.rossko.serialize_object",
+            return_value={"success": False, "message": "Ничего не найдено"},
         ):
-            with self.assertRaisesRegex(AssertionError, "Ничего"):
-                self.api._fetch_orders_for_date("2026-01-01", "2026-01-02")
+            self.assertEqual(
+                self.api._fetch_orders_for_date("2026-01-01", "2026-01-02"),
+                [],
+            )
 
     def test_fetch_returns_list_for_list_and_single_order(self):
         for order, expected in [([{"id": 1}], [{"id": 1}]), ({"id": 2}, [{"id": 2}])]:
@@ -152,24 +153,30 @@ class RosskoTests(unittest.TestCase):
         with patch.object(self.api, "_fetch_orders_for_date", return_value=[{"id": 1}]):
             self.assertEqual(self.api.pull_data("2026-01-01", "2026-01-02"), [{"id": 1}])
 
-        self.api.get_orders = Mock(side_effect=[[{"id": 1}], [{"id": 2}]])
-        with patch.object(self.api, "_fetch_orders_for_date", return_value=[{}] * 495):
+        with patch.object(
+            self.api,
+            "_fetch_orders_for_date",
+            side_effect=[[{}] * 495, [{"id": 1}], [{"id": 2}]],
+        ) as fetch_orders:
             result = self.api.pull_data("2026-01-01", "2026-01-04")
         self.assertEqual(result, [{"id": 1}, {"id": 2}])
         self.assertEqual(
-            self.api.get_orders.call_args_list,
+            fetch_orders.call_args_list,
             [
+                call("2026-01-01", "2026-01-04"),
                 call("2026-01-01", "2026-01-02"),
                 call("2026-01-03", "2026-01-04"),
             ],
         )
 
-        self.api.get_orders = Mock(side_effect=[[{"id": 3}], [{"id": 4}]])
-        with patch.object(self.api, "_fetch_orders_for_date", side_effect=ValueError("split")):
-            result = self.api.pull_data(date(2026, 1, 1), date(2026, 1, 4))
+        with patch.object(
+            self.api,
+            "_fetch_orders_for_date",
+            side_effect=[ValueError("split"), [{"id": 3}], [{"id": 4}]],
+        ):
+            result = self.api.pull_data("2026-01-01", "2026-01-04")
         self.assertEqual(result, [{"id": 3}, {"id": 4}])
 
-    @unittest.expectedFailure
     def test_pull_data_splits_using_implemented_fetch_method(self):
         with patch.object(
             self.api,

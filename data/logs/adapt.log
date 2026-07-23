@@ -1,0 +1,10 @@
+[2026-07-23 17:38:17] <adapt>: INFO | Адаптация данных поставщика ROSSKO
+[2026-07-23 17:38:17] <adapt>: INFO | Текущие данные поставщика ROSSKO сохранены
+[2026-07-23 17:38:17] <adapt>: CRITICAL | Критическая ошибка адаптации данных: 'Archive'
+Traceback (most recent call last):
+  File "C:\Program Files\_Scripts\Create_ReturnNomeclature\src\adapt\__init__.py", line 30, in run
+    return _run(data)
+  File "C:\Program Files\_Scripts\Create_ReturnNomeclature\src\adapt\__init__.py", line 60, in _run
+    archive_dir=cfg["Archive"]["path"]["product_difference_checkup"]
+                ~~~^^^^^^^^^^^
+KeyError: 'Archive'

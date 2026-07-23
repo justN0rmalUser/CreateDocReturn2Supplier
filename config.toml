@@ -16,6 +16,8 @@ db_password = "masterkey"
 
 [Cache]
 path = "data/cache"
+statuses.rossko = [31, 36]
+statuses.profit = [20]
 
 [Archive]
 path.server_answers = "data/archive/jsons"

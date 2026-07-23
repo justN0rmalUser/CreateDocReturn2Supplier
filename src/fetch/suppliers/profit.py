@@ -4,10 +4,12 @@ import requests
 
 from ..supplier_pattern import Supplier
 from ...utils.config import load_config
+from ...utils.logging import Logger
 from ...utils.other import isodate
 
 
 cfg = load_config()
+log = Logger.new("fetch.profit", "fetch")
 
 
 class ProfitLigaAPI(Supplier):
@@ -16,7 +18,7 @@ class ProfitLigaAPI(Supplier):
     Предоставляет методы для получения и фильтрации заказов.
     """
 
-    NAME = "PROFIT"
+    NAME = "profit"
     ID = 8876
     
     def __init__(
@@ -24,6 +26,7 @@ class ProfitLigaAPI(Supplier):
         url: str = cfg["Suppliers"]["profit"]["URL"], 
         api_key: str = cfg["Suppliers"]["profit"]["key"]
     ):
+        log.debug("Инициализация класса")
         self.url = url
         self.api_key = api_key
 
@@ -49,14 +52,18 @@ class ProfitLigaAPI(Supplier):
         `RuntimeError`
             Статус ответа не успешен 
         """
+        log.debug('Старт функции "_make_request"')
+        
         params = {"secret": self.api_key, "page": page_num}
         try:
+            log.debug("Старт запроса")
             response = requests.get(self.url, params=params)
             response.raise_for_status()
             sleep(0.5)
         except requests.RequestException as e:
             raise requests.RequestException(f"Ошибка при выполнении запроса к Profit Liga: {e}")
         else:
+            log.debug("Запрос успешен")
             answer = response.json()
             if (status := answer["status"]) != "success":
                 raise RuntimeError(f"Статус не успешен: {status}")
@@ -70,17 +77,21 @@ class ProfitLigaAPI(Supplier):
         start_date: str,
         end_date: str
     ):
+        log.debug('Старт функции "validate_list"')
         _date_pattern = r"%Y-%m-%d %H:%M:%S"
         
         if not page:
+            log.warning("Пустой лист")
             return []
 
         # Получаем даты верхнюю и нижнюю
+        log.debug("Получение граничных дат")
         top_of_page = isodate(page[0]["datetime"], _date_pattern)
         bot_of_page = isodate(page[-1]["datetime"], _date_pattern)
 
         # Если весь лист внутри диапазона
         if end_date >= top_of_page and start_date <= bot_of_page:
+            log.debug("Весь лист внутри диапазона")
             return page
 
         # Ищем индекс первой даты, которая <= end_date (верхняя граница)
@@ -94,7 +105,10 @@ class ProfitLigaAPI(Supplier):
                     end_idx = i
 
         if start_idx is None:
+            log.debug("Лист вне диапазона")
             return []
+        
+        log.debug("Лист частично внутри диапазона")
         return page[start_idx:end_idx + 1]
     
     def pull_data(
@@ -109,17 +123,24 @@ class ProfitLigaAPI(Supplier):
         `list[dict[str, str | float | int | dict]]`
             Список заказов
         """
+        log.debug('Старт функции "pull_data"')
+
+        log.info('Первый запрос с получением метаданных')
         _, data, count_pages = self._make_request(1, with_pages=True)
         result = self.validate_list(data, start, end)
+        log.info('Первый запрос выполнен успешно, количество страниц: %d', count_pages)
 
         for page in range(2, count_pages+1):
+            log.debug('Запрос и обработка страницы %d', page)
             _, data = self._make_request(page, with_pages=False)
             
             valid_data = self.validate_list(data, start, end)
             
             if result and not valid_data:
+                log.info('Обработка подошла к концу')
                 break
             
+            log.info('Добавление страницы %d', page)
             result += valid_data
         
         return result

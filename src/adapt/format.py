@@ -1,20 +1,14 @@
 from __future__ import annotations
 
-from pathlib import Path
 from typing import Annotated, Iterator, Self, TypeAlias, TypedDict
 
 import pydantic
 
-from ..utils.other import isodate, logger, validate_date_key
+from ..utils.logging import Logger
+from ..utils.other import isodate, validate_date_key
 
 
-fetch_data_log = logger(  #FIXME
-    name="dataobject",
-    fpath=Path(
-        r"C:\Program Files\_Scripts\Create_ReturnNomeclature\logs\dataobject.log"
-    ),
-)
-fetch_data_log.propagate = False
+log = Logger.new("adapt.format", "adapt")
 
 
 DateKey: TypeAlias = Annotated[str, pydantic.AfterValidator(validate_date_key)]
@@ -56,6 +50,11 @@ class ProductList:
         agent_id: int,
         data: ProductData | None = None,
     ) -> None:
+        log.debug(
+            "Инициализация ProductList поставщика %s (ID: %s)",
+            agent_name,
+            agent_id,
+        )
         self._data: ProductData | dict = (
             PDATA_ADAPTER.validate_python(data)
             if data is not None
@@ -79,7 +78,7 @@ class ProductList:
         `Self`
             Экземпляр класса `ProductList`
         """
-        fetch_data_log.info("Получение данных из ROSSKO")
+        log.debug('Старт функции "from_rossko"')
 
         agent_name, agent_id, fetched_data = data
         plist = cls(agent_name, agent_id)
@@ -113,6 +112,8 @@ class ProductList:
                     (order_idx, part_idx),
                     product,
                 )
+
+        log.info("Получены данные из ROSSKO")
         return plist
 
     @classmethod
@@ -129,7 +130,7 @@ class ProductList:
         `Self`
             Экземпляр класса `ProductList`
         """
-        fetch_data_log.info("Получение данных из PROFIT-LIGA")
+        log.debug('Старт функции "from_profit"')
 
         agent_name, agent_id, fetched_data = data
         plist = cls(agent_name, agent_id)
@@ -163,18 +164,22 @@ class ProductList:
                     (order_idx, part_idx),
                     product,
                 )
+
+        log.info("Получены данные из PROFIT")
         return plist
 
     @classmethod
     def adapt(cls, data: tuple[str, int, list[dict]]) -> Self:
+        log.debug('Старт функции "adapt"')
         adapter = {
-            "ROSSKO": cls.from_rossko,
-            "PROFIT": cls.from_profit,
+            "rossko": cls.from_rossko,
+            "profit": cls.from_profit,
         }
 
         agent_name, _, _ = data
 
         init_func = adapter.get(agent_name)
+        log.info("Распределение данных поставщика %s", agent_name)
 
         if init_func is not None:
             return init_func(data)
@@ -275,11 +280,11 @@ class ProductList:
             Данные товара в унифицированном формате
         """
         if self.data.get(day) is None:
-            fetch_data_log.debug(f"Дата-ключ не найден, создается новый: <{day}>")
+            log.info("Дата-ключ не найден, создается новый: <%s>", day)
             self._data[day] = {}
 
         if self.data[day].get(order) is None:
-            fetch_data_log.debug(
+            log.info(
                 "ID заказа в %s как ключ не найден, создается новый: <%s>",
                 day,
                 order,
@@ -287,7 +292,7 @@ class ProductList:
             self._data[day][order] = {}
 
         if self.data[day][order].get(guid) is None:
-            fetch_data_log.debug(
+            log.info(
                 "ID товара в %s как ключ не найден, создается новый: <%s>",
                 order,
                 guid,
@@ -306,6 +311,7 @@ class ProductList:
         data : `ProductList | ProductData`
             Данные, с которыми производится слияние
         """
+        log.debug('Старт функции "merge"')
         data = (
             data
             if isinstance(data, ProductList)
@@ -314,6 +320,7 @@ class ProductList:
 
         for inner in data.products:
             self.add(*inner)
+        log.info("Данные поставщика %s объединены", self.agent_name)
 
     def __add__(self, other):
         self.merge(other)

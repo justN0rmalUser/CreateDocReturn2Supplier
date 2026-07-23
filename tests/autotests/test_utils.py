@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from datetime import date
 from pathlib import Path
-from unittest.mock import Mock, patch
+from unittest.mock import patch
 
 from src.utils import config, other
 
@@ -24,7 +24,7 @@ class ConfigTests(unittest.TestCase):
             self.assertEqual(config._normalize_config_path(str(target)), target)
             self.assertEqual(config._normalize_config_path(target), target)
             self.assertEqual(config.load_config(target), {"section": {"value": 3}})
-            with patch.dict(os.environ, {"path_to_config": str(target)}):
+            with patch.dict(os.environ, {"CONFIG_PATH": str(target)}):
                 self.assertEqual(config.load_config(), {"section": {"value": 3}})
             with self.assertRaises(TypeError):
                 config._normalize_config_path(None)

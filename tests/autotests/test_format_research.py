@@ -1,17 +1,19 @@
-import pickle
-import os
 import logging
+import os
+import pickle
 import tempfile
 import unittest
 from pathlib import Path
 
 import pydantic
 
-os.environ.setdefault("path_to_config", "config.toml")
+os.environ["CONFIG_PATH"] = str(Path(__file__).with_name("config.toml"))
 logging.getLogger("dataobject").addHandler(logging.NullHandler())
 
-from src.adapt.format import ProductList
-from src.adapt.research import (
+from src import adapt  # noqa: E402
+from src.adapt.format import ProductList  # noqa: E402
+from src.adapt.research import (  # noqa: E402
+    SUPPLIER_STATUSES,
     _align_product_type,
     _is_partial_return,
     _is_return_transition,
@@ -35,7 +37,7 @@ def entry(status=5, count=2, comment=None, path=(0, 0), name="part"):
     return status, count, comment, path, product(name, float(count))
 
 
-def plist(name="ROSSKO", agent_id=1, data=None):
+def plist(name="rossko", agent_id=1, data=None):
     return ProductList(name, agent_id, data)
 
 
@@ -51,11 +53,11 @@ class ProductListTests(unittest.TestCase):
         with self.assertRaises(pydantic.ValidationError):
             plist(data={"2026-02-31": {}})
         with self.assertRaisesRegex(ValueError, "Неизвестный"):
-            ProductList.adapt(("OTHER", 1, []))
+            ProductList.adapt(("other", 1, []))
 
     def test_from_rossko_and_profit(self):
         rossko = ProductList.adapt((
-            "ROSSKO",
+            "rossko",
             8880,
             [{
                 "created_date": "02.06.2026 10:15:00",
@@ -77,7 +79,7 @@ class ProductListTests(unittest.TestCase):
         self.assertEqual(rossko.data["2026-06-02"][1001]["same-guid"][0][4]["name"], "Pad")
 
         profit = ProductList.adapt((
-            "PROFIT",
+            "profit",
             8876,
             [{
                 "datetime": "2026-06-03 09:00:00",
@@ -116,10 +118,10 @@ class ResearchTests(unittest.TestCase):
         cases = [
             ((object(), current, (31,)), TypeError),
             ((current, plist(agent_id=2), (31,)), ValueError),
-            ((current, current, [31]), TypeError),
+            ((current, current, 31), TypeError),
             ((current, current, ()), ValueError),
             ((current, current, (4,)), ValueError),
-            ((plist("OTHER", data=current.data), plist("OTHER", data=current.data), (1,)), AttributeError),
+            ((plist("other", data=current.data), plist("other", data=current.data), (1,)), AttributeError),
             ((current, plist(data={"2026-06-01": {1: {"g": [entry()]}}}), (31,)), ValueError),
         ]
         for args, error in cases:
@@ -145,7 +147,7 @@ class ResearchTests(unittest.TestCase):
             }},
         })
         rows = list(difference(old, new, (31, 36)))
-        self.assertEqual(rows[0][:6], ("ROSSKO", 1, "2026-06-02", 1, "changed", (5, 31)))
+        self.assertEqual(rows[0][:6], ("rossko", 1, "2026-06-02", 1, "changed", (5, 31)))
         self.assertEqual(rows[0][6]["name"], "new")
 
     def test_difference_alignment_full_partial_and_failure(self):
@@ -172,14 +174,14 @@ class ResearchTests(unittest.TestCase):
         self.assertEqual([row[4] for row in rows], ["partial"])
         self.assertEqual(rows[0][6]["name"], "partial-return")
 
-        profit_old = plist("PROFIT", data={
+        profit_old = plist("profit", data={
             "2026-06-01": {1: {"x": [entry()]}},
             "2026-06-02": {1: {"x": [
                 entry(5, count=2, path=(0, 0)),
                 entry(5, count=4, comment="x", path=(0, 1)),
             ]}},
         })
-        profit_new = plist("PROFIT", data={
+        profit_new = plist("profit", data={
             "2026-06-01": {1: {"x": [entry()]}},
             "2026-06-02": {1: {"x": [
                 entry(20, count=2, path=(0, 0)),
@@ -219,8 +221,7 @@ class ResearchTests(unittest.TestCase):
         same = entry(5, count=4, comment="x", path=(0, 0))
         partial = entry(31, count=1, comment="x", path=(0, 1))
         self.assertTrue(_is_partial_return(old, same, partial))
-        self.assertFalse(_is_return_transition("ROSSKO", 31, 36, (36,)))
-        self.assertTrue(_is_return_transition("PROFIT", 5, 20, (20,)))
+        self.assertTrue(_is_return_transition("profit", 5, 20, (20,)))
 
         # A tempting partial match whose tail cannot align falls back and fails.
         self.assertIsNone(_align_product_type([old, entry(5)], [same, partial, entry(count=9)]))
@@ -250,6 +251,27 @@ class ResearchTests(unittest.TestCase):
                 pickle.dump({}, stream)
             with self.assertRaises(TypeError):
                 read_plist(not_plist)
+
+    def test_lowercase_rossko_keeps_31_to_36_exclusion(self):
+        self.assertFalse(_is_return_transition("rossko", 31, 36, (36,)))
+
+    def test_toml_status_arrays_match_difference_contract(self):
+        current = plist()
+        self.assertEqual(
+            list(
+                difference(
+                    current,
+                    current,
+                    adapt.ALLOWED_STATUSES["rossko"],
+                )
+            ),
+            [],
+        )
+
+    def test_configured_profit_statuses_are_supported(self):
+        configured = set(adapt.ALLOWED_STATUSES["profit"])
+        self.assertIn(20, configured)
+        self.assertTrue(configured.issubset(SUPPLIER_STATUSES["profit"]))
 
 
 if __name__ == "__main__":

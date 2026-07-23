@@ -1,15 +1,19 @@
 import pickle
 from functools import cache
 from pathlib import Path
-from typing import Iterator, TypeAlias
+from typing import Iterator, TypeAlias, Iterable
 from os import makedirs
 
 from .format import ProductEntry, ProductList, UnifiedProduct
+from ..utils.logging import Logger
+
+
+log = Logger.new("adapt.research", "adapt")
 
 
 SUPPLIER_STATUSES = {
-    "ROSSKO": list(range(1, 4)) + list(range(5, 10)) + list(range(31, 37)),
-    "PROFIT": list(range(1, 28)),
+    "rossko": list(range(1, 4)) + list(range(5, 10)) + list(range(31, 37)),
+    "profit": list(range(1, 28)),
 }
 
 ResearchResult: TypeAlias = tuple[
@@ -26,7 +30,7 @@ ResearchResult: TypeAlias = tuple[
 def difference(
     old_plist: ProductList,
     new_plist: ProductList,
-    allowed_statuses: tuple[int, ...],
+    allowed_statuses: Iterable[int],
 ) -> Iterator[ResearchResult]:
     """Находит товары, которые поменяли свой статус
 
@@ -36,7 +40,7 @@ def difference(
         Список товаров за предыдущий день
     **new_plist** : `ProductList`
         Список товаров за сегодняшний день
-    **allowed_statuses** : `tuple[int, ...]`
+    **allowed_statuses** : `Iterable[int, ...]`
         Список допустимых статусов
 
     Yields
@@ -54,6 +58,8 @@ def difference(
     `ValueError`
         Полученные статусы не соответствуют допустимым
     """
+    log.debug('Старт функции "difference"')
+
     # Проверка типов входных данных
     if not isinstance(old_plist, ProductList) or not isinstance(
         new_plist, ProductList
@@ -68,7 +74,7 @@ def difference(
     agent_id = new_plist.agent_id
 
     # Проверка типов входных данных
-    if not isinstance(allowed_statuses, tuple):
+    if not isinstance(allowed_statuses, Iterable):
         raise TypeError("Недопустимый тип входных данных")
 
     # Проверка дней
@@ -92,6 +98,7 @@ def difference(
 
     for day, order, guid in old_plist.type_products:
         if old_plist.min_day == day:
+            log.debug("Пропуск минимальной даты предыдущей выборки: %s", day)
             continue
 
         old_product_type = old_plist.data[day][order][guid]
@@ -131,12 +138,25 @@ def difference(
                             new_data
                         )
                 else:
-                    # TODO логгирование аномалии с флагом warning
-                    pass
+                    log.warning(
+                        "Изменились количество или комментарий товара "
+                        "%s/%s/%s поставщика %s; позиция пропущена",
+                        day,
+                        order,
+                        guid,
+                        agent_name,
+                    )
         else:
             alignment = _align_product_type(old_product_type, new_product_type)
             if alignment is None:
-                # TODO логгирование аномалии с флагом warning
+                log.warning(
+                    "Не удалось сопоставить позиции товара %s/%s/%s "
+                    "поставщика %s; тип товара пропущен",
+                    day,
+                    order,
+                    guid,
+                    agent_name,
+                )
                 continue
 
             for old_product, new_product, partial_return in alignment:
@@ -186,12 +206,12 @@ def _is_return_transition(
     agent_name: str,
     old_status: int,
     new_status: int,
-    allowed_statuses: tuple[int, ...],
+    allowed_statuses: Iterable[int],
 ) -> bool:
     return (
         old_status != new_status
         and new_status in allowed_statuses
-        and not (agent_name == "ROSSKO" and (old_status, new_status) == (31, 36))
+        and not (agent_name == "rossko" and (old_status, new_status) == (31, 36))
     )
 
 
@@ -289,6 +309,7 @@ def write_plist(data: ProductList, path: Path | str) -> None:
     `ValueError`
         Расширение файла не "**.pkl**"
     """
+    log.debug('Старт функции "write_plist"')
     if not isinstance(path, (str, Path)) or not isinstance(data, ProductList):
         raise TypeError("Недопустимый тип входной переменной")
 
@@ -297,10 +318,12 @@ def write_plist(data: ProductList, path: Path | str) -> None:
     if path.suffix != ".pkl":
         raise ValueError("Расширение файла должно быть .pkl")
     if not path.parent.exists():
+        log.debug("Создание каталога для ProductList: %s", path.parent)
         makedirs(path.parent)
 
     with open(path, 'wb') as fpkl:
         pickle.dump(data, fpkl)
+    log.info("ProductList поставщика %s записан: %s", data.agent_name, path)
 
 
 def read_plist(path: Path | str) -> ProductList:
@@ -325,6 +348,7 @@ def read_plist(path: Path | str) -> ProductList:
     `FileNotFoundError`
         Файл не найден (скорее всего это первый прогон)
     """
+    log.debug('Старт функции "read_plist"')
     if not isinstance(path, (str, Path)):
         raise TypeError("Недопустимый тип переменной для чтения")
 
@@ -340,4 +364,5 @@ def read_plist(path: Path | str) -> ProductList:
         obj = pickle.load(fpkl)
         if not isinstance(obj, ProductList):
             raise TypeError("Объект не является \"ProductList\"")
+        log.info("ProductList поставщика %s прочитан: %s", obj.agent_name, path)
         return obj
