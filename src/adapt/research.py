@@ -72,7 +72,8 @@ def difference(
     
     agent_name = new_plist.agent_name
     agent_id = new_plist.agent_id
-
+    allowed_statuses = tuple(allowed_statuses)
+    
     # Проверка типов входных данных
     if not isinstance(allowed_statuses, Iterable):
         raise TypeError("Недопустимый тип входных данных")

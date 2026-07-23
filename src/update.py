@@ -8,7 +8,7 @@ from .utils.logging import Logger
 log = Logger.new("update")
 PATH_TO_LOGFILE = log.filepath
 
-setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\logs\\frame.log", level=INFO)
+setup_logging(log_file="C:\\Program Files\\_Scripts\\Create_ReturnNomeclature\\data\\logs\\frame.log", level=INFO)
 
 
 def run(data):
@@ -17,7 +17,6 @@ def run(data):
 
     db_cfg = DatabaseConfig()
 
-    connection = Connection(db_cfg)
     
     for agent_name, agent_id, products in data:
         if not products:
@@ -25,9 +24,10 @@ def run(data):
             continue
         
         log.info("Обновление данных поставщика %s", agent_name)
-        transaction = connection.transaction()
+        
+        connection = Connection(db_cfg)
 
-        with transaction.start_transaction(type_api="high", read_only=False) as trans:
+        with connection.single_transaction(type_api="high", read_only=False) as trans:
             try:
                 log.debug("Создание документов поставщика %s", agent_name)
                 docs_pks = trans.create_document_out(agent_id, 0)
@@ -58,5 +58,4 @@ def run(data):
 
             log.success("Данные записаны, ошибок нет")
 
-    connection.close()
     log.info("Обновление данных завершено, подключение закрыто")

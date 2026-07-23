@@ -14,8 +14,9 @@ LOGS_PATH = Path(cfg["Logging"]["path"])
 ARCHIVE_JSON_PATH = Path(cfg["Archive"]["path"]["server_answers"])
 ARCHIVE_PKL_PATH = Path(cfg["Archive"]["path"]["product_difference_checkup"])
 
+GLOBAL_LOG_PATH = LOGS_PATH / "global.log"
 log.basicConfig(
-    filename=LOGS_PATH / "global.log", 
+    filename=GLOBAL_LOG_PATH, 
     encoding='utf-8', 
     format=logging.DEFAULT_FORMAT._fmt,
     datefmt=logging.DEFAULT_FORMAT.datefmt
@@ -51,12 +52,20 @@ def run():
         raise
     
     # очистка старых логов
-    logs_delay = date.today() - timedelta(cfg["Logging"]["flush_delay"])
-    for pkg in (fetch, adapt, update):
+    try:
+        logs_delay = date.today() - timedelta(cfg["Logging"]["flush_delay"])
+        for pkg in (fetch, adapt, update):
+            logging.flush(
+                logs_delay,
+                pkg.PATH_TO_LOGFILE
+            )
         logging.flush(
             logs_delay,
-            pkg.PATH_TO_LOGFILE
+            GLOBAL_LOG_PATH
         )
+    except Exception as exc:
+        log.error(exc)
+    
 
 if __name__ == '__main__':
     log.info("Старт скрипта")
