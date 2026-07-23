@@ -21,9 +21,9 @@ wheels = [
 ]
 
 [[package]]
-name = "autodealer-api"
+name = "autodealerapi"
 version = "0.1.7"
-source = { path = "../../ALL/autodealerAPI/dist/autodealer_api-0.1.7-py3-none-any.whl" }
+source = { path = "../_auxiliary-soft/autodealerAPI/dist/autodealerapi-0.1.7-py3-none-any.whl" }
 dependencies = [
     { name = "fdb" },
     { name = "levenshtein" },
@@ -32,7 +32,7 @@ dependencies = [
     { name = "rapidfuzz" },
 ]
 wheels = [
-    { filename = "autodealer_api-0.1.7-py3-none-any.whl", hash = "sha256:8b9a49e5830a96e0f9150ba2f73467a98d9a2650f8d9336011673c71aa687fea" },
+    { filename = "autodealerapi-0.1.7-py3-none-any.whl", hash = "sha256:a08f9c178aaf545d3f679ac6c1000aa9bd1313db39178fe1ab2c7cb0009f6c2a" },
 ]
 
 [package.metadata]
@@ -96,7 +96,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "annotated-types" },
     { name = "attrs" },
-    { name = "autodealer-api" },
+    { name = "autodealerapi" },
     { name = "certifi" },
     { name = "charset-normalizer" },
     { name = "fdb" },
@@ -124,7 +124,7 @@ dependencies = [
 requires-dist = [
     { name = "annotated-types", specifier = "==0.7.0" },
     { name = "attrs", specifier = "==25.3.0" },
-    { name = "autodealer-api", path = "../../ALL/autodealerAPI/dist/autodealer_api-0.1.7-py3-none-any.whl" },
+    { name = "autodealerapi", path = "../_auxiliary-soft/autodealerAPI/dist/autodealerapi-0.1.7-py3-none-any.whl" },
     { name = "certifi", specifier = "==2025.8.3" },
     { name = "charset-normalizer", specifier = "==3.4.3" },
     { name = "fdb", specifier = "==2.0.4" },

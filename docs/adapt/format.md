@@ -24,11 +24,13 @@ data = {
         OrderId: {
             ProductId: list 
             [
-                [(
-                    current_status: int, 
-                    (path_to_order: int, path_to_product: int): tuple, 
+                (
+                    current_status: int,
+                    count: int
                     descript: str
-                ), ... ]
+                    (path_to_order: int, path_to_product: int): tuple, 
+                    data: list[tuple[dict]]
+                ), ... 
             ]
         }
     }

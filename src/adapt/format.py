@@ -8,7 +8,7 @@ import pydantic
 from ..utils.other import isodate, logger, validate_date_key
 
 
-fetch_data_log = logger(
+fetch_data_log = logger(  #FIXME
     name="dataobject",
     fpath=Path(
         r"C:\Program Files\_Scripts\Create_ReturnNomeclature\logs\dataobject.log"

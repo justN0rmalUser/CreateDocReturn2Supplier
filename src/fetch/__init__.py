@@ -8,21 +8,23 @@ from ..utils.config import load_config
 
 cfg = load_config()
 
+SupplierName: TypeAlias = str
+SupplierId: TypeAlias = str
+SupplierData: TypeAlias = Iterable[dict]
+
+DataPkg: TypeAlias = tuple[SupplierName, SupplierId, SupplierData]
 
 SUPPLIERS = (
     rossko.RosskoAPI(), 
     profit.ProfitLigaAPI()
 )
 
-SupplierName: TypeAlias = str
-SupplierId: TypeAlias = str
 
-
-def run() -> list[tuple[str, int, list[dict[str, str | float | int | dict]]], ...]:
-    end: date = date.today() - timedelta(days=cfg["DEFAULT"]["delta_days"])
+def run() -> list[DataPkg]:
+    end: date = date.today() - timedelta(days=cfg["Suppliers"]["delta_days"])
     start: date = end - timedelta(days=63)
     
-    result: list[tuple[SupplierName, SupplierId, Iterable[dict]], ...] = []
+    result: list[DataPkg] = []
     
     for provider in SUPPLIERS:
         data = provider.pull_data(start=start.isoformat(), end=end.isoformat())
@@ -30,7 +32,7 @@ def run() -> list[tuple[str, int, list[dict[str, str | float | int | dict]]], ..
         archive_json(
             data, 
             provider.NAME.lower(),
-            archive_dir=cfg["Backup"]["archive"]["server_answers"]
+            archive_dir=cfg["Archive"]["path"]["server_answers"]
         )
         
         result.append((provider.NAME, provider.ID, data))

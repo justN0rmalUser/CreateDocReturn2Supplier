@@ -1,9 +1,12 @@
 """Утилиты для конфига"""
 
 import os
-from typing import Any
+from typing import Any, TypeAlias
 import tomllib
 from pathlib import Path
+
+
+PathLike: TypeAlias = str | os.PathLike[str]
 
 
 def _normalize_config_path(_fp, *, enabled_check_exists: bool = True):
@@ -47,7 +50,7 @@ def _normalize_config_path(_fp, *, enabled_check_exists: bool = True):
     return fp
 
 
-def load_config(file_path: str | Path | None = None) -> dict[str, Any]:
+def load_config(file_path: PathLike | Path | None = None) -> dict[str, Any]:
     """Выгрузка конфигурации
 
     Parameters
@@ -62,7 +65,7 @@ def load_config(file_path: str | Path | None = None) -> dict[str, Any]:
     """
     # Проверка входных параметров
     if file_path is None:
-        file_path = os.environ.get("path_to_config")
+        file_path = os.environ.get("CONFIG_PATH")
 
     fpath = _normalize_config_path(file_path)
 

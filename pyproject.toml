@@ -7,7 +7,7 @@ requires-python = ">=3.13.14"
 dependencies = [
     "annotated-types==0.7.0",
     "attrs==25.3.0",
-    "autodealer-api",
+    "autodealerapi",
     "certifi==2025.8.3",
     "charset-normalizer==3.4.3",
     "fdb==2.0.4",
@@ -32,4 +32,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-autodealer-api = { path = "../../ALL/autodealerAPI/dist/autodealer_api-0.1.7-py3-none-any.whl" }
+autodealerapi = { path = "../_auxiliary-soft/autodealerAPI/dist/autodealerapi-0.1.7-py3-none-any.whl" }

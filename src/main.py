@@ -4,7 +4,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-os.environ["path_to_config"] = "config.toml"  #FIXME
+os.environ["CONFIG_PATH"] = "config.toml"  #FIXME
 
 from .utils import archive, config
 
@@ -12,8 +12,8 @@ from .utils import archive, config
 log.basicConfig(filename="logs\\global.log", encoding='utf-8')
 
 cfg = config.load_config()
-ARCHIVE_JSON_PATH = Path(cfg["Backup"]["archive"]["server_answers"])
-ARCHIVE_PKL_PATH = Path(cfg["Backup"]["archive"]["product_difference_checkup"])
+ARCHIVE_JSON_PATH = Path(cfg["Archive"]["path"]["server_answers"])
+ARCHIVE_PKL_PATH = Path(cfg["Archive"]["path"]["product_difference_checkup"])
 
 
 def run():
@@ -50,9 +50,9 @@ if __name__ == '__main__':
     log.info("Старт скрипта")
     log.info("Очистка старых логов")
     
-    log_delay = date.today() - timedelta(cfg["Logging"]["log_day_delay"])
+    archive_delay = date.today() - timedelta(cfg["Archive"]["flush_delay"])
     
-    archive.flush(log_delay, archive_dir=ARCHIVE_JSON_PATH)
-    archive.flush(log_delay, archive_dir=ARCHIVE_PKL_PATH)
+    archive.flush(archive_delay, archive_dir=ARCHIVE_JSON_PATH)
+    archive.flush(archive_delay, archive_dir=ARCHIVE_PKL_PATH)
 
     run()
