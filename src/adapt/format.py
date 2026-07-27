@@ -280,11 +280,11 @@ class ProductList:
             Данные товара в унифицированном формате
         """
         if self.data.get(day) is None:
-            log.info("Дата-ключ не найден, создается новый: <%s>", day)
+            log.debug("Дата-ключ не найден, создается новый: <%s>", day)
             self._data[day] = {}
 
         if self.data[day].get(order) is None:
-            log.info(
+            log.debug(
                 "ID заказа в %s как ключ не найден, создается новый: <%s>",
                 day,
                 order,
@@ -292,13 +292,14 @@ class ProductList:
             self._data[day][order] = {}
 
         if self.data[day][order].get(guid) is None:
-            log.info(
+            log.debug(
                 "ID товара в %s как ключ не найден, создается новый: <%s>",
                 order,
                 guid,
             )
             self._data[day][order][guid] = []
 
+        log.info(f"Добавлен товар: [{day}/{order}/{guid}/{(status, path)}]")
         self._data[day][order][guid].append(
             (status, count, comment, path, product)
         )
@@ -320,7 +321,6 @@ class ProductList:
 
         for inner in data.products:
             self.add(*inner)
-        log.info("Данные поставщика %s объединены", self.agent_name)
 
     def __add__(self, other):
         self.merge(other)

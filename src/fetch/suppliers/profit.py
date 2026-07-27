@@ -63,7 +63,9 @@ class ProfitLigaAPI(Supplier):
         except requests.RequestException as e:
             raise requests.RequestException(f"Ошибка при выполнении запроса к Profit Liga: {e}")
         else:
-            log.debug("Запрос успешен")
+            log.info((f"Успешный запрос на страницу {page_num}; получены метаданные"
+                      if with_pages else
+                      f"Успешный запрос на страницу {page_num}"))
             answer = response.json()
             if (status := answer["status"]) != "success":
                 raise RuntimeError(f"Статус не успешен: {status}")
@@ -86,12 +88,16 @@ class ProfitLigaAPI(Supplier):
 
         # Получаем даты верхнюю и нижнюю
         log.debug("Получение граничных дат")
-        top_of_page = isodate(page[0]["datetime"], _date_pattern)
-        bot_of_page = isodate(page[-1]["datetime"], _date_pattern)
+        top_of_page = page[0]
+        bot_of_page = page[-1]
+
+        top_of_page_date = isodate(top_of_page["datetime"], _date_pattern)
+        bot_of_page_date = isodate(bot_of_page["datetime"], _date_pattern)
+        log.info(f"Граничные данные: [{top_of_page_date}/{top_of_page["order_id"]}] -> [{bot_of_page_date}/{bot_of_page["order_id"]}]")
 
         # Если весь лист внутри диапазона
-        if end_date >= top_of_page and start_date <= bot_of_page:
-            log.debug("Весь лист внутри диапазона")
+        if end_date >= top_of_page_date and start_date <= bot_of_page_date:
+            log.info("Весь лист внутри диапазона")
             return page
 
         # Ищем индекс первой даты, которая <= end_date (верхняя граница)
@@ -105,10 +111,10 @@ class ProfitLigaAPI(Supplier):
                     end_idx = i
 
         if start_idx is None:
-            log.debug("Лист вне диапазона")
+            log.info("Лист вне диапазона")
             return []
         
-        log.debug("Лист частично внутри диапазона")
+        log.info("Лист частично внутри диапазона: [%d:%d]", start_idx, end_idx + 1)
         return page[start_idx:end_idx + 1]
     
     def pull_data(
@@ -125,7 +131,6 @@ class ProfitLigaAPI(Supplier):
         """
         log.debug('Старт функции "pull_data"')
 
-        log.info('Первый запрос с получением метаданных')
         _, data, count_pages = self._make_request(1, with_pages=True)
         result = self.validate_list(data, start, end)
         log.info('Первый запрос выполнен успешно, количество страниц: %d', count_pages)

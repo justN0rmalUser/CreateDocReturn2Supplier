@@ -54,7 +54,7 @@ class RosskoAPI(Supplier):
         """
         log.debug('Старт функции "_fetch_orders_for_date"')
         if (interval := (date.fromisoformat(end) - date.fromisoformat(start)).days) >= 32:
-            log.debug('Дробление запроса, промежуток слишком большой: %d', interval)
+            log.info('Дробление запроса, промежуток слишком большой: %d', interval)
             raise ValueError("Слишком большой промежуток времени, больше 32 дней")
 
         log.debug("Инициализация SOAP-клиента")
@@ -75,7 +75,7 @@ class RosskoAPI(Supplier):
 
         orders = data.get("OrdersList", {}).get("Order", [])
 
-        log.info("Товары за период %s:%s получены", start, end)
+        log.info("Товары за период %s -> %s получены", start, end)
         return orders if isinstance(orders, list) else [orders]
 
     def pull_data(
@@ -106,7 +106,7 @@ class RosskoAPI(Supplier):
                 end
             )
             if len(answer) >= 495 and start != end:
-                log.debug('Дробление запроса, длина ответа: %d', len(answer))
+                log.info('Дробление запроса, длина ответа слишком большая: %d (>=495)', len(answer))
                 raise ValueError
         except ValueError:
             first_half, second_half = split_iso_date_range(start, end)

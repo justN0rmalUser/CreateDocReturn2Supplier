@@ -294,5 +294,16 @@ class Logger:
         self._logger = logger
         self.level = logger.level
 
+    def close(self) -> None:
+        if self._logger is None:
+            return
+
+        handlers = self._logger.handlers.copy()
+        for handler in handlers:
+            self._logger.removeHandler(handler)
+            handler.close()
+
+        self._logger = None
+
 
 __all__ = ["DEFAULT_FORMAT", "Logger", "SUCCESS", "flush"]

@@ -24,38 +24,42 @@ def run(data):
             continue
         
         log.info("Обновление данных поставщика %s", agent_name)
+        log_supplier = Logger.new(f"update.{agent_name}", "update")
         
         connection = Connection(db_cfg)
 
         with connection.single_transaction(type_api="high", read_only=False) as trans:
             try:
-                log.debug("Создание документов поставщика %s", agent_name)
-                docs_pks = trans.create_document_out(agent_id, 0)
-                log.info("Документы поставщика %s созданы", agent_name)
-            except Exception as exc:
-                log.error(
-                    "Ошибка создания документов поставщика %s: %s",
-                    agent_name,
-                    exc,
-                )
-                raise
+                try:
+                    log_supplier.debug("Создание документов поставщика")
+                    docs_pks = trans.create_document_out(agent_id, 0)
+                    log_supplier.info("Документы поставщика созданы")
+                except Exception as exc:
+                    log.error(
+                        "Ошибка создания документов поставщика %s: %s",
+                        agent_name,
+                        exc,
+                    )
+                    raise
 
-            try:
-                log.debug("Заполнение документов поставщика %s", agent_name)
-                trans.fill_document_out(
-                    products,
-                    docs_pks["DOCUMENT_OUT"],
-                    docs_pks["DOCUMENT_OUT_HEADER"]
-                )
-                log.info("Документы поставщика %s заполнены", agent_name)
-            except Exception as exc:
-                log.error(
-                    "Ошибка заполнения документов поставщика %s: %s",
-                    agent_name,
-                    exc,
-                )
-                raise
-
-            log.success("Данные записаны, ошибок нет")
+                try:
+                    log_supplier.debug("Заполнение документов поставщика")
+                    trans.fill_document_out(
+                        products,
+                        docs_pks["DOCUMENT_OUT"],
+                        docs_pks["DOCUMENT_OUT_HEADER"]
+                    )
+                    log_supplier.info("Документы поставщика заполнены")
+                except Exception as exc:
+                    log.error(
+                        "Ошибка заполнения документов поставщика %s: %s",
+                        agent_name,
+                        exc,
+                    )
+                    raise
+                
+                log_supplier.success("Данные записаны, ошибок нет")
+            finally:
+                log_supplier.close()
 
     log.info("Обновление данных завершено, подключение закрыто")
